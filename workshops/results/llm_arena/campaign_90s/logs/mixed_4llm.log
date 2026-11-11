@@ -1,0 +1,293 @@
+=== mixed_4llm attempt 1 2026-08-27 14:42:13 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gpt | llm_claude | llm_gemini | llm_deepseek
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 1 (llm_gemini) provider request failed: Gemini response contained no output text
+=== attempt 1 failed; resuming from cache in 180s ===
+=== mixed_4llm attempt 2 2026-08-27 15:34:24 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gpt | llm_claude | llm_gemini | llm_deepseek
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 2 (llm_gemini) provider request failed: Gemini response contained no output text
+=== attempt 2 failed; resuming from cache in 180s ===
+=== mixed_4llm attempt 3 2026-08-27 17:32:44 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gpt | llm_claude | llm_gemini | llm_deepseek
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 1 (llm_gemini) provider request failed: HTTP 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+=== attempt 3 failed; resuming from cache in 180s ===
+=== mixed_4llm attempt 4 2026-08-27 23:52:02 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gpt | llm_claude | llm_gemini | llm_deepseek
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 0 (llm_gemini) provider request failed: HTTP 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+=== attempt 4 failed; resuming from cache in 180s ===
+=== mixed_4llm attempt 5 2026-08-28 00:39:03 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gpt | llm_claude | llm_gemini | llm_deepseek
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 2 (llm_gemini) provider request failed: HTTP 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+=== attempt 5 failed; resuming from cache in 180s ===
+=== mixed_4llm attempt 6 2026-08-28 01:34:26 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gpt | llm_claude | llm_gemini | llm_deepseek
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+=== attempt 6 failed; resuming from cache in 180s ===
+=== mixed_4llm attempt 7 2026-08-28 01:48:14 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gpt | llm_claude | llm_gemini | llm_deepseek
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 266, in _one_decision
+    reply = await self.provider.decide(prompt, structured_state)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/providers.py", line 388, in decide
+    data, headers = await self._post(
+                    ^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/providers.py", line 161, in _post
+    return await asyncio.to_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/providers.py", line 132, in _http_post_once
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1392, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1430, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+=== attempt 7 failed; resuming from cache in 180s ===
+=== mixed_4llm attempt 8 2026-08-28 03:53:07 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gpt | llm_claude | llm_gemini | llm_deepseek
+                   llm_gpt vs llm_claude+llm_deepseek+llm_gemini survival= 94.0%  win= 20.0%  cash=   65.18  malformed=0.0%  rejected=0.7%  latency=1.19s
+                llm_claude vs llm_deepseek+llm_gemini+llm_gpt survival= 93.0%  win=  3.0%  cash=   25.50  malformed=0.0%  rejected=5.4%  latency=0.94s
+                llm_gemini vs llm_claude+llm_deepseek+llm_gpt survival= 87.0%  win= 49.0%  cash=  166.95  malformed=0.0%  rejected=0.5%  latency=5.56s
+              llm_deepseek vs llm_claude+llm_gemini+llm_gpt survival= 75.0%  win= 28.0%  cash=  142.37  malformed=0.0%  rejected=5.4%  latency=1.02s
+100 games in 8911.4s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/mixed_4llm/arena_summary.csv

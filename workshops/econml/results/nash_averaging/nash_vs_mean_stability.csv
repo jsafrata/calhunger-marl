@@ -1,0 +1,13 @@
+metric,group,estimator,mean_spearman_vs_full,p5_spearman_vs_full,top1_stability,n_tied_at_top_point,mean_pair_flip_prob,max_pair_flip_prob,n_pairs,n_pairs_flip_ge_5pct,n_pairs_flip_ge_25pct,mean_adjacent_flip_prob
+survival,all10,nash,0.961815,0.893621,1,1,0.0530667,0.4195,45,12,3,0.183833
+survival,all10,macro_mean,0.988312,0.963636,0.892,1,0.0183556,0.249,45,5,0,0.0768889
+survival,healthy8,nash,0.959642,0.829515,0.9075,3,0.0569286,0.2145,28,11,0,0.149214
+survival,healthy8,macro_mean,0.97704,0.928571,0.892,1,0.0295,0.249,28,5,0,0.0988571
+win,all10,nash,0.966695,0.877367,1,1,0.0674556,0.51,45,10,4,0.229556
+win,all10,macro_mean,0.989737,0.963636,1,1,0.0176111,0.4535,45,4,1,0.0809444
+win,healthy8,nash,0.98532,0.928571,1,1,0.0208571,0.199,28,3,0,0.0687857
+win,healthy8,macro_mean,0.979841,0.928571,1,1,0.0283036,0.4535,28,4,1,0.104071
+survival,all10,macro_mean_E19_reference,0.988886,0.963636,0.906,1,0.0175889,0.2485,45,5,0,0.0743333
+survival,healthy8,macro_mean_E19_reference,0.978169,0.928571,0.906,1,0.0282679,0.2485,28,5,0,0.0955714
+win,all10,macro_mean_E19_reference,0.989616,0.963636,1,1,0.0177778,0.4425,45,5,1,0.0813889
+win,healthy8,macro_mean_E19_reference,0.979603,0.928571,1,1,0.0285714,0.4425,28,5,1,0.104643

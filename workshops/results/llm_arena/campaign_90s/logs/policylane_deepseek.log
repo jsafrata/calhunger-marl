@@ -1,0 +1,184 @@
+=== 2026-08-28 00:25:31 ladder lane done; starting policy lane deepseek ===
+=== 2026-08-28 00:25:31 deepseek vs ippo_s0 (attempt 1) ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_deepseek vs 3x ippo_s0
+2026-08-28 00:25:36,413	INFO worker.py:2007 -- Started a local Ray instance.
+2026-08-28 00:25:37,048	WARNING algorithm_config.py:5118 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/rllib/algorithms/algorithm.py:527: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+`UnifiedLogger` will be removed in Ray 2.7.
+  return UnifiedLogger(config, logdir, loggers=None)
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `JsonLogger interface is deprecated in favor of the `ray.tune.json.JsonLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `CSVLogger interface is deprecated in favor of the `ray.tune.csv.CSVLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `TBXLogger interface is deprecated in favor of the `ray.tune.tensorboardx.TBXLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+[2026-08-28 00:25:38,018 E 51170 3204122] core_worker.cc:2223: Actor with class name: 'MultiAgentEnvRunner' and ID: '9a8cbbebfe2fd58ad2ab58b401000000' has constructor arguments in the object store and max_restarts > 0. If the arguments in the object store go out of scope or are lost, the actor restart will fail. See https://github.com/ray-project/ray/issues/53727 for more details.
+2026-08-28 00:25:41,829	WARNING rl_module.py:459 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+2026-08-28 00:25:41,912	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+[2026-08-28 00:26:07,063 E 51170 3204414] core_worker_process.cc:842: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+              llm_deepseek vs 3xippo_s0                survival= 36.0%  win=  0.0%  cash=   22.80  malformed=0.0%  rejected=4.9%  latency=0.98s
+                   ippo_s0 vs llm_deepseek             survival= 84.3%  win= 33.0%  cash=  125.73
+100 games in 7409.2s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/deepseek_vs_ippo_s0/arena_summary.csv
+=== 2026-08-28 02:29:02 deepseek vs ippo_s2 (attempt 1) ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_deepseek vs 3x ippo_s2
+2026-08-28 02:29:06,982	INFO worker.py:2007 -- Started a local Ray instance.
+2026-08-28 02:29:07,552	WARNING algorithm_config.py:5118 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/rllib/algorithms/algorithm.py:527: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+`UnifiedLogger` will be removed in Ray 2.7.
+  return UnifiedLogger(config, logdir, loggers=None)
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `JsonLogger interface is deprecated in favor of the `ray.tune.json.JsonLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `CSVLogger interface is deprecated in favor of the `ray.tune.csv.CSVLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `TBXLogger interface is deprecated in favor of the `ray.tune.tensorboardx.TBXLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+[2026-08-28 02:29:08,457 E 62207 3366006] core_worker.cc:2223: Actor with class name: 'MultiAgentEnvRunner' and ID: '58af96a69234928e76c5a9ae01000000' has constructor arguments in the object store and max_restarts > 0. If the arguments in the object store go out of scope or are lost, the actor restart will fail. See https://github.com/ray-project/ray/issues/53727 for more details.
+2026-08-28 02:29:11,893	WARNING rl_module.py:459 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+2026-08-28 02:29:11,945	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+[2026-08-28 02:29:37,589 E 62207 3366208] core_worker_process.cc:842: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 266, in _one_decision
+    reply = await self.provider.decide(prompt, structured_state)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/providers.py", line 388, in decide
+    data, headers = await self._post(
+                    ^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/providers.py", line 161, in _post
+    return await asyncio.to_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/threads.py", line 25, in to_thread
+    return await loop.run_in_executor(None, func_call)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/providers.py", line 132, in _http_post_once
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1392, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/urllib/request.py", line 1348, in do_open
+    r = h.getresponse()
+        ^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 1430, in getresponse
+    response.begin()
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/http/client.py", line 300, in _read_status
+    raise RemoteDisconnected("Remote end closed connection without"
+http.client.RemoteDisconnected: Remote end closed connection without response
+=== cell failed; resuming from cache in 180s ===
+=== 2026-08-28 04:39:52 deepseek vs ippo_s2 (attempt 2) ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_deepseek vs 3x ippo_s2
+2026-08-28 04:39:57,591	INFO worker.py:2007 -- Started a local Ray instance.
+2026-08-28 04:39:58,201	WARNING algorithm_config.py:5118 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/rllib/algorithms/algorithm.py:527: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+`UnifiedLogger` will be removed in Ray 2.7.
+  return UnifiedLogger(config, logdir, loggers=None)
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `JsonLogger interface is deprecated in favor of the `ray.tune.json.JsonLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `CSVLogger interface is deprecated in favor of the `ray.tune.csv.CSVLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `TBXLogger interface is deprecated in favor of the `ray.tune.tensorboardx.TBXLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+[2026-08-28 04:39:59,149 E 72218 3465508] core_worker.cc:2223: Actor with class name: 'MultiAgentEnvRunner' and ID: '8e16fa8e9d2523871557c25c01000000' has constructor arguments in the object store and max_restarts > 0. If the arguments in the object store go out of scope or are lost, the actor restart will fail. See https://github.com/ray-project/ray/issues/53727 for more details.
+2026-08-28 04:40:02,806	WARNING rl_module.py:459 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+2026-08-28 04:40:02,861	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+[2026-08-28 04:40:28,239 E 72218 3465737] core_worker_process.cc:842: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+              llm_deepseek vs 3xippo_s2                survival= 66.0%  win=  0.0%  cash=   13.20  malformed=0.0%  rejected=2.9%  latency=0.96s
+                   ippo_s2 vs llm_deepseek             survival= 92.0%  win= 33.3%  cash=  128.93
+100 games in 663.1s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/deepseek_vs_ippo_s2/arena_summary.csv
+=== 2026-08-28 04:50:57 deepseek vs mappo_s1 (attempt 1) ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_deepseek vs 3x mappo_s1
+2026-08-28 04:51:02,073	INFO worker.py:2007 -- Started a local Ray instance.
+2026-08-28 04:51:02,757	WARNING algorithm_config.py:5118 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/rllib/algorithms/algorithm.py:527: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+`UnifiedLogger` will be removed in Ray 2.7.
+  return UnifiedLogger(config, logdir, loggers=None)
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `JsonLogger interface is deprecated in favor of the `ray.tune.json.JsonLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `CSVLogger interface is deprecated in favor of the `ray.tune.csv.CSVLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `TBXLogger interface is deprecated in favor of the `ray.tune.tensorboardx.TBXLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+[2026-08-28 04:51:03,786 E 73120 3475005] core_worker.cc:2223: Actor with class name: 'MultiAgentEnvRunner' and ID: 'd9683f715388e7b7ce71f29501000000' has constructor arguments in the object store and max_restarts > 0. If the arguments in the object store go out of scope or are lost, the actor restart will fail. See https://github.com/ray-project/ray/issues/53727 for more details.
+2026-08-28 04:51:07,901	WARNING rl_module.py:459 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+2026-08-28 04:51:07,958	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+[2026-08-28 04:51:32,778 E 73120 3475206] core_worker_process.cc:842: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+              llm_deepseek vs 3xmappo_s1               survival= 62.0%  win=  0.0%  cash=   22.06  malformed=0.0%  rejected=4.1%  latency=1.05s
+                  mappo_s1 vs llm_deepseek             survival= 92.3%  win= 33.0%  cash=  125.98
+100 games in 8504.9s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/deepseek_vs_mappo_s1/arena_summary.csv
+=== 2026-08-28 07:12:44 deepseek vs mappo_s3 (attempt 1) ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_deepseek vs 3x mappo_s3
+2026-08-28 07:12:48,413	INFO worker.py:2007 -- Started a local Ray instance.
+2026-08-28 07:12:48,969	WARNING algorithm_config.py:5118 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/rllib/algorithms/algorithm.py:527: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+`UnifiedLogger` will be removed in Ray 2.7.
+  return UnifiedLogger(config, logdir, loggers=None)
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `JsonLogger interface is deprecated in favor of the `ray.tune.json.JsonLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `CSVLogger interface is deprecated in favor of the `ray.tune.csv.CSVLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `TBXLogger interface is deprecated in favor of the `ray.tune.tensorboardx.TBXLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+[2026-08-28 07:12:49,945 E 83583 3583932] core_worker.cc:2223: Actor with class name: 'MultiAgentEnvRunner' and ID: '0731debb35f98a2101db75ce01000000' has constructor arguments in the object store and max_restarts > 0. If the arguments in the object store go out of scope or are lost, the actor restart will fail. See https://github.com/ray-project/ray/issues/53727 for more details.
+2026-08-28 07:12:53,514	WARNING rl_module.py:459 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+2026-08-28 07:12:53,573	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+[2026-08-28 07:13:19,016 E 83583 3584134] core_worker_process.cc:842: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+              llm_deepseek vs 3xmappo_s3               survival= 61.0%  win=  0.0%  cash=    6.89  malformed=0.0%  rejected=2.5%  latency=1.08s
+                  mappo_s3 vs llm_deepseek             survival= 93.3%  win= 33.3%  cash=  131.04
+100 games in 9042.2s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/deepseek_vs_mappo_s3/arena_summary.csv
+=== 2026-08-28 09:43:27 policy lane deepseek complete ===

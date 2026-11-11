@@ -1,0 +1,26 @@
+{
+  "config": "4_fast",
+  "cadence_of_all_seats": "fast",
+  "n_games": 1000,
+  "seed_base": 0,
+  "env_v2": {
+    "MAX_QTY": 5,
+    "MAX_PRICE": 50,
+    "termination": "180s or zero-alive (single-survivor early end REMOVED)",
+    "reward": "N/A (scripted policy — no RL reward tracker used in this eval)"
+  },
+  "end_reasons": {"time_limit": 1000},
+  "reach_180_frac": 1.000,
+  "mean_episode_length_seconds": 180.0,
+  "n_survivors_histogram": {"3": 5, "4": 995},
+  "per_seat_survival_rate": [1.000, 0.999, 0.998, 0.998],
+  "mean_trades_per_game": 105.5,
+  "n_cap_violations_total": 0,
+  "winner_counts_by_seat": {"0": 265, "1": 268, "2": 247, "3": 221},
+  "notes": [
+    "0 price-cap violations at MAX_PRICE=50 — Scripted-v1 Fast's price generator never asks above 50 in this seed range, so the tightened bound does not clip its behavior.",
+    "Winner counts are near-uniform across seats (221-268 out of 1000), consistent with symmetric play.",
+    "Under the corrected v2 termination the game runs to t=180 in 100% of trials — no early termination confound.",
+    "Compare to v1 archive (see [archive README](../../archive/v1_early_termination_buffer_qty20_price100_linear_heads_gamma0995_lambda095/README.md)): v1 reported ~102 trades/game and ~96% conditional survival that mixed early single-survivor exits with time_limit endings."
+  ]
+}

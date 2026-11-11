@@ -1,0 +1,40 @@
+{
+  "harness": "llm_arena",
+  "protocol_version": "llm-arena-v3",
+  "prompt_template_sha256": "53bbcde11a318b7de26a8ae1b4959875755d0073853eaf11fc143a799fd90bda",
+  "lineup_mode": "1v3",
+  "slots": [
+    {
+      "kind": "llm",
+      "label": "gemini",
+      "provider": "gemini_api",
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "kind": "policy",
+      "label": "ippo_s2",
+      "checkpoint_path": "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/eval/results/best_config_small90_mlp/ippo_seed2_headmlp/checkpoints/iter_1200",
+      "module_id": null
+    },
+    {
+      "kind": "policy",
+      "label": "ippo_s2",
+      "checkpoint_path": "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/eval/results/best_config_small90_mlp/ippo_seed2_headmlp/checkpoints/iter_1200",
+      "module_id": null
+    },
+    {
+      "kind": "policy",
+      "label": "ippo_s2",
+      "checkpoint_path": "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/eval/results/best_config_small90_mlp/ippo_seed2_headmlp/checkpoints/iter_1200",
+      "module_id": null
+    }
+  ],
+  "mode": "stochastic",
+  "n_games": 100,
+  "game_seed_base": 910000,
+  "environment_variant": "small_90",
+  "environment_class": "FoodTradingEnv90",
+  "game_duration_seconds": 90,
+  "llm_attempts": 5,
+  "on_malformed": "wait"
+}

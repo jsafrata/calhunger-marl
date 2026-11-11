@@ -1,0 +1,69 @@
+"""Static campaign plan for finetune_vs_ladder (no heavy imports).
+
+8 warm starts, all default_180_mlp best-config arms at iter_1200:
+IPPO seeds 0-4 and MAPPO seeds 0, 2, 3. Seeds 0-1 live under the
+best_config_2seed campaign root, seeds 2-4 under the seeds234 root —
+same env-var names as hpc/best_config_peer_crossplay/campaign.env.example.
+"""
+from __future__ import annotations
+
+# Slurm array task id -> (algorithm, seed). Order must match the
+# `algos`/`seeds` arrays in run_array.sbatch.
+TASKS: tuple[tuple[str, int], ...] = (
+    ("ippo", 0),
+    ("ippo", 1),
+    ("ippo", 2),
+    ("ippo", 3),
+    ("ippo", 4),
+    ("mappo", 0),
+    ("mappo", 2),
+    ("mappo", 3),
+)
+
+ARRAY_SPEC = "0-7"
+
+# Warm-start / fine-tune schedule.
+WARM_START_ITER = 1200
+FINETUNE_ITERATIONS = 300
+CHECKPOINT_EVERY = 50
+
+# Best-config training constants (default_180_mlp arm).
+GAME_DURATION_SECONDS = 180
+GAMES_PER_UPDATE = 45
+NUM_MINIBATCHES = 4
+TRAIN_BATCH_SIZE = GAMES_PER_UPDATE * GAME_DURATION_SECONDS  # 8100
+MINIBATCH_SIZE = TRAIN_BATCH_SIZE // NUM_MINIBATCHES  # 2025
+
+
+def ckpt_root_env_var(seed: int) -> str:
+    """Environment variable holding the campaign root for this seed."""
+    return "HUNGER_CKPT_ROOT_2SEED" if seed <= 1 else "HUNGER_CKPT_ROOT_S234"
+
+
+def checkpoint_relpath(algorithm: str, seed: int) -> str:
+    """Checkpoint path relative to the seed's campaign root."""
+    return f"{algorithm}_seed{seed}_headmlp/checkpoints/iter_{WARM_START_ITER}"
+
+
+def checkpoint_iterations(
+    start_iter: int = WARM_START_ITER,
+    iterations: int = FINETUNE_ITERATIONS,
+    every: int = CHECKPOINT_EVERY,
+) -> list[int]:
+    """Absolute iteration numbers of the checkpoints a task will write.
+
+    Continues the warm start's numbering (1200 -> 1250, 1300, ..., 1500)
+    so `eval/checkpoint_scripted_diagnostics.py --checkpoint-start 1250
+    --checkpoint-stop 1500 --checkpoint-every 50` reads them unchanged.
+    """
+    if iterations <= 0 or every <= 0:
+        raise ValueError("iterations and every must be positive")
+    ticks = [
+        start_iter + local
+        for local in range(1, iterations + 1)
+        if local % every == 0
+    ]
+    final = start_iter + iterations
+    if not ticks or ticks[-1] != final:
+        ticks.append(final)
+    return ticks

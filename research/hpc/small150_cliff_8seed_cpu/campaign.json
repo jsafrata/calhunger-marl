@@ -1,0 +1,82 @@
+{
+  "campaign_name": "small150_cliff_8seed_ippo_mappo_1200",
+  "environment_variants": [
+    "small_150"
+  ],
+  "environment_output_names": {
+    "small_150": "small_150"
+  },
+  "algorithms": [
+    "ippo",
+    "mappo"
+  ],
+  "seeds": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "iterations": 1200,
+  "checkpoint_every": 100,
+  "checkpoint_start": 100,
+  "checkpoint_iterations": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200
+  ],
+  "training": {
+    "games_per_update": 45,
+    "num_minibatches": 4,
+    "train_batch_size": 6750,
+    "minibatch_size": 1687,
+    "episode_matched_batches": {
+      "small_150": {
+        "duration_seconds": 150,
+        "train_batch_size": 6750,
+        "minibatch_size": 1687
+      }
+    },
+    "num_epochs": 4,
+    "num_env_runners": 2,
+    "head_kind": "mlp",
+    "gamma": 1.0,
+    "lambda": 1.0,
+    "entropy_coeff": 0.01,
+    "reward_kind": "terminal_only",
+    "reward_variant": "baseline",
+    "max_qty": 5,
+    "max_price": 50
+  },
+  "resources": {
+    "partition": "expansion",
+    "cpus_per_task": 6,
+    "memory_gb": 16,
+    "gpus": 0,
+    "array": "0-15%16",
+    "walltime_by_environment": {
+      "small_150": "20:00:00"
+    }
+  },
+  "locked_versions": {
+    "python_major_minor": "3.11",
+    "ray": "2.53.0",
+    "torch": "2.12.0",
+    "numpy": "2.4.6",
+    "gymnasium": "1.1.1",
+    "pyarrow": "25.0.0",
+    "scipy": "1.17.1"
+  }
+}

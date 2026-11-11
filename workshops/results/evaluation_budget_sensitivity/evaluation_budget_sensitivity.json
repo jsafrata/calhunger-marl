@@ -1,0 +1,172 @@
+{
+ "config": {
+  "B": 2000,
+  "rng_seed": 20260829,
+  "n0": 1000,
+  "alpha": 0.05,
+  "power": 0.8,
+  "z_alpha_half": 1.959963984540054,
+  "z_beta": 0.8416212335729143,
+  "z_alpha_bonferroni_7": 2.690109527158867,
+  "n_mc": 200000
+ },
+ "criterion": "two-sided test of a zero pairwise macro-survival difference at alpha=.05 with 80% power, per adjacent pair of the reference survival ordering; SD from the paired-seed bootstrap at n0 (shared game seeds across cells, so cross-cell dependence is inside sd); 1/sqrt(n) scaling (verified empirically, sd(100)/sd(1000)=3.17 vs 3.16); ranking certified when every adjacent pair is decided; budget = max over adjacent pairs",
+ "reference_order": [
+  "ippo_s2",
+  "ippo_s1",
+  "mappo_s3",
+  "ippo_s4",
+  "ippo_s3",
+  "mappo_s0",
+  "mappo_s2",
+  "ippo_s0"
+ ],
+ "adjacent_pairs": [
+  {
+   "pair": "ippo_s2 > ippo_s1",
+   "gap_pts": 0.9555555555555628,
+   "sd_at_n0_pts": 0.7083516644622551,
+   "n_80pct_power": 4313.140728268368,
+   "n_80pct_power_bonferroni7": 6854.268767642556
+  },
+  {
+   "pair": "ippo_s1 > mappo_s3",
+   "gap_pts": 0.4777777777777743,
+   "sd_at_n0_pts": 0.6653547983141201,
+   "n_80pct_power": 15221.672326084028,
+   "n_80pct_power_bonferroni7": 24189.66590451464
+  },
+  {
+   "pair": "mappo_s3 > ippo_s4",
+   "gap_pts": 0.46666666666666146,
+   "sd_at_n0_pts": 0.7205466009026802,
+   "n_80pct_power": 18711.91604458154,
+   "n_80pct_power_bonferroni7": 29736.22003254623
+  },
+  {
+   "pair": "ippo_s4 > ippo_s3",
+   "gap_pts": 1.0666666666666558,
+   "sd_at_n0_pts": 0.8383420853442592,
+   "n_80pct_power": 4848.336612084108,
+   "n_80pct_power_bonferroni7": 7704.7804161418735
+  },
+  {
+   "pair": "ippo_s3 > mappo_s0",
+   "gap_pts": 3.64444444444446,
+   "sd_at_n0_pts": 0.8058930253621596,
+   "n_80pct_power": 383.79543111527835,
+   "n_80pct_power_bonferroni7": 609.9121736084661
+  },
+  {
+   "pair": "mappo_s0 > mappo_s2",
+   "gap_pts": 3.8222222222222157,
+   "sd_at_n0_pts": 0.8246845129031433,
+   "n_80pct_power": 365.385649119802,
+   "n_80pct_power_bonferroni7": 580.6560927846522
+  },
+  {
+   "pair": "mappo_s2 > ippo_s0",
+   "gap_pts": 3.5444444444444443,
+   "sd_at_n0_pts": 0.7367364737797225,
+   "n_80pct_power": 339.1061526420176,
+   "n_80pct_power_bonferroni7": 538.893780055903
+  }
+ ],
+ "adjacent_diff_correlation": [
+  [
+   1.0,
+   -0.432,
+   0.109,
+   -0.194,
+   -0.278,
+   0.124,
+   -0.165
+  ],
+  [
+   -0.432,
+   1.0,
+   -0.548,
+   0.082,
+   0.35,
+   -0.381,
+   0.072
+  ],
+  [
+   0.109,
+   -0.548,
+   1.0,
+   -0.595,
+   -0.381,
+   0.354,
+   0.015
+  ],
+  [
+   -0.194,
+   0.082,
+   -0.595,
+   1.0,
+   -0.025,
+   -0.187,
+   -0.114
+  ],
+  [
+   -0.278,
+   0.35,
+   -0.381,
+   -0.025,
+   1.0,
+   -0.691,
+   0.218
+  ],
+  [
+   0.124,
+   -0.381,
+   0.354,
+   -0.187,
+   -0.691,
+   1.0,
+   -0.43
+  ],
+  [
+   -0.165,
+   0.072,
+   0.015,
+   -0.114,
+   0.218,
+   -0.43,
+   1.0
+  ]
+ ],
+ "published_budget_games_per_cell": 18711.91604458154,
+ "binding_pair": "mappo_s3 > ippo_s4",
+ "gap_uncertainty": {
+  "binding_gap_pts": 0.46666666666666146,
+  "binding_gap_se_pts": 0.7205466009026802,
+  "budget_if_gap_minus_1se": null,
+  "budget_if_gap_plus_1se": 2891.1747305690587,
+  "bootstrap_budget_percentiles_5_25_50_75_95": [
+   8323.919551071653,
+   26580.767529426023,
+   82519.54975660858,
+   407503.94941526715,
+   8251954.975668246
+  ],
+  "fraction_replicates_budget_over_10M_or_infinite": 0.0545
+ },
+ "bonferroni7_budget_games_per_cell": 29736.22003254623,
+ "joint_power": {
+  "at_published_budget": 0.67582,
+  "budget_for_80pct_joint_power": 22788.824733372825,
+  "budget_for_80pct_joint_power_bonferroni7": 34288.48750780762,
+  "curve_per_pair_threshold": {
+   "100": 0.0,
+   "1000": 0.0,
+   "5000": 0.010755,
+   "10000": 0.232455,
+   "18681": 0.675205,
+   "30000": 0.919055,
+   "50000": 0.99448,
+   "100000": 1.0
+  }
+ }
+}

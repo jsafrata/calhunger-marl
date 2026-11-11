@@ -1,0 +1,9 @@
+voter_set,rule,B,n_games_per_cell,scheme,top1_stability,mean_self_spearman,p5_self_spearman,full_winner,alt_winners
+grid_pop10xmetrics6_healthy8,borda,2000,1000,paired,0.6025,0.9645379207980578,0.9047619047619049,mappo_s2,ippo_s2:38.9%;mappo_s3:0.9%
+grid_pop10xmetrics6_healthy8,copeland,2000,1000,paired,1.0,0.9762232302021362,0.9523809523809526,mappo_s2,
+grid_pop10xmetrics6_healthy8,plurality,2000,1000,paired,0.9995,0.9692981443123531,0.922097543352696,mappo_s2,ippo_s2:0.1%
+grid_pop10xmetrics6_healthy8,kemeny,2000,1000,paired,1.0,0.9755952380952382,0.9523809523809526,mappo_s2,
+grid_pop8xmetrics6_healthy8,borda,2000,1000,paired,0.904,0.9906327407792249,0.9700772721497397,mappo_s2,ippo_s2:9.6%
+grid_pop8xmetrics6_healthy8,copeland,2000,1000,paired,1.0,0.9769564034174455,0.9157291161525718,mappo_s2,
+grid_pop8xmetrics6_healthy8,plurality,2000,1000,paired,1.0,0.9870315836638041,0.95068973677523,mappo_s2,
+grid_pop8xmetrics6_healthy8,kemeny,2000,1000,paired,1.0,0.9699880952380954,0.9047619047619049,mappo_s2,

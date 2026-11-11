@@ -1,0 +1,1031 @@
+=== 2026-08-28 12:17:54 gemini_vs_v2 45/100 attempt 1 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v2
+                llm_gemini vs 3xscripted_v2            survival= 96.0%  win=  2.0%  cash=   51.89  malformed=0.0%  rejected=0.0%  latency=2.84s
+               scripted_v2 vs llm_gemini               survival= 99.3%  win= 33.0%  cash=  116.04
+100 games in 14705.6s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/gemini_vs_v2/arena_summary.csv
+=== gemini_vs_v2 COMPLETE ===
+=== 2026-08-28 16:23:00 gemini_vs_ippo_s2 14/100 attempt 1 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x ippo_s2
+2026-08-28 16:23:10,067	INFO worker.py:2007 -- Started a local Ray instance.
+2026-08-28 16:23:10,587	WARNING algorithm_config.py:5118 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/rllib/algorithms/algorithm.py:527: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+`UnifiedLogger` will be removed in Ray 2.7.
+  return UnifiedLogger(config, logdir, loggers=None)
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `JsonLogger interface is deprecated in favor of the `ray.tune.json.JsonLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `CSVLogger interface is deprecated in favor of the `ray.tune.csv.CSVLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/.venv-mappo/lib/python3.12/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `TBXLogger interface is deprecated in favor of the `ray.tune.tensorboardx.TBXLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+[2026-08-28 16:23:11,840 E 32589 4198096] core_worker.cc:2223: Actor with class name: 'MultiAgentEnvRunner' and ID: 'c1afe457d76c43f13a364b7c01000000' has constructor arguments in the object store and max_restarts > 0. If the arguments in the object store go out of scope or are lost, the actor restart will fail. See https://github.com/ray-project/ray/issues/53727 for more details.
+2026-08-28 16:23:15,731	WARNING rl_module.py:459 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+2026-08-28 16:23:15,793	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+[2026-08-28 16:23:40,637 E 32589 4198811] core_worker_process.cc:842: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+                llm_gemini vs 3xippo_s2                survival= 49.0%  win=  0.0%  cash=   13.73  malformed=0.0%  rejected=0.7%  latency=5.09s
+                   ippo_s2 vs llm_gemini               survival= 81.3%  win= 33.3%  cash=  128.76
+100 games in 36607.7s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/gemini_vs_ippo_s2/arena_summary.csv
+=== gemini_vs_ippo_s2 COMPLETE ===
+=== 2026-08-29 02:33:10 gemini_vs_v5 2/100 attempt 1 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 10:45:09 gemini_vs_v5 47/100 attempt 2 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 10:47:11 gemini_vs_v5 47/100 attempt 3 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 10:49:14 gemini_vs_v5 47/100 attempt 4 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 10:51:17 gemini_vs_v5 47/100 attempt 5 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 10:53:19 gemini_vs_v5 47/100 attempt 6 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 10:55:22 gemini_vs_v5 47/100 attempt 7 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 10:57:24 gemini_vs_v5 47/100 attempt 8 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:05:33 gemini_vs_v5 47/100 attempt 9 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:07:35 gemini_vs_v5 47/100 attempt 10 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:09:39 gemini_vs_v5 47/100 attempt 11 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:11:41 gemini_vs_v5 47/100 attempt 12 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:13:44 gemini_vs_v5 47/100 attempt 13 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:15:47 gemini_vs_v5 47/100 attempt 14 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:17:49 gemini_vs_v5 47/100 attempt 15 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:19:51 gemini_vs_v5 47/100 attempt 16 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:21:54 gemini_vs_v5 47/100 attempt 17 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:23:57 gemini_vs_v5 47/100 attempt 18 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:26:00 gemini_vs_v5 47/100 attempt 19 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:28:03 gemini_vs_v5 47/100 attempt 20 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:30:06 gemini_vs_v5 47/100 attempt 21 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:32:08 gemini_vs_v5 47/100 attempt 22 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:34:11 gemini_vs_v5 47/100 attempt 23 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:36:13 gemini_vs_v5 47/100 attempt 24 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:38:16 gemini_vs_v5 47/100 attempt 25 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:40:20 gemini_vs_v5 47/100 attempt 26 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:42:22 gemini_vs_v5 47/100 attempt 27 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 429: {
+  "error": {
+    "code": 429,
+    "message": "Your prepayment credits are depleted. Please go to AI Studio at https://ai.studio/projects to manage your project and billing. Learn more at https://ai.google.dev/gemini-api/docs/billing#prepay. ",
+    "status": "RESOURCE_EXHAUSTED"
+  }
+}
+
+=== 2026-08-29 11:44:25 gemini_vs_v5 47/100 attempt 28 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5

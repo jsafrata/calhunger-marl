@@ -1,0 +1,40 @@
+{
+  "harness": "llm_arena",
+  "protocol_version": "llm-arena-v3",
+  "prompt_template_sha256": "53bbcde11a318b7de26a8ae1b4959875755d0073853eaf11fc143a799fd90bda",
+  "lineup_mode": "mixed",
+  "slots": [
+    {
+      "kind": "llm",
+      "label": "gpt",
+      "provider": "openai_api",
+      "model": "gpt-5.6-luna"
+    },
+    {
+      "kind": "llm",
+      "label": "claude",
+      "provider": "anthropic_api",
+      "model": "claude-haiku-4-5-20251001"
+    },
+    {
+      "kind": "llm",
+      "label": "gemini",
+      "provider": "gemini_api",
+      "model": "gemini-3.5-flash-lite"
+    },
+    {
+      "kind": "llm",
+      "label": "deepseek",
+      "provider": "deepseek_api",
+      "model": "deepseek-v4-flash"
+    }
+  ],
+  "mode": "stochastic",
+  "n_games": 100,
+  "game_seed_base": 910000,
+  "environment_variant": "small_90",
+  "environment_class": "FoodTradingEnv90",
+  "game_duration_seconds": 90,
+  "llm_attempts": 5,
+  "on_malformed": "wait"
+}

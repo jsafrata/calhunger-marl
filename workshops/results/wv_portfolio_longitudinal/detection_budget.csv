@@ -1,0 +1,9 @@
+run,v4_peak_ckpt,v4_peak,v4_at_1200,games_per_cell_to_detect_v4_drop,heldout_flags_decline,heldout_peak_ckpt,heldout_peak,heldout_at_1200,games_per_cell_to_detect_heldout_drop
+ippo_s0,400,36.0,17.0,66,True,900,49.0,34.3,46
+ippo_s1,500,54.0,7.0,11,True,1100,51.7,47.7,644
+ippo_s2,400,42.0,4.0,14,False,1200,42.0,42.0,n/a (no drop)
+ippo_s3,1100,54.0,34.0,75,False,1000,57.0,55.7,5703
+ippo_s4,1200,27.0,27.0,n/a (no drop),True,1000,52.0,47.3,473
+mappo_s0,700,46.0,34.0,205,True,1100,57.0,53.0,637
+mappo_s2,600,50.0,5.0,11,True,1000,53.3,37.7,41
+mappo_s3,500,40.0,8.0,21,True,900,54.0,47.0,210

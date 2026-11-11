@@ -1,0 +1,31 @@
+[
+  {
+    "focal": "llm_gpt",
+    "opponent": "self",
+    "lineup_mode": "1v3",
+    "mode": "stochastic",
+    "n_games": 100,
+    "n_focal_seat_games": 400,
+    "game_seed_base": 910000,
+    "environment_variant": "small_90",
+    "environment_class": "FoodTradingEnv90",
+    "game_duration_seconds": 90,
+    "survival_percentage": 99.0,
+    "win_percentage": 25.25,
+    "win_given_survival_percentage": 25.505050505050505,
+    "mean_terminal_cash": 100.0,
+    "mean_terminal_cash_given_survival": 100.3459595959596,
+    "mean_survival_time_ticks": 89.775,
+    "mean_trades_as_buyer": 17.555,
+    "mean_trades_as_seller": 17.555,
+    "n_llm_decisions": 35910,
+    "mean_decision_latency_seconds": 1.1591027026733498,
+    "mean_attempts_per_decision": 1.0002784739626844,
+    "malformed_decision_percentage": 0.0027847396268448903,
+    "rejected_action_percentage": 0.3063213589529379,
+    "wait_action_percentage": 60.211640211640216,
+    "total_input_tokens": 34472087,
+    "total_output_tokens": 1113520,
+    "total_cached_input_tokens": 0
+  }
+]

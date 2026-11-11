@@ -1,0 +1,1103 @@
+{
+ "config": {
+  "n_games_per_cell": 1000,
+  "source": "merged 1000-game peer matrix (load_peer_1v3(extended=True))",
+  "labels": [
+   "ippo_s0",
+   "ippo_s1",
+   "ippo_s2",
+   "ippo_s3",
+   "ippo_s4",
+   "mappo_s0",
+   "mappo_s1",
+   "mappo_s2",
+   "mappo_s3",
+   "mappo_s4"
+  ],
+  "healthy": [
+   "ippo_s0",
+   "ippo_s1",
+   "ippo_s2",
+   "ippo_s3",
+   "ippo_s4",
+   "mappo_s0",
+   "mappo_s2",
+   "mappo_s3"
+  ],
+  "grid_voter_convention": "voter (j, m) ranks healthy candidates i != j by metric m of cell (i vs 3x j); self-play diagonal excluded (E12); NaN candidate values (e.g. cash|survival with 0 survivors) make the ballot partial; all-NaN ballots are dropped",
+  "metrics": [
+   "survival",
+   "win",
+   "cash",
+   "cash_given_survival",
+   "survival_time",
+   "win_given_survival"
+  ],
+  "judge_universe_note": "the cross-check pins the judge universe to the 10 populations (each candidate is judged by its 9 single-population 1v3 contexts); healthy-8-judges grid reported as a secondary voter set"
+ },
+ "crosscheck_vs_E27": {
+  "restriction": "(all 10 populations, survival) column of the grid",
+  "reference": "E27 pop_all10judges_healthy8",
+  "pref_counts_equal": true,
+  "majority_structure_equal": true,
+  "rule_rankings_equal": {
+   "borda": true,
+   "copeland": true,
+   "plurality": true,
+   "kemeny": true
+  }
+ },
+ "voter_sets": {
+  "grid_pop10xmetrics6_healthy8": {
+   "condorcet_winner": "mappo_s2",
+   "weak_condorcet_winners": [
+    "mappo_s2"
+   ],
+   "n_cycle_triples": 0,
+   "n_triples": 56,
+   "cycle_triples": [],
+   "n_majority_ties": 0,
+   "majority_ties": [],
+   "majority_edges": [
+    {
+     "pair": [
+      "ippo_s0",
+      "ippo_s1"
+     ],
+     "votes": [
+      24,
+      23
+     ],
+     "n_judges": 48,
+     "winner": "ippo_s0"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "ippo_s2"
+     ],
+     "votes": [
+      18,
+      29
+     ],
+     "n_judges": 48,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "ippo_s3"
+     ],
+     "votes": [
+      31,
+      16
+     ],
+     "n_judges": 48,
+     "winner": "ippo_s0"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "ippo_s4"
+     ],
+     "votes": [
+      28,
+      19
+     ],
+     "n_judges": 48,
+     "winner": "ippo_s0"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "mappo_s0"
+     ],
+     "votes": [
+      30,
+      17
+     ],
+     "n_judges": 48,
+     "winner": "ippo_s0"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "mappo_s2"
+     ],
+     "votes": [
+      11,
+      36
+     ],
+     "n_judges": 48,
+     "winner": "mappo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "mappo_s3"
+     ],
+     "votes": [
+      21,
+      25
+     ],
+     "n_judges": 48,
+     "winner": "mappo_s3"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "ippo_s2"
+     ],
+     "votes": [
+      16,
+      31
+     ],
+     "n_judges": 48,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "ippo_s3"
+     ],
+     "votes": [
+      39,
+      7
+     ],
+     "n_judges": 48,
+     "winner": "ippo_s1"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "ippo_s4"
+     ],
+     "votes": [
+      37,
+      10
+     ],
+     "n_judges": 48,
+     "winner": "ippo_s1"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "mappo_s0"
+     ],
+     "votes": [
+      38,
+      9
+     ],
+     "n_judges": 48,
+     "winner": "ippo_s1"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "mappo_s2"
+     ],
+     "votes": [
+      16,
+      31
+     ],
+     "n_judges": 48,
+     "winner": "mappo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "mappo_s3"
+     ],
+     "votes": [
+      20,
+      27
+     ],
+     "n_judges": 48,
+     "winner": "mappo_s3"
+    },
+    {
+     "pair": [
+      "ippo_s2",
+      "ippo_s3"
+     ],
+     "votes": [
+      37,
+      10
+     ],
+     "n_judges": 48,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s2",
+      "ippo_s4"
+     ],
+     "votes": [
+      39,
+      8
+     ],
+     "n_judges": 48,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s2",
+      "mappo_s0"
+     ],
+     "votes": [
+      40,
+      7
+     ],
+     "n_judges": 48,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s2",
+      "mappo_s2"
+     ],
+     "votes": [
+      20,
+      27
+     ],
+     "n_judges": 48,
+     "winner": "mappo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s2",
+      "mappo_s3"
+     ],
+     "votes": [
+      27,
+      20
+     ],
+     "n_judges": 48,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s3",
+      "ippo_s4"
+     ],
+     "votes": [
+      25,
+      22
+     ],
+     "n_judges": 48,
+     "winner": "ippo_s3"
+    },
+    {
+     "pair": [
+      "ippo_s3",
+      "mappo_s0"
+     ],
+     "votes": [
+      21,
+      26
+     ],
+     "n_judges": 48,
+     "winner": "mappo_s0"
+    },
+    {
+     "pair": [
+      "ippo_s3",
+      "mappo_s2"
+     ],
+     "votes": [
+      16,
+      31
+     ],
+     "n_judges": 48,
+     "winner": "mappo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s3",
+      "mappo_s3"
+     ],
+     "votes": [
+      6,
+      41
+     ],
+     "n_judges": 48,
+     "winner": "mappo_s3"
+    },
+    {
+     "pair": [
+      "ippo_s4",
+      "mappo_s0"
+     ],
+     "votes": [
+      16,
+      31
+     ],
+     "n_judges": 48,
+     "winner": "mappo_s0"
+    },
+    {
+     "pair": [
+      "ippo_s4",
+      "mappo_s2"
+     ],
+     "votes": [
+      14,
+      33
+     ],
+     "n_judges": 48,
+     "winner": "mappo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s4",
+      "mappo_s3"
+     ],
+     "votes": [
+      7,
+      40
+     ],
+     "n_judges": 48,
+     "winner": "mappo_s3"
+    },
+    {
+     "pair": [
+      "mappo_s0",
+      "mappo_s2"
+     ],
+     "votes": [
+      10,
+      37
+     ],
+     "n_judges": 48,
+     "winner": "mappo_s2"
+    },
+    {
+     "pair": [
+      "mappo_s0",
+      "mappo_s3"
+     ],
+     "votes": [
+      4,
+      43
+     ],
+     "n_judges": 48,
+     "winner": "mappo_s3"
+    },
+    {
+     "pair": [
+      "mappo_s2",
+      "mappo_s3"
+     ],
+     "votes": [
+      31,
+      16
+     ],
+     "n_judges": 48,
+     "winner": "mappo_s2"
+    }
+   ],
+   "n_potential_voters": 60,
+   "n_voters": 60,
+   "dropped_voters": [],
+   "n_undefined_candidate_cells": 0
+  },
+  "grid_pop8xmetrics6_healthy8": {
+   "condorcet_winner": "mappo_s2",
+   "weak_condorcet_winners": [
+    "mappo_s2"
+   ],
+   "n_cycle_triples": 0,
+   "n_triples": 56,
+   "cycle_triples": [],
+   "n_majority_ties": 2,
+   "majority_ties": [
+    {
+     "pair": [
+      "ippo_s0",
+      "mappo_s3"
+     ],
+     "votes": [
+      18,
+      18
+     ],
+     "n_judges": 36
+    },
+    {
+     "pair": [
+      "ippo_s3",
+      "mappo_s0"
+     ],
+     "votes": [
+      18,
+      18
+     ],
+     "n_judges": 36
+    }
+   ],
+   "majority_edges": [
+    {
+     "pair": [
+      "ippo_s0",
+      "ippo_s1"
+     ],
+     "votes": [
+      21,
+      15
+     ],
+     "n_judges": 36,
+     "winner": "ippo_s0"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "ippo_s2"
+     ],
+     "votes": [
+      12,
+      24
+     ],
+     "n_judges": 36,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "ippo_s3"
+     ],
+     "votes": [
+      24,
+      12
+     ],
+     "n_judges": 36,
+     "winner": "ippo_s0"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "ippo_s4"
+     ],
+     "votes": [
+      23,
+      13
+     ],
+     "n_judges": 36,
+     "winner": "ippo_s0"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "mappo_s0"
+     ],
+     "votes": [
+      27,
+      9
+     ],
+     "n_judges": 36,
+     "winner": "ippo_s0"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "mappo_s2"
+     ],
+     "votes": [
+      6,
+      30
+     ],
+     "n_judges": 36,
+     "winner": "mappo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "ippo_s2"
+     ],
+     "votes": [
+      8,
+      28
+     ],
+     "n_judges": 36,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "ippo_s3"
+     ],
+     "votes": [
+      30,
+      5
+     ],
+     "n_judges": 36,
+     "winner": "ippo_s1"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "ippo_s4"
+     ],
+     "votes": [
+      31,
+      5
+     ],
+     "n_judges": 36,
+     "winner": "ippo_s1"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "mappo_s0"
+     ],
+     "votes": [
+      33,
+      3
+     ],
+     "n_judges": 36,
+     "winner": "ippo_s1"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "mappo_s2"
+     ],
+     "votes": [
+      8,
+      28
+     ],
+     "n_judges": 36,
+     "winner": "mappo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "mappo_s3"
+     ],
+     "votes": [
+      14,
+      22
+     ],
+     "n_judges": 36,
+     "winner": "mappo_s3"
+    },
+    {
+     "pair": [
+      "ippo_s2",
+      "ippo_s3"
+     ],
+     "votes": [
+      31,
+      5
+     ],
+     "n_judges": 36,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s2",
+      "ippo_s4"
+     ],
+     "votes": [
+      31,
+      5
+     ],
+     "n_judges": 36,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s2",
+      "mappo_s0"
+     ],
+     "votes": [
+      34,
+      2
+     ],
+     "n_judges": 36,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s2",
+      "mappo_s2"
+     ],
+     "votes": [
+      14,
+      22
+     ],
+     "n_judges": 36,
+     "winner": "mappo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s2",
+      "mappo_s3"
+     ],
+     "votes": [
+      22,
+      14
+     ],
+     "n_judges": 36,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s3",
+      "ippo_s4"
+     ],
+     "votes": [
+      20,
+      16
+     ],
+     "n_judges": 36,
+     "winner": "ippo_s3"
+    },
+    {
+     "pair": [
+      "ippo_s3",
+      "mappo_s2"
+     ],
+     "votes": [
+      11,
+      25
+     ],
+     "n_judges": 36,
+     "winner": "mappo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s3",
+      "mappo_s3"
+     ],
+     "votes": [
+      4,
+      32
+     ],
+     "n_judges": 36,
+     "winner": "mappo_s3"
+    },
+    {
+     "pair": [
+      "ippo_s4",
+      "mappo_s0"
+     ],
+     "votes": [
+      15,
+      21
+     ],
+     "n_judges": 36,
+     "winner": "mappo_s0"
+    },
+    {
+     "pair": [
+      "ippo_s4",
+      "mappo_s2"
+     ],
+     "votes": [
+      8,
+      28
+     ],
+     "n_judges": 36,
+     "winner": "mappo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s4",
+      "mappo_s3"
+     ],
+     "votes": [
+      4,
+      32
+     ],
+     "n_judges": 36,
+     "winner": "mappo_s3"
+    },
+    {
+     "pair": [
+      "mappo_s0",
+      "mappo_s2"
+     ],
+     "votes": [
+      4,
+      32
+     ],
+     "n_judges": 36,
+     "winner": "mappo_s2"
+    },
+    {
+     "pair": [
+      "mappo_s0",
+      "mappo_s3"
+     ],
+     "votes": [
+      1,
+      35
+     ],
+     "n_judges": 36,
+     "winner": "mappo_s3"
+    },
+    {
+     "pair": [
+      "mappo_s2",
+      "mappo_s3"
+     ],
+     "votes": [
+      26,
+      10
+     ],
+     "n_judges": 36,
+     "winner": "mappo_s2"
+    }
+   ],
+   "n_potential_voters": 48,
+   "n_voters": 48,
+   "dropped_voters": [],
+   "n_undefined_candidate_cells": 0
+  },
+  "grid_restricted_pop10_survival": {
+   "condorcet_winner": null,
+   "weak_condorcet_winners": [
+    "ippo_s2"
+   ],
+   "n_cycle_triples": 0,
+   "n_triples": 56,
+   "cycle_triples": [],
+   "n_majority_ties": 4,
+   "majority_ties": [
+    {
+     "pair": [
+      "ippo_s1",
+      "ippo_s4"
+     ],
+     "votes": [
+      4,
+      4
+     ],
+     "n_judges": 8
+    },
+    {
+     "pair": [
+      "ippo_s2",
+      "mappo_s3"
+     ],
+     "votes": [
+      4,
+      4
+     ],
+     "n_judges": 8
+    },
+    {
+     "pair": [
+      "ippo_s3",
+      "ippo_s4"
+     ],
+     "votes": [
+      4,
+      4
+     ],
+     "n_judges": 8
+    },
+    {
+     "pair": [
+      "mappo_s0",
+      "mappo_s2"
+     ],
+     "votes": [
+      4,
+      4
+     ],
+     "n_judges": 8
+    }
+   ],
+   "majority_edges": [
+    {
+     "pair": [
+      "ippo_s0",
+      "ippo_s1"
+     ],
+     "votes": [
+      0,
+      8
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s1"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "ippo_s2"
+     ],
+     "votes": [
+      1,
+      7
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "ippo_s3"
+     ],
+     "votes": [
+      1,
+      7
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s3"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "ippo_s4"
+     ],
+     "votes": [
+      0,
+      8
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s4"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "mappo_s0"
+     ],
+     "votes": [
+      1,
+      7
+     ],
+     "n_judges": 8,
+     "winner": "mappo_s0"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "mappo_s2"
+     ],
+     "votes": [
+      3,
+      5
+     ],
+     "n_judges": 8,
+     "winner": "mappo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s0",
+      "mappo_s3"
+     ],
+     "votes": [
+      1,
+      7
+     ],
+     "n_judges": 8,
+     "winner": "mappo_s3"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "ippo_s2"
+     ],
+     "votes": [
+      3,
+      5
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "ippo_s3"
+     ],
+     "votes": [
+      5,
+      2
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s1"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "mappo_s0"
+     ],
+     "votes": [
+      5,
+      3
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s1"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "mappo_s2"
+     ],
+     "votes": [
+      6,
+      2
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s1"
+    },
+    {
+     "pair": [
+      "ippo_s1",
+      "mappo_s3"
+     ],
+     "votes": [
+      5,
+      3
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s1"
+    },
+    {
+     "pair": [
+      "ippo_s2",
+      "ippo_s3"
+     ],
+     "votes": [
+      5,
+      3
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s2",
+      "ippo_s4"
+     ],
+     "votes": [
+      5,
+      3
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s2",
+      "mappo_s0"
+     ],
+     "votes": [
+      6,
+      2
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s2",
+      "mappo_s2"
+     ],
+     "votes": [
+      7,
+      1
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s2"
+    },
+    {
+     "pair": [
+      "ippo_s3",
+      "mappo_s0"
+     ],
+     "votes": [
+      5,
+      3
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s3"
+    },
+    {
+     "pair": [
+      "ippo_s3",
+      "mappo_s2"
+     ],
+     "votes": [
+      7,
+      1
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s3"
+    },
+    {
+     "pair": [
+      "ippo_s3",
+      "mappo_s3"
+     ],
+     "votes": [
+      3,
+      5
+     ],
+     "n_judges": 8,
+     "winner": "mappo_s3"
+    },
+    {
+     "pair": [
+      "ippo_s4",
+      "mappo_s0"
+     ],
+     "votes": [
+      5,
+      3
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s4"
+    },
+    {
+     "pair": [
+      "ippo_s4",
+      "mappo_s2"
+     ],
+     "votes": [
+      6,
+      2
+     ],
+     "n_judges": 8,
+     "winner": "ippo_s4"
+    },
+    {
+     "pair": [
+      "ippo_s4",
+      "mappo_s3"
+     ],
+     "votes": [
+      2,
+      6
+     ],
+     "n_judges": 8,
+     "winner": "mappo_s3"
+    },
+    {
+     "pair": [
+      "mappo_s0",
+      "mappo_s3"
+     ],
+     "votes": [
+      2,
+      6
+     ],
+     "n_judges": 8,
+     "winner": "mappo_s3"
+    },
+    {
+     "pair": [
+      "mappo_s2",
+      "mappo_s3"
+     ],
+     "votes": [
+      2,
+      6
+     ],
+     "n_judges": 8,
+     "winner": "mappo_s3"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,38 @@
+[project]
+name = "calhunger"
+version = "1.0.0"
+description = "CalHunger: a four-player market-survival game (pure-Python simulator), scripted archetypes, and the RLlib training/evaluation stack behind the 2026 evaluation-audit papers."
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.26",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+]
+# The versions that produced every released checkpoint; RLlib checkpoints are
+# only guaranteed to load with ray[rllib]==2.53.0 (see ../requirements.txt for
+# the complete lock, including the CPU-only PyTorch wheel index).
+rl = [
+    "ray[rllib]==2.53.0",
+    "torch>=2.3",
+    "gymnasium==1.1.1",
+    "tensorboard>=2.16",
+]
+analysis = [
+    "scipy>=1.14",
+    "matplotlib>=3.9",
+    "pandas>=2.2",
+]
+
+[tool.setuptools]
+packages = ["agents", "env", "env.rl", "parity"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = ["-q"]
+markers = [
+    "slow: RLlib integration tests that start Ray or run training/evaluation",
+]

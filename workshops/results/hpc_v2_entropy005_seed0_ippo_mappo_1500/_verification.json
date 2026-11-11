@@ -1,0 +1,21 @@
+{
+  "campaign_root": "/resnick/home/jsafrata/hunger_runs/v2_entropy005_seed0_ippo_mappo_1500",
+  "entropy_coeff": 0.05,
+  "ok": true,
+  "runs": [
+    {
+      "algorithm": "ippo",
+      "errors": [],
+      "ok": true,
+      "path": "/resnick/home/jsafrata/hunger_runs/v2_entropy005_seed0_ippo_mappo_1500/ippo_seed0_headmlp",
+      "seed": 0
+    },
+    {
+      "algorithm": "mappo",
+      "errors": [],
+      "ok": true,
+      "path": "/resnick/home/jsafrata/hunger_runs/v2_entropy005_seed0_ippo_mappo_1500/mappo_seed0_headmlp",
+      "seed": 0
+    }
+  ]
+}

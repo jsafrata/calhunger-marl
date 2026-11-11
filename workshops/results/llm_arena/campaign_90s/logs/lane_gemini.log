@@ -1,0 +1,298 @@
+=== 2026-08-27 14:39:12 gemini vs v2 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v2
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 2 (llm_gemini) provider request failed: Gemini response contained no output text
+=== gemini vs v2 exit=1 ===
+cell failed; retrying once after 120s (cache resumes)
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v2
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 1 (llm_gemini) provider request failed: HTTP 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+cell gemini vs v2 FAILED TWICE; moving on
+=== 2026-08-27 18:03:52 gemini vs v3 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v3
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 1 (llm_gemini) provider request failed: HTTP 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+=== gemini vs v3 exit=1 ===
+cell failed; retrying once after 120s (cache resumes)
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v3
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_gemini) provider request failed: HTTP 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+cell gemini vs v3 FAILED TWICE; moving on
+=== 2026-08-27 18:38:56 gemini vs v4 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v4
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 1 (llm_gemini) provider request failed: HTTP 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+=== gemini vs v4 exit=1 ===
+cell failed; retrying once after 120s (cache resumes)
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v4
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 2 (llm_gemini) provider request failed: HTTP 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+cell gemini vs v4 FAILED TWICE; moving on
+=== 2026-08-27 21:07:58 gemini vs v5 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 2 (llm_gemini) provider request failed: HTTP 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+=== gemini vs v5 exit=1 ===
+cell failed; retrying once after 120s (cache resumes)
+playing 100 games (stochastic, small_90, seed base 910000): llm_gemini vs 3x scripted_v5
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 2 (llm_gemini) provider request failed: HTTP 503: {
+  "error": {
+    "code": 503,
+    "message": "This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.",
+    "status": "UNAVAILABLE"
+  }
+}
+
+cell gemini vs v5 FAILED TWICE; moving on
+=== 2026-08-27 21:31:56 lane gemini complete ===

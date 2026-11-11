@@ -1,0 +1,64 @@
+{
+  "experiment": "v3_shared_vs_independent",
+  "status": "stopped_by_user",
+  "started_at_utc": "2026-07-21T14:46:46.030746+00:00",
+  "resumed_at_utc": null,
+  "algo": "ippo",
+  "condition": "shared_id",
+  "seed": 2,
+  "parameterization": "shared",
+  "include_agent_id": true,
+  "policy_ids": [
+    "shared_policy"
+  ],
+  "fixed_configuration": {
+    "horizon": 180,
+    "reward_kind": "terminal_only",
+    "death_reward": -1,
+    "surviving_nonwinner_reward": 0,
+    "winner_reward": 1,
+    "max_qty": 5,
+    "max_price": 50,
+    "num_actions": 2049,
+    "head_kind": "mlp",
+    "torso": "mlp",
+    "gamma": 1.0,
+    "lambda": 1.0,
+    "lr": 0.0003,
+    "entropy_coeff": 0.01,
+    "clip_param": 0.2,
+    "train_batch_size_environment_steps": 4096,
+    "minibatch_size": 1024,
+    "num_epochs": 4,
+    "num_env_runners": 2,
+    "local_observation_dim": 175,
+    "global_observation_dim": 309
+  },
+  "requested_iterations": 1100,
+  "requested_environment_steps": 4505600,
+  "requested_agent_steps": 18022400,
+  "resume_from_checkpoint": null,
+  "network_manifest": {
+    "shared_policy": {
+      "trainable_parameters": 794370,
+      "actor_parameters": 307457,
+      "critic_parameters": 486913,
+      "actor_observation_dim": 175,
+      "critic_observation_dim": 175,
+      "parameter_tensor_count": 56,
+      "storage_is_disjoint_from_previous_policies": true
+    }
+  },
+  "stopped_by_user_at_utc": "2026-07-21T16:16:01Z",
+  "partial_progress": {
+    "last_logged_iteration": 474,
+    "last_checkpoint_iteration": 400,
+    "environment_transitions": 1941504,
+    "agent_transitions": 6551549,
+    "learner_samples_processed": 26723328,
+    "total_optimizer_steps": 26097,
+    "wall_clock_seconds": 5303.853,
+    "resume_checkpoint": "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/eval/results/v3_shared_vs_independent/ippo_shared_id_seed2/checkpoints/iter_0400",
+    "note": "Iterations 401-474 are metric rows only; exact model/optimizer recovery is available through iteration 400."
+  }
+}

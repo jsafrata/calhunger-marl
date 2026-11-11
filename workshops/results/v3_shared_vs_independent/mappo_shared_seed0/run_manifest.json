@@ -1,0 +1,44 @@
+{
+  "experiment": "v3_shared_vs_independent",
+  "status": "complete",
+  "imported_exact_v2_reference": true,
+  "imported_at_utc": "2026-07-21T07:59:18.783597+00:00",
+  "algo": "mappo",
+  "condition": "shared",
+  "seed": 0,
+  "parameterization": "shared",
+  "include_agent_id": false,
+  "source_checkpoint": "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/eval/results/v2_full_horizon_terminal_only_qty5_price50_deep_heads_gamma1_lambda1/long_baseline/mappo_seed0_headmlp/checkpoints/iter_1100",
+  "source_iters_jsonl": "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/eval/results/v2_full_horizon_terminal_only_qty5_price50_deep_heads_gamma1_lambda1/long_baseline/mappo_seed0_headmlp/iters.jsonl",
+  "fixed_configuration": {
+    "horizon": 180,
+    "reward_kind": "terminal_only",
+    "max_qty": 5,
+    "max_price": 50,
+    "head_kind": "mlp",
+    "gamma": 1.0,
+    "lambda": 1.0,
+    "lr": 0.0003,
+    "entropy_coeff": 0.01,
+    "clip_param": 0.2,
+    "train_batch_size_environment_steps": 4096,
+    "minibatch_size": 1024,
+    "num_epochs": 4
+  },
+  "final_accounting": {
+    "iter": 1100,
+    "env_steps_sampled_lifetime": 4505600.0,
+    "module_steps_sampled_lifetime": {
+      "shared_policy": 16728455.0
+    },
+    "total_agent_steps_sampled_lifetime": 16728455.0,
+    "per_policy/shared_policy/module_steps_trained_lifetime": 68198400.0,
+    "per_policy/shared_policy/optimizer_steps_lifetime": 66600.0,
+    "per_policy/shared_policy/learner_updates_lifetime": 1100,
+    "total_optimizer_steps_lifetime": 66600.0,
+    "wall_clock_seconds": 10591.0,
+    "accounting_source": "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/eval/results/v2_full_horizon_terminal_only_qty5_price50_deep_heads_gamma1_lambda1/long_baseline/mappo_seed0_headmlp/checkpoints/iter_1100/algorithm_state.pkl",
+    "algo": "mappo"
+  },
+  "note": "This is the exact completed v2 seed-0 Condition-A run. The v2 directory is read-only; v3 evaluations are written here."
+}

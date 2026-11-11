@@ -1,0 +1,657 @@
+{
+ "config": {
+  "n_games_per_cell": 1000,
+  "labels": [
+   "ippo_s0",
+   "ippo_s1",
+   "ippo_s2",
+   "ippo_s3",
+   "ippo_s4",
+   "mappo_s0",
+   "mappo_s1",
+   "mappo_s2",
+   "mappo_s3",
+   "mappo_s4"
+  ],
+  "healthy": [
+   "ippo_s0",
+   "ippo_s1",
+   "ippo_s2",
+   "ippo_s3",
+   "ippo_s4",
+   "mappo_s0",
+   "mappo_s2",
+   "mappo_s3"
+  ],
+  "source": "merged 1000-game peer matrix"
+ },
+ "per_policy": {
+  "ippo_s0": {
+   "contexts": {
+    "vs 3xippo_s1": {
+     "survival_pct": 45.300000000000004,
+     "win_pct": 8.7,
+     "mean_cash": 122.92
+    },
+    "vs 3xippo_s2": {
+     "survival_pct": 69.6,
+     "win_pct": 8.200000000000001,
+     "mean_cash": 95.58
+    },
+    "vs 3xippo_s3": {
+     "survival_pct": 59.4,
+     "win_pct": 21.0,
+     "mean_cash": 142.814
+    },
+    "vs 3xippo_s4": {
+     "survival_pct": 60.699999999999996,
+     "win_pct": 29.9,
+     "mean_cash": 170.931
+    },
+    "vs 3xmappo_s0": {
+     "survival_pct": 55.400000000000006,
+     "win_pct": 30.7,
+     "mean_cash": 146.095
+    },
+    "vs 3xmappo_s1": {
+     "survival_pct": 4.3999999999999995,
+     "win_pct": 4.2,
+     "mean_cash": 282.426
+    },
+    "vs 3xmappo_s2": {
+     "survival_pct": 81.2,
+     "win_pct": 11.5,
+     "mean_cash": 81.088
+    },
+    "vs 3xmappo_s3": {
+     "survival_pct": 68.5,
+     "win_pct": 20.9,
+     "mean_cash": 110.864
+    },
+    "vs 3xmappo_s4": {
+     "survival_pct": 15.8,
+     "win_pct": 15.8,
+     "mean_cash": 344.76
+    },
+    "selfplay": {
+     "survival_pct": 88.6,
+     "win_pct": 25.0,
+     "mean_cash": 100.0
+    }
+   },
+   "peer_survival_min": 4.3999999999999995,
+   "peer_survival_max": 81.2,
+   "peer_win_min": 4.2,
+   "peer_win_max": 30.7
+  },
+  "ippo_s1": {
+   "contexts": {
+    "vs 3xippo_s0": {
+     "survival_pct": 75.5,
+     "win_pct": 12.9,
+     "mean_cash": 71.401
+    },
+    "vs 3xippo_s2": {
+     "survival_pct": 84.7,
+     "win_pct": 12.2,
+     "mean_cash": 60.794
+    },
+    "vs 3xippo_s3": {
+     "survival_pct": 67.0,
+     "win_pct": 16.0,
+     "mean_cash": 106.081
+    },
+    "vs 3xippo_s4": {
+     "survival_pct": 87.9,
+     "win_pct": 35.5,
+     "mean_cash": 135.408
+    },
+    "vs 3xmappo_s0": {
+     "survival_pct": 68.30000000000001,
+     "win_pct": 17.9,
+     "mean_cash": 92.31
+    },
+    "vs 3xmappo_s1": {
+     "survival_pct": 5.5,
+     "win_pct": 5.2,
+     "mean_cash": 278.044
+    },
+    "vs 3xmappo_s2": {
+     "survival_pct": 89.8,
+     "win_pct": 11.200000000000001,
+     "mean_cash": 59.002
+    },
+    "vs 3xmappo_s3": {
+     "survival_pct": 77.9,
+     "win_pct": 13.200000000000001,
+     "mean_cash": 67.029
+    },
+    "vs 3xmappo_s4": {
+     "survival_pct": 20.9,
+     "win_pct": 20.9,
+     "mean_cash": 377.997
+    },
+    "selfplay": {
+     "survival_pct": 91.77499999999999,
+     "win_pct": 24.975,
+     "mean_cash": 100.0
+    }
+   },
+   "peer_survival_min": 5.5,
+   "peer_survival_max": 89.8,
+   "peer_win_min": 5.2,
+   "peer_win_max": 35.5
+  },
+  "ippo_s2": {
+   "contexts": {
+    "vs 3xippo_s0": {
+     "survival_pct": 84.5,
+     "win_pct": 35.3,
+     "mean_cash": 100.878
+    },
+    "vs 3xippo_s1": {
+     "survival_pct": 56.89999999999999,
+     "win_pct": 15.4,
+     "mean_cash": 116.328
+    },
+    "vs 3xippo_s3": {
+     "survival_pct": 72.39999999999999,
+     "win_pct": 28.000000000000004,
+     "mean_cash": 135.875
+    },
+    "vs 3xippo_s4": {
+     "survival_pct": 75.6,
+     "win_pct": 30.3,
+     "mean_cash": 141.583
+    },
+    "vs 3xmappo_s0": {
+     "survival_pct": 74.3,
+     "win_pct": 32.4,
+     "mean_cash": 124.482
+    },
+    "vs 3xmappo_s1": {
+     "survival_pct": 2.7,
+     "win_pct": 2.3,
+     "mean_cash": 258.76
+    },
+    "vs 3xmappo_s2": {
+     "survival_pct": 88.7,
+     "win_pct": 24.4,
+     "mean_cash": 90.342
+    },
+    "vs 3xmappo_s3": {
+     "survival_pct": 85.9,
+     "win_pct": 28.799999999999997,
+     "mean_cash": 91.315
+    },
+    "vs 3xmappo_s4": {
+     "survival_pct": 45.1,
+     "win_pct": 45.1,
+     "mean_cash": 360.05
+    },
+    "selfplay": {
+     "survival_pct": 90.275,
+     "win_pct": 24.925,
+     "mean_cash": 100.0
+    }
+   },
+   "peer_survival_min": 2.7,
+   "peer_survival_max": 88.7,
+   "peer_win_min": 2.3,
+   "peer_win_max": 45.1
+  },
+  "ippo_s3": {
+   "contexts": {
+    "vs 3xippo_s0": {
+     "survival_pct": 69.1,
+     "win_pct": 10.4,
+     "mean_cash": 54.461
+    },
+    "vs 3xippo_s1": {
+     "survival_pct": 69.89999999999999,
+     "win_pct": 4.9,
+     "mean_cash": 52.183
+    },
+    "vs 3xippo_s2": {
+     "survival_pct": 82.69999999999999,
+     "win_pct": 6.0,
+     "mean_cash": 45.127
+    },
+    "vs 3xippo_s4": {
+     "survival_pct": 78.9,
+     "win_pct": 13.3,
+     "mean_cash": 93.451
+    },
+    "vs 3xmappo_s0": {
+     "survival_pct": 71.5,
+     "win_pct": 25.3,
+     "mean_cash": 89.162
+    },
+    "vs 3xmappo_s1": {
+     "survival_pct": 8.1,
+     "win_pct": 7.3,
+     "mean_cash": 247.436
+    },
+    "vs 3xmappo_s2": {
+     "survival_pct": 86.3,
+     "win_pct": 5.5,
+     "mean_cash": 44.672
+    },
+    "vs 3xmappo_s3": {
+     "survival_pct": 77.9,
+     "win_pct": 7.1,
+     "mean_cash": 45.789
+    },
+    "vs 3xmappo_s4": {
+     "survival_pct": 15.0,
+     "win_pct": 15.0,
+     "mean_cash": 342.209
+    },
+    "selfplay": {
+     "survival_pct": 94.27499999999999,
+     "win_pct": 24.925,
+     "mean_cash": 100.0
+    }
+   },
+   "peer_survival_min": 8.1,
+   "peer_survival_max": 86.3,
+   "peer_win_min": 4.9,
+   "peer_win_max": 25.3
+  },
+  "ippo_s4": {
+   "contexts": {
+    "vs 3xippo_s0": {
+     "survival_pct": 68.7,
+     "win_pct": 4.6,
+     "mean_cash": 48.382
+    },
+    "vs 3xippo_s1": {
+     "survival_pct": 80.10000000000001,
+     "win_pct": 10.5,
+     "mean_cash": 72.804
+    },
+    "vs 3xippo_s2": {
+     "survival_pct": 78.60000000000001,
+     "win_pct": 4.9,
+     "mean_cash": 44.134
+    },
+    "vs 3xippo_s3": {
+     "survival_pct": 70.8,
+     "win_pct": 10.2,
+     "mean_cash": 75.973
+    },
+    "vs 3xmappo_s0": {
+     "survival_pct": 74.7,
+     "win_pct": 10.7,
+     "mean_cash": 68.045
+    },
+    "vs 3xmappo_s1": {
+     "survival_pct": 16.3,
+     "win_pct": 12.3,
+     "mean_cash": 236.798
+    },
+    "vs 3xmappo_s2": {
+     "survival_pct": 82.8,
+     "win_pct": 5.7,
+     "mean_cash": 45.916
+    },
+    "vs 3xmappo_s3": {
+     "survival_pct": 75.0,
+     "win_pct": 7.3999999999999995,
+     "mean_cash": 45.612
+    },
+    "vs 3xmappo_s4": {
+     "survival_pct": 22.0,
+     "win_pct": 22.0,
+     "mean_cash": 333.657
+    },
+    "selfplay": {
+     "survival_pct": 92.125,
+     "win_pct": 24.95,
+     "mean_cash": 100.0
+    }
+   },
+   "peer_survival_min": 16.3,
+   "peer_survival_max": 82.8,
+   "peer_win_min": 4.6,
+   "peer_win_max": 22.0
+  },
+  "mappo_s0": {
+   "contexts": {
+    "vs 3xippo_s0": {
+     "survival_pct": 73.6,
+     "win_pct": 6.800000000000001,
+     "mean_cash": 61.655
+    },
+    "vs 3xippo_s1": {
+     "survival_pct": 50.0,
+     "win_pct": 2.9000000000000004,
+     "mean_cash": 80.149
+    },
+    "vs 3xippo_s2": {
+     "survival_pct": 66.0,
+     "win_pct": 3.5999999999999996,
+     "mean_cash": 67.985
+    },
+    "vs 3xippo_s3": {
+     "survival_pct": 73.9,
+     "win_pct": 8.9,
+     "mean_cash": 88.627
+    },
+    "vs 3xippo_s4": {
+     "survival_pct": 68.8,
+     "win_pct": 14.799999999999999,
+     "mean_cash": 112.064
+    },
+    "vs 3xmappo_s1": {
+     "survival_pct": 15.8,
+     "win_pct": 13.700000000000001,
+     "mean_cash": 253.641
+    },
+    "vs 3xmappo_s2": {
+     "survival_pct": 81.3,
+     "win_pct": 6.3,
+     "mean_cash": 51.85
+    },
+    "vs 3xmappo_s3": {
+     "survival_pct": 73.6,
+     "win_pct": 8.1,
+     "mean_cash": 66.511
+    },
+    "vs 3xmappo_s4": {
+     "survival_pct": 23.599999999999998,
+     "win_pct": 23.599999999999998,
+     "mean_cash": 353.844
+    },
+    "selfplay": {
+     "survival_pct": 87.575,
+     "win_pct": 24.775,
+     "mean_cash": 100.0
+    }
+   },
+   "peer_survival_min": 15.8,
+   "peer_survival_max": 81.3,
+   "peer_win_min": 2.9000000000000004,
+   "peer_win_max": 23.599999999999998
+  },
+  "mappo_s1": {
+   "contexts": {
+    "vs 3xippo_s0": {
+     "survival_pct": 25.5,
+     "win_pct": 1.0999999999999999,
+     "mean_cash": 4.581
+    },
+    "vs 3xippo_s1": {
+     "survival_pct": 22.6,
+     "win_pct": 0.8,
+     "mean_cash": 2.845
+    },
+    "vs 3xippo_s2": {
+     "survival_pct": 22.0,
+     "win_pct": 2.1999999999999997,
+     "mean_cash": 4.011
+    },
+    "vs 3xippo_s3": {
+     "survival_pct": 23.0,
+     "win_pct": 0.8999999999999999,
+     "mean_cash": 6.724
+    },
+    "vs 3xippo_s4": {
+     "survival_pct": 32.5,
+     "win_pct": 0.6,
+     "mean_cash": 5.348
+    },
+    "vs 3xmappo_s0": {
+     "survival_pct": 24.6,
+     "win_pct": 3.5000000000000004,
+     "mean_cash": 6.309
+    },
+    "vs 3xmappo_s2": {
+     "survival_pct": 24.0,
+     "win_pct": 2.0,
+     "mean_cash": 2.416
+    },
+    "vs 3xmappo_s3": {
+     "survival_pct": 14.399999999999999,
+     "win_pct": 1.7000000000000002,
+     "mean_cash": 4.45
+    },
+    "vs 3xmappo_s4": {
+     "survival_pct": 18.9,
+     "win_pct": 18.9,
+     "mean_cash": 116.335
+    },
+    "selfplay": {
+     "survival_pct": 54.225,
+     "win_pct": 21.0,
+     "mean_cash": 100.0
+    }
+   },
+   "peer_survival_min": 14.399999999999999,
+   "peer_survival_max": 32.5,
+   "peer_win_min": 0.6,
+   "peer_win_max": 18.9
+  },
+  "mappo_s2": {
+   "contexts": {
+    "vs 3xippo_s0": {
+     "survival_pct": 77.60000000000001,
+     "win_pct": 34.9,
+     "mean_cash": 113.54
+    },
+    "vs 3xippo_s1": {
+     "survival_pct": 56.3,
+     "win_pct": 16.5,
+     "mean_cash": 133.251
+    },
+    "vs 3xippo_s2": {
+     "survival_pct": 77.7,
+     "win_pct": 15.7,
+     "mean_cash": 108.684
+    },
+    "vs 3xippo_s3": {
+     "survival_pct": 75.7,
+     "win_pct": 32.2,
+     "mean_cash": 145.834
+    },
+    "vs 3xippo_s4": {
+     "survival_pct": 65.5,
+     "win_pct": 37.1,
+     "mean_cash": 184.933
+    },
+    "vs 3xmappo_s0": {
+     "survival_pct": 54.800000000000004,
+     "win_pct": 23.799999999999997,
+     "mean_cash": 140.449
+    },
+    "vs 3xmappo_s1": {
+     "survival_pct": 0.5,
+     "win_pct": 0.5,
+     "mean_cash": 284.961
+    },
+    "vs 3xmappo_s3": {
+     "survival_pct": 70.1,
+     "win_pct": 27.500000000000004,
+     "mean_cash": 119.076
+    },
+    "vs 3xmappo_s4": {
+     "survival_pct": 14.000000000000002,
+     "win_pct": 14.000000000000002,
+     "mean_cash": 369.775
+    },
+    "selfplay": {
+     "survival_pct": 92.125,
+     "win_pct": 25.0,
+     "mean_cash": 100.0
+    }
+   },
+   "peer_survival_min": 0.5,
+   "peer_survival_max": 77.7,
+   "peer_win_min": 0.5,
+   "peer_win_max": 37.1
+  },
+  "mappo_s3": {
+   "contexts": {
+    "vs 3xippo_s0": {
+     "survival_pct": 72.3,
+     "win_pct": 12.6,
+     "mean_cash": 87.531
+    },
+    "vs 3xippo_s1": {
+     "survival_pct": 63.4,
+     "win_pct": 7.8,
+     "mean_cash": 103.629
+    },
+    "vs 3xippo_s2": {
+     "survival_pct": 84.6,
+     "win_pct": 11.4,
+     "mean_cash": 93.989
+    },
+    "vs 3xippo_s3": {
+     "survival_pct": 75.6,
+     "win_pct": 22.8,
+     "mean_cash": 123.773
+    },
+    "vs 3xippo_s4": {
+     "survival_pct": 81.8,
+     "win_pct": 27.6,
+     "mean_cash": 148.906
+    },
+    "vs 3xmappo_s0": {
+     "survival_pct": 77.7,
+     "win_pct": 33.7,
+     "mean_cash": 129.617
+    },
+    "vs 3xmappo_s1": {
+     "survival_pct": 2.1999999999999997,
+     "win_pct": 2.1,
+     "mean_cash": 271.974
+    },
+    "vs 3xmappo_s2": {
+     "survival_pct": 83.2,
+     "win_pct": 8.6,
+     "mean_cash": 74.152
+    },
+    "vs 3xmappo_s4": {
+     "survival_pct": 32.4,
+     "win_pct": 32.4,
+     "mean_cash": 367.799
+    },
+    "selfplay": {
+     "survival_pct": 94.525,
+     "win_pct": 24.975,
+     "mean_cash": 100.0
+    }
+   },
+   "peer_survival_min": 2.1999999999999997,
+   "peer_survival_max": 84.6,
+   "peer_win_min": 2.1,
+   "peer_win_max": 33.7
+  },
+  "mappo_s4": {
+   "contexts": {
+    "vs 3xippo_s0": {
+     "survival_pct": 0.0,
+     "win_pct": 0.0,
+     "mean_cash": 18.891
+    },
+    "vs 3xippo_s1": {
+     "survival_pct": 0.0,
+     "win_pct": 0.0,
+     "mean_cash": 9.117
+    },
+    "vs 3xippo_s2": {
+     "survival_pct": 0.0,
+     "win_pct": 0.0,
+     "mean_cash": 11.454
+    },
+    "vs 3xippo_s3": {
+     "survival_pct": 0.4,
+     "win_pct": 0.0,
+     "mean_cash": 10.188
+    },
+    "vs 3xippo_s4": {
+     "survival_pct": 0.0,
+     "win_pct": 0.0,
+     "mean_cash": 15.32
+    },
+    "vs 3xmappo_s0": {
+     "survival_pct": 0.0,
+     "win_pct": 0.0,
+     "mean_cash": 14.557
+    },
+    "vs 3xmappo_s1": {
+     "survival_pct": 0.0,
+     "win_pct": 0.0,
+     "mean_cash": 85.48
+    },
+    "vs 3xmappo_s2": {
+     "survival_pct": 0.0,
+     "win_pct": 0.0,
+     "mean_cash": 10.012
+    },
+    "vs 3xmappo_s3": {
+     "survival_pct": 0.0,
+     "win_pct": 0.0,
+     "mean_cash": 18.493
+    },
+    "selfplay": {
+     "survival_pct": 0.0,
+     "win_pct": 0.0,
+     "mean_cash": 100.0
+    }
+   },
+   "peer_survival_min": 0.0,
+   "peer_survival_max": 0.4,
+   "peer_win_min": 0.0,
+   "peer_win_max": 0.0
+  }
+ },
+ "context_rank_range": {
+  "ippo_s0": [
+   5,
+   7
+  ],
+  "ippo_s1": [
+   1,
+   6
+  ],
+  "ippo_s2": [
+   1,
+   6
+  ],
+  "ippo_s3": [
+   2,
+   8
+  ],
+  "ippo_s4": [
+   1,
+   7
+  ],
+  "mappo_s0": [
+   2,
+   7
+  ],
+  "mappo_s1": [
+   6,
+   8
+  ],
+  "mappo_s2": [
+   1,
+   9
+  ],
+  "mappo_s3": [
+   1,
+   7
+  ],
+  "mappo_s4": [
+   9,
+   9
+  ]
+ },
+ "context_leaderboard_spearman_healthy": {
+  "mean": 0.3476166547067995,
+  "min": -0.7714285714285715,
+  "max": 0.8986451052612952
+ }
+}

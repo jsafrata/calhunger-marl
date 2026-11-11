@@ -1,0 +1,43 @@
+{
+  "n_runs": 8,
+  "trajectory_A_n100": [
+    19.5,
+    21.4,
+    24.4,
+    28.8,
+    32.1,
+    32.8,
+    36.8,
+    28.6,
+    26.8,
+    26.2,
+    24.4,
+    17.0
+  ],
+  "trajectory_B_n500": [
+    19.4,
+    21.1,
+    26.6,
+    29.1,
+    32.5,
+    35.9,
+    35.0,
+    25.6,
+    26.2,
+    26.8,
+    22.7,
+    16.7
+  ],
+  "peak_ckpt_A": 700,
+  "peak_ckpt_B": 600,
+  "mean_700_B": 35.0,
+  "mean_1200_B": 16.7,
+  "runs_down_700_to_1200_B": 6,
+  "runs_up_700_to_1200_B": 2,
+  "runs_declining_gt5_from_B_peak": 7,
+  "pearson_A_vs_B_over_96_cells": 0.898,
+  "mean_abs_diff_A_minus_B_pts": 3.95,
+  "mean_A_minus_B_pts": 0.09,
+  "in_sample_oracle_optimism_pts": 2.7,
+  "B_oracle_minus_oracleA_pick_on_B_pts": 1.05
+}

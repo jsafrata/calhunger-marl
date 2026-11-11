@@ -1,0 +1,7 @@
+pair,left,right,n_games,left_win_rate_percent,right_win_rate_percent,left_mean_terminal_cash,right_mean_terminal_cash,cash_left_pays_right_total,cash_right_pays_left_total,net_trade_cash_to_left_per_game,cross_version_units_per_game,within_left_units_per_game,within_right_units_per_game,net_flow_favors
+v2_vs_v3,v2,v3,50,35.0,15.0,110.18,89.82,5551.0,6569.0,20.36,31.48,5.76,3.18,v2
+v2_vs_v4,v2,v4,50,11.0,39.0,89.84,110.16,2977.0,1961.0,-20.32,16.38,7.6,2.0,v4
+v2_vs_v5,v2,v5,50,28.000000000000004,22.0,93.42,106.58,3176.0,2518.0,-13.16,14.02,12.0,1.06,v5
+v3_vs_v4,v3,v4,50,12.0,38.0,83.71,116.29,4492.0,2863.0,-32.58,20.7,5.98,3.92,v4
+v3_vs_v5,v3,v5,50,5.0,45.0,62.25,137.75,7903.0,4128.0,-75.5,18.88,5.2,1.14,v5
+v4_vs_v5,v4,v5,50,34.0,17.0,100.18,99.82,2421.0,2439.0,0.36,12.62,3.76,0.48,v4

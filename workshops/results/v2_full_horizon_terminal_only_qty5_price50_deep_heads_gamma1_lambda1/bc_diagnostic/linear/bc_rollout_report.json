@@ -1,0 +1,188 @@
+{
+  "n_games": 500,
+  "lineups": {
+    "bc_selfplay": {
+      "n_games": 500,
+      "survivors_mean": 1.636,
+      "reach180_frac": 0.852,
+      "trades_mean": 119.894,
+      "per_seat": [
+        {
+          "survival_rate": 0.42,
+          "bids_mean": 85.35,
+          "asks_mean": 85.524,
+          "takes_mean": 0.0,
+          "decisions_mean": 177.88,
+          "type_freq": {
+            "wait": 3503,
+            "cancel": 0,
+            "take": 0,
+            "post": 85437
+          }
+        },
+        {
+          "survival_rate": 0.406,
+          "bids_mean": 84.648,
+          "asks_mean": 85.874,
+          "takes_mean": 0.0,
+          "decisions_mean": 177.88,
+          "type_freq": {
+            "wait": 3679,
+            "cancel": 0,
+            "take": 0,
+            "post": 85261
+          }
+        },
+        {
+          "survival_rate": 0.424,
+          "bids_mean": 85.324,
+          "asks_mean": 85.842,
+          "takes_mean": 0.0,
+          "decisions_mean": 177.88,
+          "type_freq": {
+            "wait": 3357,
+            "cancel": 0,
+            "take": 0,
+            "post": 85583
+          }
+        },
+        {
+          "survival_rate": 0.386,
+          "bids_mean": 87.12,
+          "asks_mean": 83.556,
+          "takes_mean": 0.0,
+          "decisions_mean": 177.88,
+          "type_freq": {
+            "wait": 3602,
+            "cancel": 0,
+            "take": 0,
+            "post": 85338
+          }
+        }
+      ],
+      "elapsed_seconds": 314.0235478878021
+    },
+    "1bc_3fast": {
+      "n_games": 500,
+      "survivors_mean": 3.236,
+      "reach180_frac": 1.0,
+      "trades_mean": 103.426,
+      "per_seat": [
+        {
+          "survival_rate": 0.482,
+          "bids_mean": 73.016,
+          "asks_mean": 98.024,
+          "takes_mean": 0.0,
+          "decisions_mean": 180.0,
+          "type_freq": {
+            "wait": 4480,
+            "cancel": 0,
+            "take": 0,
+            "post": 85520
+          }
+        },
+        {
+          "survival_rate": 0.926,
+          "bids_mean": 81.92,
+          "asks_mean": 96.74,
+          "takes_mean": 0.0,
+          "decisions_mean": 180.0,
+          "type_freq": {
+            "wait": 670,
+            "cancel": 0,
+            "take": 0,
+            "post": 89330
+          }
+        },
+        {
+          "survival_rate": 0.914,
+          "bids_mean": 81.29,
+          "asks_mean": 97.31,
+          "takes_mean": 0.0,
+          "decisions_mean": 180.0,
+          "type_freq": {
+            "wait": 700,
+            "cancel": 0,
+            "take": 0,
+            "post": 89300
+          }
+        },
+        {
+          "survival_rate": 0.914,
+          "bids_mean": 80.944,
+          "asks_mean": 97.616,
+          "takes_mean": 0.0,
+          "decisions_mean": 180.0,
+          "type_freq": {
+            "wait": 720,
+            "cancel": 0,
+            "take": 0,
+            "post": 89280
+          }
+        }
+      ],
+      "elapsed_seconds": 120.4846420288086
+    },
+    "scripted_v1_fast_reference": {
+      "n_games": 500,
+      "survivors_mean": 3.996,
+      "reach180_frac": 1.0,
+      "trades_mean": 105.756,
+      "per_seat": [
+        {
+          "survival_rate": 0.998,
+          "bids_mean": 83.978,
+          "asks_mean": 95.022,
+          "takes_mean": 0.0,
+          "decisions_mean": 180.0,
+          "type_freq": {
+            "wait": 500,
+            "cancel": 0,
+            "take": 0,
+            "post": 89500
+          }
+        },
+        {
+          "survival_rate": 0.998,
+          "bids_mean": 82.084,
+          "asks_mean": 96.916,
+          "takes_mean": 0.0,
+          "decisions_mean": 180.0,
+          "type_freq": {
+            "wait": 500,
+            "cancel": 0,
+            "take": 0,
+            "post": 89500
+          }
+        },
+        {
+          "survival_rate": 1.0,
+          "bids_mean": 81.652,
+          "asks_mean": 97.348,
+          "takes_mean": 0.0,
+          "decisions_mean": 180.0,
+          "type_freq": {
+            "wait": 500,
+            "cancel": 0,
+            "take": 0,
+            "post": 89500
+          }
+        },
+        {
+          "survival_rate": 1.0,
+          "bids_mean": 81.3,
+          "asks_mean": 97.7,
+          "takes_mean": 0.0,
+          "decisions_mean": 180.0,
+          "type_freq": {
+            "wait": 500,
+            "cancel": 0,
+            "take": 0,
+            "post": 89500
+          }
+        }
+      ],
+      "elapsed_seconds": 52.93729496002197
+    }
+  }
+}

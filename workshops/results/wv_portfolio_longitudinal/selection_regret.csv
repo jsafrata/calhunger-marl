@@ -1,0 +1,6 @@
+selector,median_ckpt_picked,mean_deployment_surv_v4,mean_regret_vs_oracle,worst_run_regret,per_run_ckpt
+final checkpoint (default practice),1200,17.0,26.62,47.0,"{""ippo_s0"": 1200, ""ippo_s1"": 1200, ""ippo_s2"": 1200, ""ippo_s3"": 1200, ""ippo_s4"": 1200, ""mappo_s0"": 1200, ""mappo_s2"": 1200, ""mappo_s3"": 1200}"
+self-play survival,1200,21.88,21.75,45.0,"{""ippo_s0"": 900, ""ippo_s1"": 1100, ""ippo_s2"": 1000, ""ippo_s3"": 1200, ""ippo_s4"": 1200, ""mappo_s0"": 1100, ""mappo_s2"": 1200, ""mappo_s3"": 1200}"
+cross-play cash vs v4 (raw score),1200,20.0,23.62,47.0,"{""ippo_s0"": 800, ""ippo_s1"": 1200, ""ippo_s2"": 1100, ""ippo_s3"": 1200, ""ippo_s4"": 1200, ""mappo_s0"": 1200, ""mappo_s2"": 1100, ""mappo_s3"": 1100}"
+"held-out portfolio survival (v2,v3,v5)",1000,25.88,17.75,38.0,"{""ippo_s0"": 900, ""ippo_s1"": 1100, ""ippo_s2"": 1200, ""ippo_s3"": 1000, ""ippo_s4"": 1000, ""mappo_s0"": 1100, ""mappo_s2"": 1000, ""mappo_s3"": 900}"
+oracle (v4 survival),600,43.62,0.0,0.0,"{""ippo_s0"": 400, ""ippo_s1"": 500, ""ippo_s2"": 400, ""ippo_s3"": 1100, ""ippo_s4"": 1200, ""mappo_s0"": 700, ""mappo_s2"": 600, ""mappo_s3"": 500}"

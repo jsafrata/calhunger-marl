@@ -1,0 +1,2468 @@
+{
+ "config": {
+  "B": 4000,
+  "rng_seed": 20260828,
+  "n_games_per_cell": 1000,
+  "alpha": 0.05,
+  "metrics": [
+   "survival",
+   "win",
+   "cash",
+   "cash_given_survival",
+   "survival_time",
+   "win_given_survival"
+  ],
+  "n_pairs": 28,
+  "n_tests": 168,
+  "min_percentile_p_resolvable": 0.00025
+ },
+ "counts": {
+  "per_test_95_percentile": 15,
+  "per_test_99_percentile": 14,
+  "per_test_95_normal": 15,
+  "bonferroni_168_normal": 14,
+  "holm_168_normal": 14,
+  "families_per_test_95_normal": 18,
+  "families_bonferroni_84_normal": 18,
+  "families_holm_84_normal": 18
+ },
+ "strict_pairs": {
+  "per_test_95_percentile": [
+   [
+    "ippo_s0",
+    "ippo_s1",
+    [
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s2",
+    [
+     "cash",
+     "cash_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s3",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s4",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "mappo_s0",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "mappo_s3",
+    [
+     "cash",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s1",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s2",
+    "ippo_s4",
+    [
+     "survival_time"
+    ]
+   ],
+   [
+    "ippo_s2",
+    "mappo_s2",
+    [
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "mappo_s0",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s4",
+    "mappo_s0",
+    [
+     "cash",
+     "cash_given_survival"
+    ]
+   ],
+   [
+    "ippo_s4",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "mappo_s0",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "mappo_s2",
+    "mappo_s3",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ]
+  ],
+  "per_test_99_percentile": [
+   [
+    "ippo_s0",
+    "ippo_s1",
+    [
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s2",
+    [
+     "cash",
+     "cash_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s3",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s4",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "mappo_s0",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "mappo_s3",
+    [
+     "cash",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s1",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s2",
+    "mappo_s2",
+    [
+     "cash",
+     "cash_given_survival"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "mappo_s0",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s4",
+    "mappo_s0",
+    [
+     "cash",
+     "cash_given_survival"
+    ]
+   ],
+   [
+    "ippo_s4",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "mappo_s0",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "mappo_s2",
+    "mappo_s3",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ]
+  ],
+  "per_test_95_normal": [
+   [
+    "ippo_s0",
+    "ippo_s1",
+    [
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s2",
+    [
+     "cash",
+     "cash_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s3",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s4",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "mappo_s0",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "mappo_s3",
+    [
+     "cash",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s1",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s2",
+    "ippo_s4",
+    [
+     "survival_time"
+    ]
+   ],
+   [
+    "ippo_s2",
+    "mappo_s2",
+    [
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "mappo_s0",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s4",
+    "mappo_s0",
+    [
+     "cash",
+     "cash_given_survival"
+    ]
+   ],
+   [
+    "ippo_s4",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "mappo_s0",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "mappo_s2",
+    "mappo_s3",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ]
+  ],
+  "bonferroni_168_normal": [
+   [
+    "ippo_s0",
+    "ippo_s1",
+    [
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s2",
+    [
+     "cash",
+     "cash_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s3",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s4",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "mappo_s0",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "mappo_s3",
+    [
+     "cash",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s1",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s2",
+    "mappo_s2",
+    [
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "mappo_s0",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s4",
+    "mappo_s0",
+    [
+     "cash",
+     "cash_given_survival"
+    ]
+   ],
+   [
+    "ippo_s4",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "mappo_s0",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "mappo_s2",
+    "mappo_s3",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ]
+  ],
+  "holm_168_normal": [
+   [
+    "ippo_s0",
+    "ippo_s1",
+    [
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s2",
+    [
+     "cash",
+     "cash_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s3",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s4",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "mappo_s0",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "mappo_s3",
+    [
+     "cash",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s1",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s2",
+    "mappo_s2",
+    [
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "mappo_s0",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "ippo_s4",
+    "mappo_s0",
+    [
+     "cash",
+     "cash_given_survival"
+    ]
+   ],
+   [
+    "ippo_s4",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "mappo_s0",
+    "mappo_s2",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ],
+   [
+    "mappo_s2",
+    "mappo_s3",
+    [
+     "win",
+     "cash",
+     "cash_given_survival",
+     "win_given_survival"
+    ]
+   ]
+  ],
+  "families_per_test_95_normal": [
+   [
+    "ippo_s0",
+    "ippo_s1",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s2",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s3",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s4",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "mappo_s0",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "mappo_s3",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s1",
+    "ippo_s2",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s1",
+    "mappo_s2",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s2",
+    "ippo_s4",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s2",
+    "mappo_s2",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s2",
+    "mappo_s3",
+    [
+     "win"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "ippo_s4",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "mappo_s0",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "mappo_s2",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s4",
+    "mappo_s0",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s4",
+    "mappo_s2",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "mappo_s0",
+    "mappo_s2",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "mappo_s2",
+    "mappo_s3",
+    [
+     "win",
+     "cash"
+    ]
+   ]
+  ],
+  "families_bonferroni_84_normal": [
+   [
+    "ippo_s0",
+    "ippo_s1",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s2",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s3",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s4",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "mappo_s0",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "mappo_s3",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s1",
+    "ippo_s2",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s1",
+    "mappo_s2",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s2",
+    "ippo_s4",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s2",
+    "mappo_s2",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s2",
+    "mappo_s3",
+    [
+     "win"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "ippo_s4",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "mappo_s0",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "mappo_s2",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s4",
+    "mappo_s0",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s4",
+    "mappo_s2",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "mappo_s0",
+    "mappo_s2",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "mappo_s2",
+    "mappo_s3",
+    [
+     "win",
+     "cash"
+    ]
+   ]
+  ],
+  "families_holm_84_normal": [
+   [
+    "ippo_s0",
+    "ippo_s1",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s2",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s3",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "ippo_s4",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "mappo_s0",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s0",
+    "mappo_s3",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s1",
+    "ippo_s2",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s1",
+    "mappo_s2",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s2",
+    "ippo_s4",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s2",
+    "mappo_s2",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s2",
+    "mappo_s3",
+    [
+     "win"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "ippo_s4",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "mappo_s0",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s3",
+    "mappo_s2",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s4",
+    "mappo_s0",
+    [
+     "cash"
+    ]
+   ],
+   [
+    "ippo_s4",
+    "mappo_s2",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "mappo_s0",
+    "mappo_s2",
+    [
+     "win",
+     "cash"
+    ]
+   ],
+   [
+    "mappo_s2",
+    "mappo_s3",
+    [
+     "win",
+     "cash"
+    ]
+   ]
+  ]
+ },
+ "per_pair": [
+  {
+   "pair": [
+    "ippo_s0",
+    "ippo_s1"
+   ],
+   "survival": {
+    "delta": -0.13022222222222213,
+    "sd": 0.008820670644842498,
+    "z": -14.76330173356647,
+    "p_normal": 2.5260531090828804e-49,
+    "p_bonferroni_168": 4.243769223259239e-47
+   },
+   "win": {
+    "delta": 0.006555555555555537,
+    "sd": 0.006823925238355682,
+    "z": 0.9606722416459514,
+    "p_normal": 0.3367169924950445,
+    "p_bonferroni_168": 1.0
+   },
+   "cash": {
+    "delta": 27.712444444444458,
+    "sd": 2.16252009041703,
+    "z": 12.814884156336445,
+    "p_normal": 1.3534034347233174e-37,
+    "p_bonferroni_168": 2.2737177703351734e-35
+   },
+   "cash_given_survival": {
+    "delta": 24.69555806173608,
+    "sd": 2.8049786888096753,
+    "z": 8.804187411568506,
+    "p_normal": 1.318039931274391e-18,
+    "p_bonferroni_168": 2.2143070845409768e-16
+   },
+   "survival_time": {
+    "delta": -8.22666666666666,
+    "sd": 0.4846773377519893,
+    "z": -16.973491487807642,
+    "p_normal": 1.2902728987614564e-64,
+    "p_bonferroni_168": 2.1676584699192467e-62
+   },
+   "win_given_survival": {
+    "delta": 0.07246079651857767,
+    "sd": 0.011180674843648614,
+    "z": 6.480896505074589,
+    "p_normal": 9.117920241161345e-11,
+    "p_bonferroni_168": 1.531810600515106e-08
+   }
+  },
+  {
+   "pair": [
+    "ippo_s0",
+    "ippo_s2"
+   ],
+   "survival": {
+    "delta": -0.13977777777777767,
+    "sd": 0.006314137999542133,
+    "z": -22.137270010239497,
+    "p_normal": 1.3836764603523001e-108,
+    "p_bonferroni_168": 2.3245764533918643e-106
+   },
+   "win": {
+    "delta": -0.10122222222222224,
+    "sd": 0.00759938006482442,
+    "z": -13.319799951940018,
+    "p_normal": 1.7758269547621956e-40,
+    "p_bonferroni_168": 2.9833892840004885e-38
+   },
+   "cash": {
+    "delta": 8.6516666666667,
+    "sd": 1.9647743254643435,
+    "z": 4.403389516310996,
+    "p_normal": 1.0657256926381134e-05,
+    "p_bonferroni_168": 0.0017904191636320304
+   },
+   "cash_given_survival": {
+    "delta": 15.431371742507991,
+    "sd": 3.0071970613869183,
+    "z": 5.131480055181701,
+    "p_normal": 2.8747269056409084e-07,
+    "p_bonferroni_168": 4.829541201476726e-05
+   },
+   "survival_time": {
+    "delta": -6.753333333333302,
+    "sd": 0.3781912552188031,
+    "z": -17.85692619842876,
+    "p_normal": 2.5531816972298255e-71,
+    "p_bonferroni_168": 4.289345251346107e-69
+   },
+   "win_given_survival": {
+    "delta": -0.02919917685786083,
+    "sd": 0.01311122910986797,
+    "z": -2.227035818929021,
+    "p_normal": 0.025944879993991678,
+    "p_bonferroni_168": 1.0
+   }
+  },
+  {
+   "pair": [
+    "ippo_s0",
+    "ippo_s3"
+   ],
+   "survival": {
+    "delta": -0.11011111111111105,
+    "sd": 0.008379111632957814,
+    "z": -13.141143826990879,
+    "p_normal": 1.913127755540496e-39,
+    "p_bonferroni_168": 3.2140546293080332e-37
+   },
+   "win": {
+    "delta": 0.062333333333333324,
+    "sd": 0.00550073620206061,
+    "z": 11.331816513939145,
+    "p_normal": 9.1291522404078e-30,
+    "p_bonferroni_168": 1.5336975763885103e-27
+   },
+   "cash": {
+    "delta": 53.66533333333335,
+    "sd": 1.4217021241686976,
+    "z": 37.74724143759209,
+    "p_normal": 0.0,
+    "p_bonferroni_168": 0.0
+   },
+   "cash_given_survival": {
+    "delta": 50.905068952048595,
+    "sd": 2.0430562212824497,
+    "z": 24.916137119366642,
+    "p_normal": 4.9743857133939035e-137,
+    "p_bonferroni_168": 8.356967998501757e-135
+   },
+   "survival_time": {
+    "delta": -6.281111111111102,
+    "sd": 0.4649689553418197,
+    "z": -13.508667705553746,
+    "p_normal": 1.3901442653475215e-41,
+    "p_bonferroni_168": 2.335442365783836e-39
+   },
+   "win_given_survival": {
+    "delta": 0.13774920719245337,
+    "sd": 0.009041517233180236,
+    "z": 15.235187152765276,
+    "p_normal": 2.0653488727698538e-52,
+    "p_bonferroni_168": 3.4697861062533542e-50
+   }
+  },
+  {
+   "pair": [
+    "ippo_s0",
+    "ippo_s4"
+   ],
+   "survival": {
+    "delta": -0.12077777777777765,
+    "sd": 0.00949499645729262,
+    "z": -12.720149851663654,
+    "p_normal": 4.5698297167475895e-37,
+    "p_bonferroni_168": 7.677313924135951e-35
+   },
+   "win": {
+    "delta": 0.06955555555555555,
+    "sd": 0.00555275035481994,
+    "z": 12.526324994095837,
+    "p_normal": 5.3588853467451346e-36,
+    "p_bonferroni_168": 9.002927382531827e-34
+   },
+   "cash": {
+    "delta": 58.46188888888892,
+    "sd": 2.15020254281085,
+    "z": 27.189014860183672,
+    "p_normal": 8.759624633061437e-163,
+    "p_bonferroni_168": 1.4716169383543214e-160
+   },
+   "cash_given_survival": {
+    "delta": 63.59233686817042,
+    "sd": 2.6480759803026412,
+    "z": 24.014543895716553,
+    "p_normal": 1.9600500332145753e-127,
+    "p_bonferroni_168": 3.2928840558004864e-125
+   },
+   "survival_time": {
+    "delta": -8.398888888888877,
+    "sd": 0.5240550212350562,
+    "z": -16.02673106555675,
+    "p_normal": 8.314289424351815e-58,
+    "p_bonferroni_168": 1.396800623291105e-55
+   },
+   "win_given_survival": {
+    "delta": 0.1824024787329444,
+    "sd": 0.010021140791269523,
+    "z": 18.201767895712482,
+    "p_normal": 4.99687945946348e-74,
+    "p_bonferroni_168": 8.394757491898647e-72
+   }
+  },
+  {
+   "pair": [
+    "ippo_s0",
+    "mappo_s0"
+   ],
+   "survival": {
+    "delta": -0.07366666666666655,
+    "sd": 0.008336464141213022,
+    "z": -8.836680086282655,
+    "p_normal": 9.860497971740046e-19,
+    "p_bonferroni_168": 1.6565636592523277e-16
+   },
+   "win": {
+    "delta": 0.0691111111111111,
+    "sd": 0.005032641617837746,
+    "z": 13.732571551718081,
+    "p_normal": 6.479233858204887e-43,
+    "p_bonferroni_168": 1.088511288178421e-40
+   },
+   "cash": {
+    "delta": 40.128000000000014,
+    "sd": 0.9931891911140838,
+    "z": 40.40317832596173,
+    "p_normal": 0.0,
+    "p_bonferroni_168": 0.0
+   },
+   "cash_given_survival": {
+    "delta": 53.44812793643351,
+    "sd": 2.0027232719826404,
+    "z": 26.687725001328488,
+    "p_normal": 6.534739703023818e-157,
+    "p_bonferroni_168": 1.0978362701080015e-154
+   },
+   "survival_time": {
+    "delta": -5.1188888888888755,
+    "sd": 0.3898265289468058,
+    "z": -13.131196849836197,
+    "p_normal": 2.1818068099074607e-39,
+    "p_bonferroni_168": 3.6654354406445337e-37
+   },
+   "win_given_survival": {
+    "delta": 0.16847814606517147,
+    "sd": 0.008059213040688403,
+    "z": 20.905036908018054,
+    "p_normal": 4.818261591491069e-97,
+    "p_bonferroni_168": 8.094679473704997e-95
+   }
+  },
+  {
+   "pair": [
+    "ippo_s0",
+    "mappo_s2"
+   ],
+   "survival": {
+    "delta": -0.03544444444444439,
+    "sd": 0.007463831552739958,
+    "z": -4.748826952215019,
+    "p_normal": 2.0459991221730213e-06,
+    "p_bonferroni_168": 0.0003437278525250676
+   },
+   "win": {
+    "delta": -0.05700000000000002,
+    "sd": 0.006560787496614758,
+    "z": -8.687981439638296,
+    "p_normal": 3.689360474642375e-18,
+    "p_bonferroni_168": 6.19812559739919e-16
+   },
+   "cash": {
+    "delta": -11.447222222222223,
+    "sd": 1.4657835176879874,
+    "z": -7.809626786006011,
+    "p_normal": 5.7357574258828154e-15,
+    "p_bonferroni_168": 9.63607247548313e-13
+   },
+   "cash_given_survival": {
+    "delta": -17.465896928315004,
+    "sd": 3.481732608751503,
+    "z": -5.016438334297593,
+    "p_normal": 5.263816066625093e-07,
+    "p_bonferroni_168": 8.843210991930156e-05
+   },
+   "survival_time": {
+    "delta": -1.4522222222222183,
+    "sd": 0.4440404725812547,
+    "z": -3.270472652594696,
+    "p_normal": 0.0010736792304773307,
+    "p_bonferroni_168": 0.18037811072019155
+   },
+   "win_given_survival": {
+    "delta": -0.07242555243703214,
+    "sd": 0.010744297984906987,
+    "z": -6.74083616619454,
+    "p_normal": 1.5747769941498122e-11,
+    "p_bonferroni_168": 2.6456253501716845e-09
+   }
+  },
+  {
+   "pair": [
+    "ippo_s0",
+    "mappo_s3"
+   ],
+   "survival": {
+    "delta": -0.12544444444444436,
+    "sd": 0.008569233857358645,
+    "z": -14.638933483735148,
+    "p_normal": 1.5853552552016167e-48,
+    "p_bonferroni_168": 2.663396828738716e-46
+   },
+   "win": {
+    "delta": -0.009000000000000008,
+    "sd": 0.005401902930877328,
+    "z": -1.6660795492188363,
+    "p_normal": 0.09569757123601014,
+    "p_bonferroni_168": 1.0
+   },
+   "cash": {
+    "delta": 10.678666666666686,
+    "sd": 1.1293882265134196,
+    "z": 9.45526650267396,
+    "p_normal": 3.2220014939270244e-21,
+    "p_bonferroni_168": 5.412962509797401e-19
+   },
+   "cash_given_survival": {
+    "delta": 1.9939807441020605,
+    "sd": 2.155038385564536,
+    "z": 0.9252646066347051,
+    "p_normal": 0.3548282844436078,
+    "p_bonferroni_168": 1.0
+   },
+   "survival_time": {
+    "delta": -9.365555555555545,
+    "sd": 0.41085000837940394,
+    "z": -22.795558876822074,
+    "p_normal": 5.074668033986009e-115,
+    "p_bonferroni_168": 8.525442297096495e-113
+   },
+   "win_given_survival": {
+    "delta": 0.06097146554507715,
+    "sd": 0.009171149285847323,
+    "z": 6.648181557699286,
+    "p_normal": 2.967361440513815e-11,
+    "p_bonferroni_168": 4.985167220063209e-09
+   }
+  },
+  {
+   "pair": [
+    "ippo_s1",
+    "ippo_s2"
+   ],
+   "survival": {
+    "delta": -0.00955555555555554,
+    "sd": 0.006965968198970636,
+    "z": -1.3717483747582377,
+    "p_normal": 0.17014178343604247,
+    "p_bonferroni_168": 1.0
+   },
+   "win": {
+    "delta": -0.10777777777777778,
+    "sd": 0.007695553764672223,
+    "z": -14.005201064613491,
+    "p_normal": 1.4486914413191916e-44,
+    "p_bonferroni_168": 2.433801621416242e-42
+   },
+   "cash": {
+    "delta": -19.06077777777776,
+    "sd": 2.463364929161264,
+    "z": -7.737699580008085,
+    "p_normal": 1.0123169821566737e-14,
+    "p_bonferroni_168": 1.7006925300232117e-12
+   },
+   "cash_given_survival": {
+    "delta": -9.264186319228088,
+    "sd": 3.193448235626757,
+    "z": -2.90099780415256,
+    "p_normal": 0.0037197648496525796,
+    "p_bonferroni_168": 0.6249204947416334
+   },
+   "survival_time": {
+    "delta": 1.4733333333333576,
+    "sd": 0.35736572475812184,
+    "z": 4.12276060982223,
+    "p_normal": 3.7435869596106864e-05,
+    "p_bonferroni_168": 0.006289226092145953
+   },
+   "win_given_survival": {
+    "delta": -0.1016599733764385,
+    "sd": 0.013985113361119026,
+    "z": -7.269156191402093,
+    "p_normal": 3.6173995011014286e-13,
+    "p_bonferroni_168": 6.0772311618504e-11
+   }
+  },
+  {
+   "pair": [
+    "ippo_s1",
+    "ippo_s3"
+   ],
+   "survival": {
+    "delta": 0.02011111111111108,
+    "sd": 0.007180802698491093,
+    "z": 2.800677299675291,
+    "p_normal": 0.005099548556738371,
+    "p_bonferroni_168": 0.8567241575320463
+   },
+   "win": {
+    "delta": 0.05577777777777779,
+    "sd": 0.00657941176944699,
+    "z": 8.477623795609619,
+    "p_normal": 2.2983975051318658e-17,
+    "p_bonferroni_168": 3.861307808621534e-15
+   },
+   "cash": {
+    "delta": 25.952888888888893,
+    "sd": 2.3659209576468148,
+    "z": 10.969465740183509,
+    "p_normal": 5.35880930675916e-28,
+    "p_bonferroni_168": 9.00279963535539e-26
+   },
+   "cash_given_survival": {
+    "delta": 26.209510890312515,
+    "sd": 2.653171033532849,
+    "z": 9.87856062012446,
+    "p_normal": 5.1568285756196165e-23,
+    "p_bonferroni_168": 8.663472007040956e-21
+   },
+   "survival_time": {
+    "delta": 1.9455555555555577,
+    "sd": 0.39272005056097387,
+    "z": 4.954052009253065,
+    "p_normal": 7.268376528386077e-07,
+    "p_bonferroni_168": 0.0001221087256768861
+   },
+   "win_given_survival": {
+    "delta": 0.0652884106738757,
+    "sd": 0.010343925356208417,
+    "z": 6.311763515838756,
+    "p_normal": 2.7587356311002424e-10,
+    "p_bonferroni_168": 4.6346758602484074e-08
+   }
+  },
+  {
+   "pair": [
+    "ippo_s1",
+    "ippo_s4"
+   ],
+   "survival": {
+    "delta": 0.009444444444444478,
+    "sd": 0.006661993008057498,
+    "z": 1.4176605158578943,
+    "p_normal": 0.15628990294520956,
+    "p_bonferroni_168": 1.0
+   },
+   "win": {
+    "delta": 0.06300000000000001,
+    "sd": 0.005250608272776999,
+    "z": 11.998609823291938,
+    "p_normal": 3.613141807642783e-33,
+    "p_bonferroni_168": 6.070078236839876e-31
+   },
+   "cash": {
+    "delta": 30.749444444444464,
+    "sd": 1.1001370902333003,
+    "z": 27.950556996422684,
+    "p_normal": 6.490329846335013e-172,
+    "p_bonferroni_168": 1.0903754141842822e-169
+   },
+   "cash_given_survival": {
+    "delta": 38.89677880643434,
+    "sd": 1.787154808332181,
+    "z": 21.76463875713924,
+    "p_normal": 5.020385401053745e-105,
+    "p_bonferroni_168": 8.434247473770291e-103
+   },
+   "survival_time": {
+    "delta": -0.17222222222221717,
+    "sd": 0.31953368014481714,
+    "z": -0.5389798726198867,
+    "p_normal": 0.5899007426864187,
+    "p_bonferroni_168": 1.0
+   },
+   "win_given_survival": {
+    "delta": 0.10994168221436673,
+    "sd": 0.007630052869757933,
+    "z": 14.409032819435062,
+    "p_normal": 4.540238349692281e-47,
+    "p_bonferroni_168": 7.627600427483032e-45
+   }
+  },
+  {
+   "pair": [
+    "ippo_s1",
+    "mappo_s0"
+   ],
+   "survival": {
+    "delta": 0.05655555555555558,
+    "sd": 0.010380139359017803,
+    "z": 5.448438946672005,
+    "p_normal": 5.081382774789211e-08,
+    "p_bonferroni_168": 8.536723061645874e-06
+   },
+   "win": {
+    "delta": 0.06255555555555556,
+    "sd": 0.005522719692774606,
+    "z": 11.32694741639653,
+    "p_normal": 9.650985439017141e-30,
+    "p_bonferroni_168": 1.6213655537548798e-27
+   },
+   "cash": {
+    "delta": 12.415555555555557,
+    "sd": 2.3872638791037306,
+    "z": 5.200747041092427,
+    "p_normal": 1.9848909741457306e-07,
+    "p_bonferroni_168": 3.3346168365648275e-05
+   },
+   "cash_given_survival": {
+    "delta": 28.75256987469743,
+    "sd": 2.56578483306584,
+    "z": 11.206150065335434,
+    "p_normal": 3.803810788067059e-29,
+    "p_bonferroni_168": 6.390402123952659e-27
+   },
+   "survival_time": {
+    "delta": 3.107777777777784,
+    "sd": 0.5103746502451697,
+    "z": 6.089208733789765,
+    "p_normal": 1.1347009853768674e-09,
+    "p_bonferroni_168": 1.9062976554331372e-07
+   },
+   "win_given_survival": {
+    "delta": 0.0960173495465938,
+    "sd": 0.00926985105229791,
+    "z": 10.358025064792383,
+    "p_normal": 3.8482555008617903e-25,
+    "p_bonferroni_168": 6.465069241447808e-23
+   }
+  },
+  {
+   "pair": [
+    "ippo_s1",
+    "mappo_s2"
+   ],
+   "survival": {
+    "delta": 0.09477777777777774,
+    "sd": 0.007423668467325358,
+    "z": 12.76697338989935,
+    "p_normal": 2.507150681821549e-37,
+    "p_bonferroni_168": 4.2120131454602026e-35
+   },
+   "win": {
+    "delta": -0.06355555555555556,
+    "sd": 0.006436985869857676,
+    "z": -9.873496204670214,
+    "p_normal": 5.424039699178652e-23,
+    "p_bonferroni_168": 9.112386694620136e-21
+   },
+   "cash": {
+    "delta": -39.15966666666668,
+    "sd": 1.7752316743821048,
+    "z": -22.058904892115994,
+    "p_normal": 7.84593181824439e-108,
+    "p_bonferroni_168": 1.3181165454650576e-105
+   },
+   "cash_given_survival": {
+    "delta": -42.161454990051084,
+    "sd": 3.540467543393824,
+    "z": -11.908442733423824,
+    "p_normal": 1.06956111265595e-32,
+    "p_bonferroni_168": 1.796862669261996e-30
+   },
+   "survival_time": {
+    "delta": 6.774444444444441,
+    "sd": 0.4104158306476824,
+    "z": 16.506294198626804,
+    "p_normal": 3.305693381115479e-61,
+    "p_bonferroni_168": 5.553564880274005e-59
+   },
+   "win_given_survival": {
+    "delta": -0.1448863489556098,
+    "sd": 0.01131683213615707,
+    "z": -12.802730235142446,
+    "p_normal": 1.5828663652521028e-37,
+    "p_bonferroni_168": 2.659215493623533e-35
+   }
+  },
+  {
+   "pair": [
+    "ippo_s1",
+    "mappo_s3"
+   ],
+   "survival": {
+    "delta": 0.00477777777777777,
+    "sd": 0.00680185016954448,
+    "z": 0.7024232611253972,
+    "p_normal": 0.48241524309505246,
+    "p_bonferroni_168": 1.0
+   },
+   "win": {
+    "delta": -0.015555555555555545,
+    "sd": 0.006312480825431791,
+    "z": -2.4642539099501346,
+    "p_normal": 0.013729881011076446,
+    "p_bonferroni_168": 1.0
+   },
+   "cash": {
+    "delta": -17.03377777777777,
+    "sd": 1.52805396104464,
+    "z": -11.147366658526108,
+    "p_normal": 7.375692235215224e-29,
+    "p_bonferroni_168": 1.2391162955161576e-26
+   },
+   "cash_given_survival": {
+    "delta": -22.70157731763402,
+    "sd": 2.449988940145226,
+    "z": -9.26599175434986,
+    "p_normal": 1.932727224817371e-20,
+    "p_bonferroni_168": 3.246981737693183e-18
+   },
+   "survival_time": {
+    "delta": -1.1388888888888857,
+    "sd": 0.30927689771772876,
+    "z": -3.682424705153142,
+    "p_normal": 0.000231026113460181,
+    "p_bonferroni_168": 0.03881238706131041
+   },
+   "win_given_survival": {
+    "delta": -0.011489330973500522,
+    "sd": 0.010259873285164357,
+    "z": -1.119831664014208,
+    "p_normal": 0.26278550325754657,
+    "p_bonferroni_168": 1.0
+   }
+  },
+  {
+   "pair": [
+    "ippo_s2",
+    "ippo_s3"
+   ],
+   "survival": {
+    "delta": 0.02966666666666662,
+    "sd": 0.007070460822749585,
+    "z": 4.195860412833706,
+    "p_normal": 2.7183763494633225e-05,
+    "p_bonferroni_168": 0.004566872267098382
+   },
+   "win": {
+    "delta": 0.16355555555555557,
+    "sd": 0.006587443275664531,
+    "z": 24.828381621101144,
+    "p_normal": 4.427837187492081e-136,
+    "p_bonferroni_168": 7.438766474986696e-134
+   },
+   "cash": {
+    "delta": 45.01366666666665,
+    "sd": 1.9613515365807725,
+    "z": 22.950330844382467,
+    "p_normal": 1.4623058318688842e-116,
+    "p_bonferroni_168": 2.4566737975397254e-114
+   },
+   "cash_given_survival": {
+    "delta": 35.4736972095406,
+    "sd": 2.7539004194052827,
+    "z": 12.88125632995884,
+    "p_normal": 5.739362059846799e-38,
+    "p_bonferroni_168": 9.642128260542622e-36
+   },
+   "survival_time": {
+    "delta": 0.4722222222222001,
+    "sd": 0.3870877555077407,
+    "z": 1.2199358298037328,
+    "p_normal": 0.22248920189120336,
+    "p_bonferroni_168": 1.0
+   },
+   "win_given_survival": {
+    "delta": 0.1669483840503142,
+    "sd": 0.012937459953050692,
+    "z": 12.904262865829955,
+    "p_normal": 4.25871182533274e-38,
+    "p_bonferroni_168": 7.154635866559003e-36
+   }
+  },
+  {
+   "pair": [
+    "ippo_s2",
+    "ippo_s4"
+   ],
+   "survival": {
+    "delta": 0.019000000000000017,
+    "sd": 0.00801696952820414,
+    "z": 2.369972834891909,
+    "p_normal": 0.017789392247293142,
+    "p_bonferroni_168": 1.0
+   },
+   "win": {
+    "delta": 0.1707777777777778,
+    "sd": 0.007094705951644202,
+    "z": 24.07115656966727,
+    "p_normal": 5.013220238433078e-128,
+    "p_bonferroni_168": 8.422210000567571e-126
+   },
+   "cash": {
+    "delta": 49.81022222222222,
+    "sd": 2.7831766165169682,
+    "z": 17.896895916205878,
+    "p_normal": 1.2468036099424663e-71,
+    "p_bonferroni_168": 2.0946300647033435e-69
+   },
+   "cash_given_survival": {
+    "delta": 48.16096512566243,
+    "sd": 3.2557749968510894,
+    "z": 14.792473427138733,
+    "p_normal": 1.6382124992473405e-49,
+    "p_bonferroni_168": 2.752196998735532e-47
+   },
+   "survival_time": {
+    "delta": -1.6455555555555748,
+    "sd": 0.4224296735871634,
+    "z": -3.8954544589208027,
+    "p_normal": 9.801477793130472e-05,
+    "p_bonferroni_168": 0.01646648269245919
+   },
+   "win_given_survival": {
+    "delta": 0.21160165559080524,
+    "sd": 0.01344795041963781,
+    "z": 15.73486285923593,
+    "p_normal": 8.724554725718588e-56,
+    "p_bonferroni_168": 1.4657251939207227e-53
+   }
+  },
+  {
+   "pair": [
+    "ippo_s2",
+    "mappo_s0"
+   ],
+   "survival": {
+    "delta": 0.06611111111111112,
+    "sd": 0.00849603328431756,
+    "z": 7.781409146918317,
+    "p_normal": 7.172112861469879e-15,
+    "p_bonferroni_168": 1.2049149607269396e-12
+   },
+   "win": {
+    "delta": 0.17033333333333334,
+    "sd": 0.006689618924460884,
+    "z": 25.46233728060384,
+    "p_normal": 5.154293923866163e-143,
+    "p_bonferroni_168": 8.659213792095154e-141
+   },
+   "cash": {
+    "delta": 31.476333333333315,
+    "sd": 2.338249931104824,
+    "z": 13.461492253080376,
+    "p_normal": 2.6353952439506564e-41,
+    "p_bonferroni_168": 4.427464009837103e-39
+   },
+   "cash_given_survival": {
+    "delta": 38.01675619392552,
+    "sd": 2.96919592407468,
+    "z": 12.803720995869634,
+    "p_normal": 1.5627951150831406e-37,
+    "p_bonferroni_168": 2.625495793339676e-35
+   },
+   "survival_time": {
+    "delta": 1.6344444444444264,
+    "sd": 0.42259755049099035,
+    "z": 3.867614572175028,
+    "p_normal": 0.00010990519510191933,
+    "p_bonferroni_168": 0.018464072777122448
+   },
+   "win_given_survival": {
+    "delta": 0.1976773229230323,
+    "sd": 0.012893142781072151,
+    "z": 15.331973459041622,
+    "p_normal": 4.675627337201368e-53,
+    "p_bonferroni_168": 7.855053926498299e-51
+   }
+  },
+  {
+   "pair": [
+    "ippo_s2",
+    "mappo_s2"
+   ],
+   "survival": {
+    "delta": 0.10433333333333328,
+    "sd": 0.005892352260591333,
+    "z": 17.706567550471398,
+    "p_normal": 3.7314533916305435e-70,
+    "p_bonferroni_168": 6.268841697939313e-68
+   },
+   "win": {
+    "delta": 0.04422222222222222,
+    "sd": 0.005771238087775013,
+    "z": 7.662519124951094,
+    "p_normal": 1.8232097147053356e-14,
+    "p_bonferroni_168": 3.062992320704964e-12
+   },
+   "cash": {
+    "delta": -20.098888888888922,
+    "sd": 1.2462938973901085,
+    "z": -16.126925543789028,
+    "p_normal": 1.6503399512454223e-58,
+    "p_bonferroni_168": 2.7725711180923094e-56
+   },
+   "cash_given_survival": {
+    "delta": -32.897268670822996,
+    "sd": 3.6121333433170264,
+    "z": -9.107434732908668,
+    "p_normal": 8.435281027317621e-20,
+    "p_bonferroni_168": 1.4171272125893602e-17
+   },
+   "survival_time": {
+    "delta": 5.301111111111084,
+    "sd": 0.328220346301101,
+    "z": 16.151074029542276,
+    "p_normal": 1.116014530829132e-58,
+    "p_bonferroni_168": 1.8749044117929418e-56
+   },
+   "win_given_survival": {
+    "delta": -0.043226375579171306,
+    "sd": 0.011305420721377038,
+    "z": -3.8235087967523413,
+    "p_normal": 0.00013156589554943001,
+    "p_bonferroni_168": 0.02210307045230424
+   }
+  },
+  {
+   "pair": [
+    "ippo_s2",
+    "mappo_s3"
+   ],
+   "survival": {
+    "delta": 0.014333333333333309,
+    "sd": 0.007324934826172521,
+    "z": 1.956786466156569,
+    "p_normal": 0.05037257891474719,
+    "p_bonferroni_168": 1.0
+   },
+   "win": {
+    "delta": 0.09222222222222223,
+    "sd": 0.006339679265455989,
+    "z": 14.546827743278437,
+    "p_normal": 6.117480750810775e-48,
+    "p_bonferroni_168": 1.0277367661362103e-45
+   },
+   "cash": {
+    "delta": 2.026999999999987,
+    "sd": 2.0204455433713693,
+    "z": 1.003244064978698,
+    "p_normal": 0.315743116841527,
+    "p_bonferroni_168": 1.0
+   },
+   "cash_given_survival": {
+    "delta": -13.437390998405931,
+    "sd": 3.0129839888033714,
+    "z": -4.45982821294138,
+    "p_normal": 8.202537191469163e-06,
+    "p_bonferroni_168": 0.0013780262481668194
+   },
+   "survival_time": {
+    "delta": -2.6122222222222433,
+    "sd": 0.34429670271777085,
+    "z": -7.587125295136943,
+    "p_normal": 3.27080776022705e-14,
+    "p_bonferroni_168": 5.4949570371814435e-12
+   },
+   "win_given_survival": {
+    "delta": 0.09017064240293798,
+    "sd": 0.013406915770038438,
+    "z": 6.725681278944849,
+    "p_normal": 1.747727502224326e-11,
+    "p_bonferroni_168": 2.9361822037368678e-09
+   }
+  },
+  {
+   "pair": [
+    "ippo_s3",
+    "ippo_s4"
+   ],
+   "survival": {
+    "delta": -0.010666666666666602,
+    "sd": 0.008453147665646718,
+    "z": -1.2618573682340302,
+    "p_normal": 0.20700011470988644,
+    "p_bonferroni_168": 1.0
+   },
+   "win": {
+    "delta": 0.007222222222222227,
+    "sd": 0.004870267455854015,
+    "z": 1.4829210690557013,
+    "p_normal": 0.13809538293428356,
+    "p_bonferroni_168": 1.0
+   },
+   "cash": {
+    "delta": 4.796555555555571,
+    "sd": 2.507250981079378,
+    "z": 1.9130735581527787,
+    "p_normal": 0.055738636266288735,
+    "p_bonferroni_168": 1.0
+   },
+   "cash_given_survival": {
+    "delta": 12.687267916121826,
+    "sd": 2.490460443755673,
+    "z": 5.094346287624278,
+    "p_normal": 3.49946623286388e-07,
+    "p_bonferroni_168": 5.879103271211318e-05
+   },
+   "survival_time": {
+    "delta": -2.117777777777775,
+    "sd": 0.4492126318165666,
+    "z": -4.714421696499748,
+    "p_normal": 2.4239819581801664e-06,
+    "p_bonferroni_168": 0.00040722896897426794
+   },
+   "win_given_survival": {
+    "delta": 0.044653271540491035,
+    "sd": 0.008639636722290303,
+    "z": 5.168420036144042,
+    "p_normal": 2.360812566140345e-07,
+    "p_bonferroni_168": 3.966165111115779e-05
+   }
+  },
+  {
+   "pair": [
+    "ippo_s3",
+    "mappo_s0"
+   ],
+   "survival": {
+    "delta": 0.0364444444444445,
+    "sd": 0.00802933252546315,
+    "z": 4.538913331695937,
+    "p_normal": 5.654486907096094e-06,
+    "p_bonferroni_168": 0.0009499538003921437
+   },
+   "win": {
+    "delta": 0.0067777777777777715,
+    "sd": 0.004322955114675902,
+    "z": 1.5678575414230065,
+    "p_normal": 0.11691438250922678,
+    "p_bonferroni_168": 1.0
+   },
+   "cash": {
+    "delta": -13.537333333333336,
+    "sd": 1.3870398795456955,
+    "z": -9.759873189635536,
+    "p_normal": 1.6736436222016653e-22,
+    "p_bonferroni_168": 2.811721285298798e-20
+   },
+   "cash_given_survival": {
+    "delta": 2.5430589843849134,
+    "sd": 1.590711319220826,
+    "z": 1.5986929580853007,
+    "p_normal": 0.10988884307625976,
+    "p_bonferroni_168": 1.0
+   },
+   "survival_time": {
+    "delta": 1.1622222222222263,
+    "sd": 0.3805693387250425,
+    "z": 3.0539039905732395,
+    "p_normal": 0.0022588435841091434,
+    "p_bonferroni_168": 0.3794857221303361
+   },
+   "win_given_survival": {
+    "delta": 0.030728938872718103,
+    "sd": 0.0069672180534327425,
+    "z": 4.410503394188729,
+    "p_normal": 1.031305894273961e-05,
+    "p_bonferroni_168": 0.0017325939023802544
+   }
+  },
+  {
+   "pair": [
+    "ippo_s3",
+    "mappo_s2"
+   ],
+   "survival": {
+    "delta": 0.07466666666666666,
+    "sd": 0.006584836012056636,
+    "z": 11.339183926517569,
+    "p_normal": 8.392339549252384e-30,
+    "p_bonferroni_168": 1.4099130442744006e-27
+   },
+   "win": {
+    "delta": -0.11933333333333335,
+    "sd": 0.006293956650920066,
+    "z": -18.959986531824764,
+    "p_normal": 3.652376146863642e-80,
+    "p_bonferroni_168": 6.135991926730919e-78
+   },
+   "cash": {
+    "delta": -65.11255555555557,
+    "sd": 1.6590737264562079,
+    "z": -39.24633035726291,
+    "p_normal": 0.0,
+    "p_bonferroni_168": 0.0
+   },
+   "cash_given_survival": {
+    "delta": -68.3709658803636,
+    "sd": 3.320506874062514,
+    "z": -20.590520807058088,
+    "p_normal": 3.337620440151837e-94,
+    "p_bonferroni_168": 5.607202339455086e-92
+   },
+   "survival_time": {
+    "delta": 4.8288888888888835,
+    "sd": 0.3570791043023915,
+    "z": 13.523302906012534,
+    "p_normal": 1.139428830706488e-41,
+    "p_bonferroni_168": 1.9142404355868997e-39
+   },
+   "win_given_survival": {
+    "delta": -0.2101747596294855,
+    "sd": 0.010779677654051951,
+    "z": -19.497313961933113,
+    "p_normal": 1.1570115017754321e-84,
+    "p_bonferroni_168": 1.943779322982726e-82
+   }
+  },
+  {
+   "pair": [
+    "ippo_s3",
+    "mappo_s3"
+   ],
+   "survival": {
+    "delta": -0.01533333333333331,
+    "sd": 0.007194243794852392,
+    "z": -2.13133357314143,
+    "p_normal": 0.03306167107374355,
+    "p_bonferroni_168": 1.0
+   },
+   "win": {
+    "delta": -0.07133333333333333,
+    "sd": 0.0048556338282910085,
+    "z": -14.690838694984512,
+    "p_normal": 7.379473919694995e-49,
+    "p_bonferroni_168": 1.239751618508759e-46
+   },
+   "cash": {
+    "delta": -42.986666666666665,
+    "sd": 1.470389288172826,
+    "z": -29.234888347210344,
+    "p_normal": 6.988936252533417e-188,
+    "p_bonferroni_168": 1.174141290425614e-185
+   },
+   "cash_given_survival": {
+    "delta": -48.911088207946534,
+    "sd": 1.9172835236793042,
+    "z": -25.510618332590273,
+    "p_normal": 1.5029466097479666e-143,
+    "p_bonferroni_168": 2.524950304376584e-141
+   },
+   "survival_time": {
+    "delta": -3.0844444444444434,
+    "sd": 0.339596648530042,
+    "z": -9.082670449769124,
+    "p_normal": 1.0594300293001275e-19,
+    "p_bonferroni_168": 1.7798424492242142e-17
+   },
+   "win_given_survival": {
+    "delta": -0.07677774164737622,
+    "sd": 0.008702621444004821,
+    "z": -8.8223694597526,
+    "p_normal": 1.120627998878889e-18,
+    "p_bonferroni_168": 1.8826550381165337e-16
+   }
+  },
+  {
+   "pair": [
+    "ippo_s4",
+    "mappo_s0"
+   ],
+   "survival": {
+    "delta": 0.047111111111111104,
+    "sd": 0.011357523321055428,
+    "z": 4.148009189976568,
+    "p_normal": 3.353789396017342e-05,
+    "p_bonferroni_168": 0.005634366185309134
+   },
+   "win": {
+    "delta": -0.00044444444444445563,
+    "sd": 0.004475696751925829,
+    "z": -0.0993017331331077,
+    "p_normal": 0.920898702379083,
+    "p_bonferroni_168": 1.0
+   },
+   "cash": {
+    "delta": -18.333888888888907,
+    "sd": 2.34344337557974,
+    "z": -7.823482777497588,
+    "p_normal": 5.13815890392135e-15,
+    "p_bonferroni_168": 8.632106958587868e-13
+   },
+   "cash_given_survival": {
+    "delta": -10.144208931736912,
+    "sd": 2.359476742885708,
+    "z": -4.299346862529466,
+    "p_normal": 1.713021925276867e-05,
+    "p_bonferroni_168": 0.002877876834465137
+   },
+   "survival_time": {
+    "delta": 3.280000000000001,
+    "sd": 0.569072776367939,
+    "z": 5.763761923271636,
+    "p_normal": 8.22594316503606e-09,
+    "p_bonferroni_168": 1.3819584517260582e-06
+   },
+   "win_given_survival": {
+    "delta": -0.013924332667772932,
+    "sd": 0.008089611451265912,
+    "z": -1.721260996483826,
+    "p_normal": 0.08520347371699952,
+    "p_bonferroni_168": 1.0
+   }
+  },
+  {
+   "pair": [
+    "ippo_s4",
+    "mappo_s2"
+   ],
+   "survival": {
+    "delta": 0.08533333333333326,
+    "sd": 0.009026420682210838,
+    "z": 9.453728818722926,
+    "p_normal": 3.2697056563458954e-21,
+    "p_bonferroni_168": 5.493105502661104e-19
+   },
+   "win": {
+    "delta": -0.1265555555555556,
+    "sd": 0.006246119563223097,
+    "z": -20.26146862456967,
+    "p_normal": 2.814415151443565e-91,
+    "p_bonferroni_168": 4.728217454425189e-89
+   },
+   "cash": {
+    "delta": -69.90911111111114,
+    "sd": 2.0137622599370077,
+    "z": -34.71567250113127,
+    "p_normal": 4.570832314421771e-264,
+    "p_bonferroni_168": 7.678998288228575e-262
+   },
+   "cash_given_survival": {
+    "delta": -81.05823379648542,
+    "sd": 3.526312397328464,
+    "z": -22.98668542750075,
+    "p_normal": 6.334508491250795e-117,
+    "p_bonferroni_168": 1.0641974265301336e-114
+   },
+   "survival_time": {
+    "delta": 6.946666666666658,
+    "sd": 0.4924421924469824,
+    "z": 14.106562705661243,
+    "p_normal": 3.460379935181246e-45,
+    "p_bonferroni_168": 5.813438291104493e-43
+   },
+   "win_given_survival": {
+    "delta": -0.25482803116997654,
+    "sd": 0.010901821913428552,
+    "z": -23.37481140249472,
+    "p_normal": 7.71078439218684e-121,
+    "p_bonferroni_168": 1.295411777887389e-118
+   }
+  },
+  {
+   "pair": [
+    "ippo_s4",
+    "mappo_s3"
+   ],
+   "survival": {
+    "delta": -0.004666666666666708,
+    "sd": 0.007196418189836626,
+    "z": -0.6484707452462057,
+    "p_normal": 0.5166805263731405,
+    "p_bonferroni_168": 1.0
+   },
+   "win": {
+    "delta": -0.07855555555555556,
+    "sd": 0.005150944834175028,
+    "z": -15.250707993291288,
+    "p_normal": 1.6285762229375629e-52,
+    "p_bonferroni_168": 2.7360080545351055e-50
+   },
+   "cash": {
+    "delta": -47.783222222222236,
+    "sd": 1.6101358780410484,
+    "z": -29.67651542573978,
+    "p_normal": 1.5432019105636745e-193,
+    "p_bonferroni_168": 2.5925792097469732e-191
+   },
+   "cash_given_survival": {
+    "delta": -61.59835612406836,
+    "sd": 2.2676404457769315,
+    "z": -27.164075433027364,
+    "p_normal": 1.72676660052898e-162,
+    "p_bonferroni_168": 2.900967888888686e-160
+   },
+   "survival_time": {
+    "delta": -0.9666666666666686,
+    "sd": 0.3373525093540459,
+    "z": -2.865449759118785,
+    "p_normal": 0.004164173442600053,
+    "p_bonferroni_168": 0.6995811383568089
+   },
+   "win_given_survival": {
+    "delta": -0.12143101318786725,
+    "sd": 0.009159279257563756,
+    "z": -13.25770399320331,
+    "p_normal": 4.071719304572289e-40,
+    "p_bonferroni_168": 6.840488431681446e-38
+   }
+  },
+  {
+   "pair": [
+    "mappo_s0",
+    "mappo_s2"
+   ],
+   "survival": {
+    "delta": 0.03822222222222216,
+    "sd": 0.008172184190919215,
+    "z": 4.6771121806938725,
+    "p_normal": 2.909431121497045e-06,
+    "p_bonferroni_168": 0.0004887844284115036
+   },
+   "win": {
+    "delta": -0.12611111111111112,
+    "sd": 0.005905898196933698,
+    "z": -21.35341770310012,
+    "p_normal": 3.6243907088902555e-101,
+    "p_bonferroni_168": 6.088976390935629e-99
+   },
+   "cash": {
+    "delta": -51.57522222222224,
+    "sd": 1.7660466011640659,
+    "z": -29.203771966281707,
+    "p_normal": 1.7367325836893884e-187,
+    "p_bonferroni_168": 2.9177107405981726e-185
+   },
+   "cash_given_survival": {
+    "delta": -70.91402486474851,
+    "sd": 3.428581380755279,
+    "z": -20.683197214682103,
+    "p_normal": 4.907787673797791e-95,
+    "p_bonferroni_168": 8.24508329198029e-93
+   },
+   "survival_time": {
+    "delta": 3.666666666666657,
+    "sd": 0.414290692533754,
+    "z": 8.850468361337658,
+    "p_normal": 8.715276850703814e-19,
+    "p_bonferroni_168": 1.4641665109182408e-16
+   },
+   "win_given_survival": {
+    "delta": -0.2409036985022036,
+    "sd": 0.0103918465936713,
+    "z": -23.18199141324079,
+    "p_normal": 6.918810140435191e-119,
+    "p_bonferroni_168": 1.1623601035931121e-116
+   }
+  },
+  {
+   "pair": [
+    "mappo_s0",
+    "mappo_s3"
+   ],
+   "survival": {
+    "delta": -0.05177777777777781,
+    "sd": 0.008224890324325752,
+    "z": -6.295254494110519,
+    "p_normal": 3.0689592905787143e-10,
+    "p_bonferroni_168": 5.1558516081722404e-08
+   },
+   "win": {
+    "delta": -0.0781111111111111,
+    "sd": 0.004792328417781154,
+    "z": -16.299198281422566,
+    "p_normal": 9.99951531566887e-60,
+    "p_bonferroni_168": 1.67991857303237e-57
+   },
+   "cash": {
+    "delta": -29.44933333333333,
+    "sd": 1.3622576021320603,
+    "z": -21.618035595648262,
+    "p_normal": 1.2154146887123574e-103,
+    "p_bonferroni_168": 2.0418966770367606e-101
+   },
+   "cash_given_survival": {
+    "delta": -51.45414719233145,
+    "sd": 1.9630422517304293,
+    "z": -26.21143133672972,
+    "p_normal": 1.9686449053987308e-151,
+    "p_bonferroni_168": 3.307323441069868e-149
+   },
+   "survival_time": {
+    "delta": -4.24666666666667,
+    "sd": 0.4043204871652609,
+    "z": -10.503219108288466,
+    "p_normal": 8.348363292608522e-26,
+    "p_bonferroni_168": 1.4025250331582317e-23
+   },
+   "win_given_survival": {
+    "delta": -0.10750668052009432,
+    "sd": 0.008238960784835134,
+    "z": -13.048572912007808,
+    "p_normal": 6.474890069557289e-39,
+    "p_bonferroni_168": 1.0877815316856245e-36
+   }
+  },
+  {
+   "pair": [
+    "mappo_s2",
+    "mappo_s3"
+   ],
+   "survival": {
+    "delta": -0.08999999999999997,
+    "sd": 0.007740452341183711,
+    "z": -11.627227458161276,
+    "p_normal": 2.9967338574985005e-31,
+    "p_bonferroni_168": 5.034512880597481e-29
+   },
+   "win": {
+    "delta": 0.048000000000000015,
+    "sd": 0.005891791274694222,
+    "z": 8.146928117797447,
+    "p_normal": 3.732854210084684e-16,
+    "p_bonferroni_168": 6.271195072942269e-14
+   },
+   "cash": {
+    "delta": 22.12588888888891,
+    "sd": 1.3469800297027863,
+    "z": 16.426293189937663,
+    "p_normal": 1.2401155327017895e-60,
+    "p_bonferroni_168": 2.0833940949390063e-58
+   },
+   "cash_given_survival": {
+    "delta": 19.459877672417065,
+    "sd": 3.4684614968804626,
+    "z": 5.610521463167256,
+    "p_normal": 2.0171785118580905e-08,
+    "p_bonferroni_168": 3.388859899921592e-06
+   },
+   "survival_time": {
+    "delta": -7.913333333333327,
+    "sd": 0.3795174587048464,
+    "z": -20.85103900183835,
+    "p_normal": 1.4914861769610356e-96,
+    "p_bonferroni_168": 2.50569677729454e-94
+   },
+   "win_given_survival": {
+    "delta": 0.1333970179821093,
+    "sd": 0.011159320226231699,
+    "z": 11.953865941452158,
+    "p_normal": 6.197380883319753e-33,
+    "p_bonferroni_168": 1.0411599883977184e-30
+   }
+  }
+ ]
+}

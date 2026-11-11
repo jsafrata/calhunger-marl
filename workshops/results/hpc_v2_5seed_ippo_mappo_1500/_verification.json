@@ -1,0 +1,80 @@
+{
+  "campaign_root": "/resnick/home/jsafrata/hunger_runs/v2_5seed_ippo_mappo_1500",
+  "ok": false,
+  "runs": [
+    {
+      "algorithm": "ippo",
+      "errors": [],
+      "ok": true,
+      "path": "/resnick/home/jsafrata/hunger_runs/v2_5seed_ippo_mappo_1500/ippo_seed0_headmlp",
+      "seed": 0
+    },
+    {
+      "algorithm": "ippo",
+      "errors": [],
+      "ok": true,
+      "path": "/resnick/home/jsafrata/hunger_runs/v2_5seed_ippo_mappo_1500/ippo_seed1_headmlp",
+      "seed": 1
+    },
+    {
+      "algorithm": "ippo",
+      "errors": [],
+      "ok": true,
+      "path": "/resnick/home/jsafrata/hunger_runs/v2_5seed_ippo_mappo_1500/ippo_seed2_headmlp",
+      "seed": 2
+    },
+    {
+      "algorithm": "ippo",
+      "errors": [],
+      "ok": true,
+      "path": "/resnick/home/jsafrata/hunger_runs/v2_5seed_ippo_mappo_1500/ippo_seed3_headmlp",
+      "seed": 3
+    },
+    {
+      "algorithm": "ippo",
+      "errors": [
+        "iteration sequence mismatch: observed=1400, expected=1500, first_missing=[1401, 1402, 1403, 1404, 1405], duplicates=[]",
+        "checkpoint mismatch: observed=[100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400], expected=[100, 200, 300, 400, 500, 600, 700, 800, 900, 1000, 1100, 1200, 1300, 1400, 1500]",
+        "missing RLlib checkpoint marker: /resnick/home/jsafrata/hunger_runs/v2_5seed_ippo_mappo_1500/ippo_seed4_headmlp/checkpoints/iter_1500/rllib_checkpoint.json"
+      ],
+      "ok": false,
+      "path": "/resnick/home/jsafrata/hunger_runs/v2_5seed_ippo_mappo_1500/ippo_seed4_headmlp",
+      "seed": 4
+    },
+    {
+      "algorithm": "mappo",
+      "errors": [],
+      "ok": true,
+      "path": "/resnick/home/jsafrata/hunger_runs/v2_5seed_ippo_mappo_1500/mappo_seed0_headmlp",
+      "seed": 0
+    },
+    {
+      "algorithm": "mappo",
+      "errors": [],
+      "ok": true,
+      "path": "/resnick/home/jsafrata/hunger_runs/v2_5seed_ippo_mappo_1500/mappo_seed1_headmlp",
+      "seed": 1
+    },
+    {
+      "algorithm": "mappo",
+      "errors": [],
+      "ok": true,
+      "path": "/resnick/home/jsafrata/hunger_runs/v2_5seed_ippo_mappo_1500/mappo_seed2_headmlp",
+      "seed": 2
+    },
+    {
+      "algorithm": "mappo",
+      "errors": [],
+      "ok": true,
+      "path": "/resnick/home/jsafrata/hunger_runs/v2_5seed_ippo_mappo_1500/mappo_seed3_headmlp",
+      "seed": 3
+    },
+    {
+      "algorithm": "mappo",
+      "errors": [],
+      "ok": true,
+      "path": "/resnick/home/jsafrata/hunger_runs/v2_5seed_ippo_mappo_1500/mappo_seed4_headmlp",
+      "seed": 4
+    }
+  ]
+}

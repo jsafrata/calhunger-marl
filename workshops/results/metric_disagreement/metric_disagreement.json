@@ -1,0 +1,5494 @@
+{
+ "config": {
+  "B": 2000,
+  "rng_seed": 20260828,
+  "metrics": [
+   "survival",
+   "win",
+   "cash",
+   "cash_given_survival",
+   "survival_time",
+   "win_given_survival",
+   "selfplay_survival",
+   "selfplay_cash_given_survival"
+  ],
+  "labels": [
+   "ippo_s0",
+   "ippo_s1",
+   "ippo_s2",
+   "ippo_s3",
+   "ippo_s4",
+   "mappo_s0",
+   "mappo_s1",
+   "mappo_s2",
+   "mappo_s3",
+   "mappo_s4"
+  ],
+  "healthy": [
+   "ippo_s0",
+   "ippo_s1",
+   "ippo_s2",
+   "ippo_s3",
+   "ippo_s4",
+   "mappo_s0",
+   "mappo_s2",
+   "mappo_s3"
+  ]
+ },
+ "full_scores": {
+  "survival": {
+   "ippo_s0": 0.5288888888888889,
+   "ippo_s1": 0.6244444444444445,
+   "ippo_s2": 0.6555555555555556,
+   "ippo_s3": 0.6411111111111111,
+   "ippo_s4": 0.61,
+   "mappo_s0": 0.6244444444444444,
+   "mappo_s1": 0.2488888888888889,
+   "mappo_s2": 0.5722222222222223,
+   "mappo_s3": 0.6399999999999999,
+   "mappo_s4": 0.0011111111111111111
+  },
+  "win": {
+   "ippo_s0": 0.16444444444444445,
+   "ippo_s1": 0.17222222222222225,
+   "ippo_s2": 0.26333333333333336,
+   "ippo_s3": 0.09444444444444446,
+   "ippo_s4": 0.0988888888888889,
+   "mappo_s0": 0.09333333333333334,
+   "mappo_s1": 0.03777777777777778,
+   "mappo_s2": 0.2544444444444445,
+   "mappo_s3": 0.18222222222222223,
+   "mappo_s4": 0.0
+  },
+  "cash": {
+   "ippo_s0": 157.65222222222224,
+   "ippo_s1": 144.27666666666664,
+   "ippo_s2": 153.6277777777778,
+   "ippo_s3": 110.99777777777778,
+   "ippo_s4": 110.13555555555556,
+   "mappo_s0": 123.27333333333334,
+   "mappo_s1": 15.395555555555555,
+   "mappo_s2": 174.34555555555553,
+   "mappo_s3": 153.67666666666668,
+   "mappo_s4": 22.426666666666666
+  },
+  "cash_given_survival": {
+   "ippo_s0": 161.9904965869639,
+   "ippo_s1": 147.34840885342044,
+   "ippo_s2": 155.08391280640026,
+   "ippo_s3": 107.01100899275025,
+   "ippo_s4": 101.48327420312545,
+   "mappo_s0": 108.88025644034576,
+   "mappo_s1": 20.758497152337736,
+   "mappo_s2": 161.5621943045672,
+   "mappo_s3": 158.38995258999282,
+   "mappo_s4": 2.0
+  },
+  "survival_time": {
+   "ippo_s0": 158.55555555555554,
+   "ippo_s1": 166.0111111111111,
+   "ippo_s2": 165.43333333333334,
+   "ippo_s3": 165.6888888888889,
+   "ippo_s4": 165.8,
+   "mappo_s0": 164.95555555555555,
+   "mappo_s1": 156.02222222222224,
+   "mappo_s2": 161.14444444444445,
+   "mappo_s3": 167.64444444444445,
+   "mappo_s4": 105.08888888888887
+  },
+  "win_given_survival": {
+   "ippo_s0": 0.44197381465554497,
+   "ippo_s1": 0.4011794235960564,
+   "ippo_s2": 0.4983911586065681,
+   "ippo_s3": 0.2845230407142903,
+   "ippo_s4": 0.2845222584009769,
+   "mappo_s0": 0.270543761258683,
+   "mappo_s1": 0.1760933466247476,
+   "mappo_s2": 0.5046505640475822,
+   "mappo_s3": 0.4002828800564482,
+   "mappo_s4": 0.0
+  },
+  "selfplay_survival": {
+   "ippo_s0": 0.8825,
+   "ippo_s1": 0.9325,
+   "ippo_s2": 0.925,
+   "ippo_s3": 0.9525,
+   "ippo_s4": 0.9225,
+   "mappo_s0": 0.8925,
+   "mappo_s1": 0.5675,
+   "mappo_s2": 0.935,
+   "mappo_s3": 0.9325,
+   "mappo_s4": 0.0
+  },
+  "selfplay_cash_given_survival": {
+   "ippo_s0": 96.61756373937678,
+   "ippo_s1": 96.98659517426273,
+   "ippo_s2": 94.14054054054054,
+   "ippo_s3": 96.4251968503937,
+   "ippo_s4": 103.29810298102981,
+   "mappo_s0": 99.34733893557423,
+   "mappo_s1": 103.88546255506608,
+   "mappo_s2": 98.51604278074866,
+   "mappo_s3": 98.99195710455764,
+   "mappo_s4": NaN
+  }
+ },
+ "metric_spearman_all10": {
+  "survival~win": {
+   "rho": 0.5878787878787878,
+   "p": 0.07387770688865801
+  },
+  "survival~cash": {
+   "rho": 0.309090909090909,
+   "p": 0.3848412302612835
+  },
+  "survival~cash_given_survival": {
+   "rho": 0.309090909090909,
+   "p": 0.3848412302612835
+  },
+  "survival~survival_time": {
+   "rho": 0.7696969696969697,
+   "p": 0.009221952722215994
+  },
+  "survival~win_given_survival": {
+   "rho": 0.4424242424242424,
+   "p": 0.20042268671194224
+  },
+  "survival~selfplay_survival": {
+   "rho": 0.7173285415424762,
+   "p": 0.019528343138302953
+  },
+  "survival~selfplay_cash_given_survival": {
+   "rho": NaN,
+   "p": NaN
+  },
+  "win~cash": {
+   "rho": 0.8181818181818182,
+   "p": 0.0038149200825507135
+  },
+  "win~cash_given_survival": {
+   "rho": 0.7939393939393938,
+   "p": 0.0060999233136969115
+  },
+  "win~survival_time": {
+   "rho": 0.5151515151515151,
+   "p": 0.12755286970323426
+  },
+  "win~win_given_survival": {
+   "rho": 0.9272727272727272,
+   "p": 0.00011203450639397582
+  },
+  "win~selfplay_survival": {
+   "rho": 0.6200636545536659,
+   "p": 0.05582263340222193
+  },
+  "win~selfplay_cash_given_survival": {
+   "rho": NaN,
+   "p": NaN
+  },
+  "cash~cash_given_survival": {
+   "rho": 0.9757575757575757,
+   "p": 1.4675461874042197e-06
+  },
+  "cash~survival_time": {
+   "rho": 0.2606060606060606,
+   "p": 0.4670890543863402
+  },
+  "cash~win_given_survival": {
+   "rho": 0.8909090909090909,
+   "p": 0.0005421442248338665
+  },
+  "cash~selfplay_survival": {
+   "rho": 0.49240349038085235,
+   "p": 0.14823041535371734
+  },
+  "cash~selfplay_cash_given_survival": {
+   "rho": NaN,
+   "p": NaN
+  },
+  "cash_given_survival~survival_time": {
+   "rho": 0.2606060606060606,
+   "p": 0.4670890543863402
+  },
+  "cash_given_survival~win_given_survival": {
+   "rho": 0.8787878787878788,
+   "p": 0.0008138621117322101
+  },
+  "cash_given_survival~selfplay_survival": {
+   "rho": 0.43161293601284584,
+   "p": 0.21294529187580233
+  },
+  "cash_given_survival~selfplay_cash_given_survival": {
+   "rho": NaN,
+   "p": NaN
+  },
+  "survival_time~win_given_survival": {
+   "rho": 0.309090909090909,
+   "p": 0.3848412302612835
+  },
+  "survival_time~selfplay_survival": {
+   "rho": 0.6808542089216724,
+   "p": 0.03021117068836832
+  },
+  "survival_time~selfplay_cash_given_survival": {
+   "rho": NaN,
+   "p": NaN
+  },
+  "win_given_survival~selfplay_survival": {
+   "rho": 0.6079055436800646,
+   "p": 0.06225488170893071
+  },
+  "win_given_survival~selfplay_cash_given_survival": {
+   "rho": NaN,
+   "p": NaN
+  },
+  "selfplay_survival~selfplay_cash_given_survival": {
+   "rho": NaN,
+   "p": NaN
+  }
+ },
+ "metric_spearman_healthy8": {
+  "survival~win": {
+   "rho": 0.19047619047619052,
+   "p": 0.6514014957024814
+  },
+  "survival~cash": {
+   "rho": -0.3333333333333334,
+   "p": 0.4197530864197531
+  },
+  "survival~cash_given_survival": {
+   "rho": -0.3571428571428572,
+   "p": 0.38512064355625636
+  },
+  "survival~survival_time": {
+   "rho": 0.5476190476190477,
+   "p": 0.1600256425388966
+  },
+  "survival~win_given_survival": {
+   "rho": -0.09523809523809526,
+   "p": 0.8225054302036114
+  },
+  "survival~selfplay_survival": {
+   "rho": 0.4431217169079058,
+   "p": 0.2715023869225746
+  },
+  "survival~selfplay_cash_given_survival": {
+   "rho": -0.4523809523809524,
+   "p": 0.260404767436885
+  },
+  "win~cash": {
+   "rho": 0.6666666666666669,
+   "p": 0.07098765432098751
+  },
+  "win~cash_given_survival": {
+   "rho": 0.5952380952380953,
+   "p": 0.11952980613879259
+  },
+  "win~survival_time": {
+   "rho": 0.04761904761904763,
+   "p": 0.9108491685195836
+  },
+  "win~win_given_survival": {
+   "rho": 0.8571428571428572,
+   "p": 0.006530017254715292
+  },
+  "win~selfplay_survival": {
+   "rho": 0.2515015150017844,
+   "p": 0.5479426035598269
+  },
+  "win~selfplay_cash_given_survival": {
+   "rho": -0.38095238095238104,
+   "p": 0.35181255311756476
+  },
+  "cash~cash_given_survival": {
+   "rho": 0.9761904761904763,
+   "p": 3.3143960262001043e-05
+  },
+  "cash~survival_time": {
+   "rho": -0.4285714285714286,
+   "p": 0.2894032248467901
+  },
+  "cash~win_given_survival": {
+   "rho": 0.8095238095238096,
+   "p": 0.014902667686230067
+  },
+  "cash~selfplay_survival": {
+   "rho": 0.023952525238265177,
+   "p": 0.9551061898789129
+  },
+  "cash~selfplay_cash_given_survival": {
+   "rho": -0.261904761904762,
+   "p": 0.530922861565801
+  },
+  "cash_given_survival~survival_time": {
+   "rho": -0.4523809523809524,
+   "p": 0.260404767436885
+  },
+  "cash_given_survival~win_given_survival": {
+   "rho": 0.7619047619047621,
+   "p": 0.028004939153071805
+  },
+  "cash_given_survival~selfplay_survival": {
+   "rho": -0.1197626261913259,
+   "p": 0.7775830437712571
+  },
+  "cash_given_survival~selfplay_cash_given_survival": {
+   "rho": -0.30952380952380953,
+   "p": 0.4556448907375822
+  },
+  "survival_time~win_given_survival": {
+   "rho": -0.3571428571428572,
+   "p": 0.38512064355625636
+  },
+  "survival_time~selfplay_survival": {
+   "rho": 0.37126414119311024,
+   "p": 0.3652020580197782
+  },
+  "survival_time~selfplay_cash_given_survival": {
+   "rho": 0.2380952380952381,
+   "p": 0.5701563208157683
+  },
+  "win_given_survival~selfplay_survival": {
+   "rho": 0.22754898976351917,
+   "p": 0.5878445645010817
+  },
+  "win_given_survival~selfplay_cash_given_survival": {
+   "rho": -0.5714285714285715,
+   "p": 0.13895995716070667
+  },
+  "selfplay_survival~selfplay_cash_given_survival": {
+   "rho": -0.26347777762091695,
+   "p": 0.5283664705769091
+  }
+ },
+ "pairwise": [
+  {
+   "pair": [
+    "ippo_s0",
+    "ippo_s1"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": -0.09555555555555562,
+    "ci95": [
+     -0.15333333333333338,
+     -0.03666666666666673
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win": {
+    "delta": -0.0077777777777778,
+    "ci95": [
+     -0.051111111111111135,
+     0.03336111111111098
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "cash": {
+    "delta": 13.375555555555593,
+    "ci95": [
+     0.03538888888889461,
+     27.42627777777777
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 14.642087733543462,
+    "ci95": [
+     -13.879865084959354,
+     29.75306986478256
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": -7.455555555555549,
+    "ci95": [
+     -10.589166666666653,
+     -4.377777777777794
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": 0.040794391059488566,
+    "ci95": [
+     -0.04688738431828514,
+     0.09537490223756583
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": -0.050000000000000044,
+    "ci95": [
+     -0.09499999999999997,
+     -0.010000000000000009
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -0.36903143488595447,
+    "ci95": [
+     -4.777143288389794,
+     3.677984495517123
+    ],
+    "decided": false,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s0",
+    "ippo_s2"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": -0.1266666666666667,
+    "ci95": [
+     -0.16888888888888887,
+     -0.08552777777777787
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win": {
+    "delta": -0.09888888888888892,
+    "ci95": [
+     -0.14555555555555555,
+     -0.054444444444444434
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash": {
+    "delta": 4.024444444444441,
+    "ci95": [
+     -8.764888888888905,
+     16.135388888888926
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 6.906583780563636,
+    "ci95": [
+     -19.800089265010264,
+     23.428185806891715
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": -6.877777777777794,
+    "ci95": [
+     -8.944722222222262,
+     -4.81111111111113
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": -0.0564173439510231,
+    "ci95": [
+     -0.13220329064618042,
+     -0.0032535221246667986
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_survival": {
+    "delta": -0.04250000000000009,
+    "ci95": [
+     -0.09499999999999997,
+     0.007499999999999951
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": 2.4770231988362355,
+    "ci95": [
+     -1.8129739422104212,
+     6.556222223376956
+    ],
+    "decided": false,
+    "sign": 1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s0",
+    "ippo_s3"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": -0.11222222222222222,
+    "ci95": [
+     -0.16111111111111115,
+     -0.06111111111111123
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win": {
+    "delta": 0.06999999999999999,
+    "ci95": [
+     0.03666666666666668,
+     0.10111111111111112
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 46.65444444444445,
+    "ci95": [
+     38.99855555555556,
+     54.02986111111113
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 54.97948759421365,
+    "ci95": [
+     30.189938969527727,
+     63.93170751341782
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": -7.133333333333354,
+    "ci95": [
+     -9.85583333333336,
+     -4.499166666666672
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": 0.15745077394125467,
+    "ci95": [
+     0.08197376887257206,
+     0.20622890612686515
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": -0.07000000000000006,
+    "ci95": [
+     -0.11249999999999993,
+     -0.029999999999999916
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": 0.19236688898307364,
+    "ci95": [
+     -3.6763683309910693,
+     3.8290469327486094
+    ],
+    "decided": false,
+    "sign": 1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s0",
+    "ippo_s4"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": -0.08111111111111113,
+    "ci95": [
+     -0.1388888888888889,
+     -0.028888888888888964
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win": {
+    "delta": 0.06555555555555555,
+    "ci95": [
+     0.028888888888888895,
+     0.1011111111111111
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 47.51666666666668,
+    "ci95": [
+     34.56069444444445,
+     60.60816666666666
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 60.50722238383845,
+    "ci95": [
+     31.068089389712203,
+     75.94903820436073
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": -7.2444444444444684,
+    "ci95": [
+     -10.455833333333356,
+     -4.055555555555571
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": 0.15745155625456808,
+    "ci95": [
+     0.06897430504589801,
+     0.21681490538859344
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": -0.040000000000000036,
+    "ci95": [
+     -0.08500000000000008,
+     0.007500000000000062
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -6.680539241653037,
+    "ci95": [
+     -11.213744292237445,
+     -2.5814374844122185
+    ],
+    "decided": true,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s0",
+    "mappo_s0"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": -0.0955555555555555,
+    "ci95": [
+     -0.14888888888888896,
+     -0.04222222222222227
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win": {
+    "delta": 0.07111111111111111,
+    "ci95": [
+     0.041111111111111126,
+     0.1
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 34.378888888888895,
+    "ci95": [
+     28.68441666666666,
+     39.91886111111111
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 53.11024014661814,
+    "ci95": [
+     25.94249061295961,
+     61.818899003255254
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": -6.400000000000006,
+    "ci95": [
+     -8.878055555555516,
+     -4.0886111111111
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": 0.17143005339686196,
+    "ci95": [
+     0.09136643221891146,
+     0.2125308838565285
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": -0.010000000000000009,
+    "ci95": [
+     -0.06000000000000005,
+     0.04250000000000009
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -2.7297751961974512,
+    "ci95": [
+     -6.798766158664732,
+     1.3892433229581245
+    ],
+    "decided": false,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s0",
+    "mappo_s1"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": 0.2799999999999999,
+    "ci95": [
+     0.2277777777777778,
+     0.32891666666666663
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.12666666666666668,
+    "ci95": [
+     0.09441666666666665,
+     0.15780555555555542
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 142.2566666666667,
+    "ci95": [
+     133.32316666666665,
+     151.06152777777777
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 141.23199943462618,
+    "ci95": [
+     114.25996121604892,
+     151.963836880992
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 2.533333333333303,
+    "ci95": [
+     -0.3449999999999903,
+     5.300000000000012
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.26588046803079735,
+    "ci95": [
+     0.18801810118685242,
+     0.3227902794153073
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.31499999999999995,
+    "ci95": [
+     0.2350000000000001,
+     0.39249999999999996
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -7.267898815689307,
+    "ci95": [
+     -13.139322162771522,
+     -1.496060311535955
+    ],
+    "decided": true,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s0",
+    "mappo_s2"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": -0.043333333333333446,
+    "ci95": [
+     -0.09111111111111109,
+     0.005555555555555536
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "win": {
+    "delta": -0.09000000000000002,
+    "ci95": [
+     -0.13333333333333333,
+     -0.04777777777777775
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash": {
+    "delta": -16.6933333333333,
+    "ci95": [
+     -26.224916666666697,
+     -7.103916666666645
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": 0.428302282396686,
+    "ci95": [
+     -25.920109291820076,
+     11.320171570568606
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": -2.588888888888903,
+    "ci95": [
+     -5.267222222222207,
+     0.055555555555515924
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": -0.06267674939203727,
+    "ci95": [
+     -0.13837176312465366,
+     -0.010780975788258054
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_survival": {
+    "delta": -0.0525000000000001,
+    "ci95": [
+     -0.09750000000000003,
+     -0.007437500000000294
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -1.8984790413718855,
+    "ci95": [
+     -5.616466099813461,
+     1.4965991512482315
+    ],
+    "decided": false,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s0",
+    "mappo_s3"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": -0.11111111111111105,
+    "ci95": [
+     -0.16444444444444434,
+     -0.06000000000000005
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win": {
+    "delta": -0.01777777777777778,
+    "ci95": [
+     -0.052222222222222225,
+     0.015555555555555545
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "cash": {
+    "delta": 3.975555555555559,
+    "ci95": [
+     -3.05855555555555,
+     11.058055555555578
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 3.6005439969710835,
+    "ci95": [
+     -23.131261383656177,
+     15.8914727338491
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": -9.088888888888903,
+    "ci95": [
+     -11.755833333333337,
+     -6.521944444444407
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": 0.041690934599096785,
+    "ci95": [
+     -0.027315528060860107,
+     0.09051549389053466
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": -0.050000000000000044,
+    "ci95": [
+     -0.08999999999999997,
+     -0.007499999999999951
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -2.3743933651808646,
+    "ci95": [
+     -5.858950220796811,
+     0.9228746492212028
+    ],
+    "decided": false,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s0",
+    "mappo_s4"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": 0.5277777777777778,
+    "ci95": [
+     0.48555555555555563,
+     0.57
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.16444444444444445,
+    "ci95": [
+     0.13777777777777778,
+     0.19224999999999987
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 135.22555555555556,
+    "ci95": [
+     126.77086111111112,
+     143.64913888888887
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 159.9904965869639,
+    "ci95": [
+     131.9751969265057,
+     169.80004997803164
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 53.46666666666667,
+    "ci95": [
+     50.03333333333332,
+     57.1111111111111
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.44197381465554497,
+    "ci95": [
+     0.36185701091192946,
+     0.48295774065931846
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.8825,
+    "ci95": [
+     0.845,
+     0.9175
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": null,
+    "ci95": null,
+    "decided": false,
+    "sign": 0
+   }
+  },
+  {
+   "pair": [
+    "ippo_s1",
+    "ippo_s2"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": -0.03111111111111109,
+    "ci95": [
+     -0.08111111111111113,
+     0.01777777777777778
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "win": {
+    "delta": -0.09111111111111111,
+    "ci95": [
+     -0.13444444444444448,
+     -0.04777777777777781
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash": {
+    "delta": -9.351111111111152,
+    "ci95": [
+     -24.018111111111125,
+     5.704249999999981
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": -7.735503952979826,
+    "ci95": [
+     -25.20952609053268,
+     10.050910831882144
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "survival_time": {
+    "delta": 0.5777777777777544,
+    "ci95": [
+     -1.8780555555555707,
+     2.9666666666666694
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": -0.09721173501051167,
+    "ci95": [
+     -0.16056744455082111,
+     -0.03054276602934942
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_survival": {
+    "delta": 0.007499999999999951,
+    "ci95": [
+     -0.03500000000000003,
+     0.050000000000000044
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": 2.84605463372219,
+    "ci95": [
+     -0.5475179111740622,
+     6.329890019387768
+    ],
+    "decided": false,
+    "sign": 1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s1",
+    "ippo_s3"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": -0.016666666666666607,
+    "ci95": [
+     -0.061111111111111005,
+     0.03111111111111098
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "win": {
+    "delta": 0.07777777777777779,
+    "ci95": [
+     0.039999999999999994,
+     0.11555555555555554
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 33.27888888888886,
+    "ci95": [
+     17.96036111111111,
+     47.53494444444445
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 40.33739986067019,
+    "ci95": [
+     24.533311235444106,
+     54.90608259956652
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 0.32222222222219443,
+    "ci95": [
+     -2.223055555555561,
+     2.9888888888888254
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.11665638288176611,
+    "ci95": [
+     0.061153963481884094,
+     0.1707688267745111
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": -0.020000000000000018,
+    "ci95": [
+     -0.05006250000000004,
+     0.012500000000000067
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": 0.5613983238690281,
+    "ci95": [
+     -1.9544613974107572,
+     3.069591527800129
+    ],
+    "decided": false,
+    "sign": 1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s1",
+    "ippo_s4"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": 0.014444444444444482,
+    "ci95": [
+     -0.0311111111111112,
+     0.05888888888888877
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.07333333333333335,
+    "ci95": [
+     0.042222222222222244,
+     0.10447222222222209
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 34.14111111111109,
+    "ci95": [
+     27.737250000000003,
+     41.049472222222214
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 45.86513465029499,
+    "ci95": [
+     36.1538536551734,
+     55.32006111878106
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 0.21111111111108016,
+    "ci95": [
+     -1.8225000000000287,
+     2.3111111111110754
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.11665716519507952,
+    "ci95": [
+     0.07142259887279159,
+     0.16234382128904393
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.010000000000000009,
+    "ci95": [
+     -0.02749999999999997,
+     0.04500000000000004
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -6.311507806767082,
+    "ci95": [
+     -10.38481315639206,
+     -2.458201654514082
+    ],
+    "decided": true,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s1",
+    "mappo_s0"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": 1.1102230246251565e-16,
+    "ci95": [
+     -0.06000000000000005,
+     0.0644444444444443
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.07888888888888891,
+    "ci95": [
+     0.04222222222222222,
+     0.11555555555555555
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 21.003333333333302,
+    "ci95": [
+     5.665166666666668,
+     35.36541666666666
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 38.46815241307468,
+    "ci95": [
+     23.292056792082516,
+     51.965192539383864
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 1.055555555555543,
+    "ci95": [
+     -1.7005555555555716,
+     4.099999999999967
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.1306356623373734,
+    "ci95": [
+     0.07517285042000074,
+     0.18380837647131304
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.040000000000000036,
+    "ci95": [
+     -0.0025000000000000577,
+     0.08250000000000002
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -2.3607437613114968,
+    "ci95": [
+     -5.606247004371964,
+     0.9653748137462396
+    ],
+    "decided": false,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s1",
+    "mappo_s1"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": 0.37555555555555553,
+    "ci95": [
+     0.32000000000000006,
+     0.4277777777777778
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.13444444444444448,
+    "ci95": [
+     0.10111111111111112,
+     0.16777777777777778
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 128.8811111111111,
+    "ci95": [
+     120.60963888888892,
+     136.7579722222222
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 126.5899117010827,
+    "ci95": [
+     116.23553518109985,
+     136.7041942818406
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 9.988888888888852,
+    "ci95": [
+     7.0663888888888575,
+     13.222222222222229
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.2250860769713088,
+    "ci95": [
+     0.17010780556005037,
+     0.27692558494242114
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.365,
+    "ci95": [
+     0.2925,
+     0.4375
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -6.8988673808033525,
+    "ci95": [
+     -12.22302435528876,
+     -1.868992258685894
+    ],
+    "decided": true,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s1",
+    "mappo_s2"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": 0.05222222222222217,
+    "ci95": [
+     0.0011111111111111738,
+     0.10113888888888888
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": -0.08222222222222222,
+    "ci95": [
+     -0.12333333333333332,
+     -0.04222222222222227
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash": {
+    "delta": -30.068888888888893,
+    "ci95": [
+     -40.09572222222223,
+     -19.353305555555572
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": -14.213785451146776,
+    "ci95": [
+     -25.869264212027236,
+     -1.8479680048150209
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "survival_time": {
+    "delta": 4.866666666666646,
+    "ci95": [
+     2.1774999999999727,
+     7.655555555555538
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": -0.10347114045152583,
+    "ci95": [
+     -0.15936230261235368,
+     -0.04274931516269945
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_survival": {
+    "delta": -0.0025000000000000577,
+    "ci95": [
+     -0.04249999999999998,
+     0.03749999999999998
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -1.529447606485931,
+    "ci95": [
+     -4.483959809703235,
+     1.4309850486973705
+    ],
+    "decided": false,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s1",
+    "mappo_s3"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": -0.015555555555555434,
+    "ci95": [
+     -0.054444444444444524,
+     0.02444444444444449
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "win": {
+    "delta": -0.009999999999999981,
+    "ci95": [
+     -0.050000000000000044,
+     0.02999999999999997
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "cash": {
+    "delta": -9.400000000000034,
+    "ci95": [
+     -18.70236111111108,
+     -0.3483611111111465
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": -11.041543736572379,
+    "ci95": [
+     -24.04833357081436,
+     3.6459958760732794
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "survival_time": {
+    "delta": -1.6333333333333542,
+    "ci95": [
+     -3.3786111111111268,
+     0.13361111111112925
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": 0.0008965435396082189,
+    "ci95": [
+     -0.046056971601517185,
+     0.05501297377076221
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.0,
+    "ci95": [
+     -0.03749999999999998,
+     0.03749999999999998
+    ],
+    "decided": false,
+    "sign": 0
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -2.00536193029491,
+    "ci95": [
+     -4.620048584035146,
+     0.42908951321975164
+    ],
+    "decided": false,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s1",
+    "mappo_s4"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": 0.6233333333333334,
+    "ci95": [
+     0.5933333333333333,
+     0.6533333333333334
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.17222222222222225,
+    "ci95": [
+     0.14222222222222222,
+     0.20111111111111113
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 121.84999999999998,
+    "ci95": [
+     113.70669444444447,
+     129.78975
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 145.34840885342044,
+    "ci95": [
+     136.62271956276106,
+     154.80287167568488
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 60.92222222222222,
+    "ci95": [
+     58.421666666666674,
+     63.53361111111112
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.4011794235960564,
+    "ci95": [
+     0.3683997718901667,
+     0.43746176787422164
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.9325,
+    "ci95": [
+     0.905,
+     0.9575
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": null,
+    "ci95": null,
+    "decided": false,
+    "sign": 0
+   }
+  },
+  {
+   "pair": [
+    "ippo_s2",
+    "ippo_s3"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": 0.014444444444444482,
+    "ci95": [
+     -0.025555555555555665,
+     0.05444444444444452
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.16888888888888892,
+    "ci95": [
+     0.13000000000000003,
+     0.20777777777777778
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 42.63000000000001,
+    "ci95": [
+     30.96713888888888,
+     54.40941666666664
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 48.072903813650015,
+    "ci95": [
+     30.896122865469938,
+     62.93592415736159
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": -0.25555555555556,
+    "ci95": [
+     -2.5666666666666638,
+     2.1888888888888687
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": 0.21386811789227778,
+    "ci95": [
+     0.14948579453298672,
+     0.2768194256879568
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": -0.02749999999999997,
+    "ci95": [
+     -0.0675,
+     0.012500000000000067
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -2.284656309853162,
+    "ci95": [
+     -5.77537146862498,
+     0.9228206374949526
+    ],
+    "decided": false,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s2",
+    "ippo_s4"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": 0.04555555555555557,
+    "ci95": [
+     -0.006666666666666712,
+     0.09666666666666668
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.16444444444444445,
+    "ci95": [
+     0.12000000000000001,
+     0.20669444444444435
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 43.49222222222224,
+    "ci95": [
+     27.329944444444447,
+     60.13183333333334
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 53.60063860327482,
+    "ci95": [
+     34.16522542141297,
+     72.86203662517475
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": -0.36666666666667425,
+    "ci95": [
+     -2.9563888888889096,
+     2.36750000000003
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": 0.21386890020559118,
+    "ci95": [
+     0.13870165390749187,
+     0.28691475575425474
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.0025000000000000577,
+    "ci95": [
+     -0.03749999999999998,
+     0.040000000000000036
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -9.157562440489272,
+    "ci95": [
+     -13.759967401561026,
+     -4.914645396530062
+    ],
+    "decided": true,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s2",
+    "mappo_s0"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": 0.0311111111111112,
+    "ci95": [
+     -0.01777777777777778,
+     0.0800277777777777
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.17000000000000004,
+    "ci95": [
+     0.12555555555555553,
+     0.21333333333333332
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 30.354444444444454,
+    "ci95": [
+     15.930861111111112,
+     45.30005555555553
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 46.2036563660545,
+    "ci95": [
+     28.321540324325266,
+     63.68027501966688
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 0.4777777777777885,
+    "ci95": [
+     -1.74500000000005,
+     2.7447222222222165
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.22784739734788506,
+    "ci95": [
+     0.15743333900312675,
+     0.29766064797961506
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.032500000000000084,
+    "ci95": [
+     -0.010000000000000009,
+     0.0774999999999999
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -5.206798395033687,
+    "ci95": [
+     -8.75466597640201,
+     -1.6743412724002487
+    ],
+    "decided": true,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s2",
+    "mappo_s1"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": 0.4066666666666666,
+    "ci95": [
+     0.3533333333333334,
+     0.4566666666666666
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.2255555555555556,
+    "ci95": [
+     0.18777777777777777,
+     0.263361111111111
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 138.23222222222225,
+    "ci95": [
+     125.32116666666664,
+     150.99888888888887
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 134.32541565406254,
+    "ci95": [
+     118.25882844089139,
+     149.3595002628899
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 9.411111111111097,
+    "ci95": [
+     6.62166666666665,
+     12.200000000000017
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.3222978119818205,
+    "ci95": [
+     0.25410775731209995,
+     0.38960048199985314
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.35750000000000004,
+    "ci95": [
+     0.275,
+     0.44499999999999995
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -9.744922014525542,
+    "ci95": [
+     -15.343987207443355,
+     -4.111511280167428
+    ],
+    "decided": true,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s2",
+    "mappo_s2"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": 0.08333333333333326,
+    "ci95": [
+     0.04663888888888875,
+     0.1200000000000001
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.00888888888888889,
+    "ci95": [
+     -0.027777777777777818,
+     0.044444444444444425
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "cash": {
+    "delta": -20.71777777777774,
+    "ci95": [
+     -27.670277777777763,
+     -13.299944444444455
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": -6.47828149816695,
+    "ci95": [
+     -19.34633471484139,
+     4.928410749082941
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "survival_time": {
+    "delta": 4.288888888888891,
+    "ci95": [
+     2.444166666666706,
+     6.288888888888891
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": -0.006259405441014165,
+    "ci95": [
+     -0.04971992119690741,
+     0.038420530695195305
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "selfplay_survival": {
+    "delta": -0.010000000000000009,
+    "ci95": [
+     -0.05249999999999999,
+     0.030000000000000027
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -4.375502240208121,
+    "ci95": [
+     -7.856011086251845,
+     -1.1548547644668192
+    ],
+    "decided": true,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s2",
+    "mappo_s3"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": 0.015555555555555656,
+    "ci95": [
+     -0.0311111111111112,
+     0.06333333333333335
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.08111111111111113,
+    "ci95": [
+     0.041111111111111126,
+     0.12224999999999991
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": -0.04888888888888232,
+    "ci95": [
+     -12.15727777777776,
+     12.11363888888886
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": -3.306039783592553,
+    "ci95": [
+     -20.96372957417759,
+     14.305881662751949
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "survival_time": {
+    "delta": -2.2111111111111086,
+    "ci95": [
+     -4.211388888888886,
+     -0.044444444444450684
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": 0.09810827855011989,
+    "ci95": [
+     0.041395221739748946,
+     0.1650140719259979
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": -0.007499999999999951,
+    "ci95": [
+     -0.04749999999999999,
+     0.03499999999999992
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -4.8514165640171,
+    "ci95": [
+     -7.941581655124688,
+     -1.822123280423283
+    ],
+    "decided": true,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s2",
+    "mappo_s4"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": 0.6544444444444445,
+    "ci95": [
+     0.6211111111111112,
+     0.6888888888888889
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.26333333333333336,
+    "ci95": [
+     0.22555555555555554,
+     0.30000000000000004
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 131.20111111111112,
+    "ci95": [
+     118.42180555555554,
+     143.83519444444443
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 153.08391280640026,
+    "ci95": [
+     138.53766724947366,
+     168.08422820235833
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 60.34444444444446,
+    "ci95": [
+     57.399722222222245,
+     63.66694444444445
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.4983911586065681,
+    "ci95": [
+     0.4440760037027785,
+     0.5562389035465801
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.925,
+    "ci95": [
+     0.8925,
+     0.955
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": null,
+    "ci95": null,
+    "decided": false,
+    "sign": 0
+   }
+  },
+  {
+   "pair": [
+    "ippo_s3",
+    "ippo_s4"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": 0.03111111111111109,
+    "ci95": [
+     -0.023361111111111197,
+     0.0822222222222222
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win": {
+    "delta": -0.004444444444444445,
+    "ci95": [
+     -0.03,
+     0.022222222222222227
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "cash": {
+    "delta": 0.8622222222222291,
+    "ci95": [
+     -14.247499999999977,
+     16.721805555555523
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 5.527734789624802,
+    "ci95": [
+     -9.163443875323196,
+     21.22483110097699
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": -0.11111111111111427,
+    "ci95": [
+     -3.2002777777777944,
+     2.7777777777777724
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": 7.823133134077231e-07,
+    "ci95": [
+     -0.05459659912101032,
+     0.05459157545695956
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.030000000000000027,
+    "ci95": [
+     -0.007499999999999951,
+     0.06500000000000006
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -6.87290613063611,
+    "ci95": [
+     -10.872354858244803,
+     -3.2733762926795573
+    ],
+    "decided": true,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s3",
+    "mappo_s0"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": 0.01666666666666672,
+    "ci95": [
+     -0.02444444444444438,
+     0.06000000000000005
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.0011111111111111183,
+    "ci95": [
+     -0.024444444444444435,
+     0.02777777777777779
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "cash": {
+    "delta": -12.275555555555556,
+    "ci95": [
+     -20.30558333333332,
+     -4.212111111111072
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": -1.8692474475955123,
+    "ci95": [
+     -10.806573804910865,
+     7.4325995838339445
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "survival_time": {
+    "delta": 0.7333333333333485,
+    "ci95": [
+     -1.1333333333333542,
+     2.633333333333354
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.013979279455607285,
+    "ci95": [
+     -0.030830104651028874,
+     0.056853484285652435
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.06000000000000005,
+    "ci95": [
+     0.019937499999999914,
+     0.09999999999999998
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -2.922142085180525,
+    "ci95": [
+     -5.862893229861129,
+     0.08341007257925541
+    ],
+    "decided": false,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s3",
+    "mappo_s1"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": 0.39222222222222214,
+    "ci95": [
+     0.34111111111111103,
+     0.4422499999999999
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.05666666666666668,
+    "ci95": [
+     0.03777777777777778,
+     0.07777777777777778
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 95.60222222222222,
+    "ci95": [
+     87.34544444444445,
+     104.5045277777778
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 86.25251184041251,
+    "ci95": [
+     76.97679007775909,
+     95.96272085274715
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 9.666666666666657,
+    "ci95": [
+     6.499722222222195,
+     12.800277777777788
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.1084296940895427,
+    "ci95": [
+     0.06285686523805242,
+     0.15212981088793173
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.385,
+    "ci95": [
+     0.31500000000000006,
+     0.45749999999999996
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -7.460265704672381,
+    "ci95": [
+     -12.861461799924648,
+     -2.2748618697675673
+    ],
+    "decided": true,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s3",
+    "mappo_s2"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": 0.06888888888888878,
+    "ci95": [
+     0.034416666666666505,
+     0.1033333333333335
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": -0.16000000000000003,
+    "ci95": [
+     -0.1988888888888889,
+     -0.12000000000000001
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash": {
+    "delta": -63.34777777777775,
+    "ci95": [
+     -73.21063888888887,
+     -52.41119444444442
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": -54.551185311816965,
+    "ci95": [
+     -65.82095662807606,
+     -42.55938441113266
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "survival_time": {
+    "delta": 4.544444444444451,
+    "ci95": [
+     2.577500000000005,
+     6.666944444444489
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": -0.22012752333329194,
+    "ci95": [
+     -0.2793457279594954,
+     -0.15746442015287418
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_survival": {
+    "delta": 0.01749999999999996,
+    "ci95": [
+     -0.022499999999999964,
+     0.05499999999999994
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -2.090845930354959,
+    "ci95": [
+     -4.960289759929621,
+     0.5609819371355084
+    ],
+    "decided": false,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s3",
+    "mappo_s3"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": 0.0011111111111111738,
+    "ci95": [
+     -0.04222222222222205,
+     0.043333333333333224
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win": {
+    "delta": -0.08777777777777777,
+    "ci95": [
+     -0.11666666666666667,
+     -0.05777777777777782
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash": {
+    "delta": -42.67888888888889,
+    "ci95": [
+     -51.47080555555556,
+     -33.71533333333331
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": -51.37894359724257,
+    "ci95": [
+     -61.17348460900456,
+     -39.68688956186239
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "survival_time": {
+    "delta": -1.9555555555555486,
+    "ci95": [
+     -4.111111111111088,
+     -2.7711166694647785e-14
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": -0.11575983934215789,
+    "ci95": [
+     -0.15526349300340533,
+     -0.07026902417587004
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_survival": {
+    "delta": 0.020000000000000018,
+    "ci95": [
+     -0.01256250000000006,
+     0.05249999999999999
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -2.5667602541639383,
+    "ci95": [
+     -4.89273112781576,
+     -0.3779826488764675
+    ],
+    "decided": true,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s3",
+    "mappo_s4"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": 0.64,
+    "ci95": [
+     0.6088888888888889,
+     0.671111111111111
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.09444444444444446,
+    "ci95": [
+     0.07555555555555556,
+     0.11555555555555556
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 88.57111111111112,
+    "ci95": [
+     80.77649999999998,
+     96.87391666666666
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 105.01100899275025,
+    "ci95": [
+     97.21046977865541,
+     112.94407065864434
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 60.60000000000002,
+    "ci95": [
+     57.500000000000014,
+     63.81138888888888
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.2845230407142903,
+    "ci95": [
+     0.2534124188137166,
+     0.316736863620051
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.9525,
+    "ci95": [
+     0.9275,
+     0.975
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": null,
+    "ci95": null,
+    "decided": false,
+    "sign": 0
+   }
+  },
+  {
+   "pair": [
+    "ippo_s4",
+    "mappo_s0"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": -0.014444444444444371,
+    "ci95": [
+     -0.07666666666666655,
+     0.054444444444444406
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "win": {
+    "delta": 0.005555555555555564,
+    "ci95": [
+     -0.022222222222222227,
+     0.03555555555555555
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "cash": {
+    "delta": -13.137777777777785,
+    "ci95": [
+     -27.393083333333315,
+     0.5479999999999751
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": -7.396982237220314,
+    "ci95": [
+     -22.027772193589975,
+     6.1995222979950135
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "survival_time": {
+    "delta": 0.8444444444444628,
+    "ci95": [
+     -2.3566666666666656,
+     4.167500000000014
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.013978497142293878,
+    "ci95": [
+     -0.04426879509959996,
+     0.07099191101183938
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.030000000000000027,
+    "ci95": [
+     -0.007562500000000054,
+     0.06999999999999995
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": 3.9507640454555855,
+    "ci95": [
+     0.19040161223138308,
+     7.960376738228498
+    ],
+    "decided": true,
+    "sign": 1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s4",
+    "mappo_s1"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": 0.36111111111111105,
+    "ci95": [
+     0.30888888888888894,
+     0.41336111111111107
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.06111111111111112,
+    "ci95": [
+     0.03997222222222222,
+     0.08224999999999988
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 94.74,
+    "ci95": [
+     86.41944444444444,
+     102.9448333333333
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 80.72477705078771,
+    "ci95": [
+     70.00811115585084,
+     91.68520676947078
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 9.777777777777771,
+    "ci95": [
+     6.799444444444455,
+     12.94499999999998
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.10842891177622929,
+    "ci95": [
+     0.05462462117070191,
+     0.1663595961712808
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.355,
+    "ci95": [
+     0.275,
+     0.4325
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -0.5873595740362703,
+    "ci95": [
+     -6.409303371599453,
+     5.25034225160546
+    ],
+    "decided": false,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s4",
+    "mappo_s2"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": 0.03777777777777769,
+    "ci95": [
+     -0.015555555555555656,
+     0.09333333333333327
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "win": {
+    "delta": -0.15555555555555556,
+    "ci95": [
+     -0.19555555555555554,
+     -0.11222222222222225
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash": {
+    "delta": -64.20999999999998,
+    "ci95": [
+     -76.00680555555553,
+     -52.5326111111111
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": -60.07892010144177,
+    "ci95": [
+     -74.00921300502056,
+     -46.03027730028155
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "survival_time": {
+    "delta": 4.655555555555566,
+    "ci95": [
+     1.8333333333333706,
+     7.711111111111082
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": -0.22012830564660535,
+    "ci95": [
+     -0.2859842787126976,
+     -0.15403869074946597
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_survival": {
+    "delta": -0.012500000000000067,
+    "ci95": [
+     -0.04749999999999999,
+     0.019999999999999907
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": 4.782060200281151,
+    "ci95": [
+     1.4743381430610263,
+     8.060773519315504
+    ],
+    "decided": true,
+    "sign": 1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s4",
+    "mappo_s3"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": -0.029999999999999916,
+    "ci95": [
+     -0.07555555555555549,
+     0.015555555555555548
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "win": {
+    "delta": -0.08333333333333333,
+    "ci95": [
+     -0.11669444444444446,
+     -0.0488888888888889
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash": {
+    "delta": -43.54111111111112,
+    "ci95": [
+     -52.69130555555557,
+     -34.60180555555553
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": -56.90667838686737,
+    "ci95": [
+     -69.26045845274894,
+     -43.27128689100107
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "survival_time": {
+    "delta": -1.8444444444444343,
+    "ci95": [
+     -3.7666666666667084,
+     0.22250000000000503
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": -0.1157606216554713,
+    "ci95": [
+     -0.16417982448277368,
+     -0.058840219781925274
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_survival": {
+    "delta": -0.010000000000000009,
+    "ci95": [
+     -0.04999999999999993,
+     0.030000000000000027
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": 4.306145876472172,
+    "ci95": [
+     1.245284301459638,
+     7.634807764727537
+    ],
+    "decided": true,
+    "sign": 1
+   }
+  },
+  {
+   "pair": [
+    "ippo_s4",
+    "mappo_s4"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": 0.6088888888888889,
+    "ci95": [
+     0.5722222222222223,
+     0.6466666666666667
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.0988888888888889,
+    "ci95": [
+     0.08108333333333331,
+     0.11777777777777779
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 87.7088888888889,
+    "ci95": [
+     79.43216666666667,
+     95.94930555555557
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 99.48327420312545,
+    "ci95": [
+     90.43194296632097,
+     108.7259971007829
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 60.71111111111114,
+    "ci95": [
+     57.566666666666706,
+     64.04472222222223
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.2845222584009769,
+    "ci95": [
+     0.24651166908927674,
+     0.32470348660179293
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.9225,
+    "ci95": [
+     0.895,
+     0.9475
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": null,
+    "ci95": null,
+    "decided": false,
+    "sign": 0
+   }
+  },
+  {
+   "pair": [
+    "mappo_s0",
+    "mappo_s1"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": 0.3755555555555554,
+    "ci95": [
+     0.3166388888888888,
+     0.43111111111111106
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.05555555555555556,
+    "ci95": [
+     0.031111111111111117,
+     0.08
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 107.87777777777778,
+    "ci95": [
+     98.59766666666665,
+     117.27230555555556
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 88.12175928800802,
+    "ci95": [
+     79.26148698609602,
+     97.91433678857143
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 8.933333333333309,
+    "ci95": [
+     5.8552777777777765,
+     11.989166666666657
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.09445041463393541,
+    "ci95": [
+     0.04070826404407789,
+     0.14616843509845992
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.32499999999999996,
+    "ci95": [
+     0.24749999999999994,
+     0.4075
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -4.538123619491856,
+    "ci95": [
+     -10.164384500004463,
+     0.8671787986157649
+    ],
+    "decided": false,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "mappo_s0",
+    "mappo_s2"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": 0.05222222222222206,
+    "ci95": [
+     0.0044444444444444705,
+     0.10111111111111115
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": -0.16111111111111115,
+    "ci95": [
+     -0.19666666666666668,
+     -0.12333333333333334
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash": {
+    "delta": -51.072222222222194,
+    "ci95": [
+     -62.81475000000002,
+     -39.11266666666667
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": -52.68193786422145,
+    "ci95": [
+     -64.13348370331276,
+     -41.03743549977373
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "survival_time": {
+    "delta": 3.811111111111103,
+    "ci95": [
+     1.3777777777777651,
+     6.211111111111081
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": -0.23410680278889923,
+    "ci95": [
+     -0.29198160542446455,
+     -0.16953896100427976
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_survival": {
+    "delta": -0.04250000000000009,
+    "ci95": [
+     -0.08250000000000002,
+     -0.0025000000000000577
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": 0.8312961548255657,
+    "ci95": [
+     -2.0758635783162767,
+     3.6340921929363947
+    ],
+    "decided": false,
+    "sign": 1
+   }
+  },
+  {
+   "pair": [
+    "mappo_s0",
+    "mappo_s3"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": -0.015555555555555545,
+    "ci95": [
+     -0.06558333333333335,
+     0.033333333333333326
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "win": {
+    "delta": -0.08888888888888889,
+    "ci95": [
+     -0.11777777777777781,
+     -0.05888888888888888
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash": {
+    "delta": -30.403333333333336,
+    "ci95": [
+     -38.56533333333331,
+     -21.73688888888894
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": -49.509696149647056,
+    "ci95": [
+     -59.719139486126075,
+     -37.98625521899233
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "survival_time": {
+    "delta": -2.688888888888897,
+    "ci95": [
+     -5.056111111111126,
+     -0.3436111111111056
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": -0.12973911879776517,
+    "ci95": [
+     -0.16968526185286406,
+     -0.08530074576238737
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_survival": {
+    "delta": -0.040000000000000036,
+    "ci95": [
+     -0.08499999999999996,
+     0.007499999999999951
+    ],
+    "decided": false,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": 0.3553818310165866,
+    "ci95": [
+     -2.528566623168385,
+     3.3722633435135827
+    ],
+    "decided": false,
+    "sign": 1
+   }
+  },
+  {
+   "pair": [
+    "mappo_s0",
+    "mappo_s4"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": 0.6233333333333333,
+    "ci95": [
+     0.5744444444444444,
+     0.67
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.09333333333333334,
+    "ci95": [
+     0.07555555555555554,
+     0.11222222222222222
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 100.84666666666668,
+    "ci95": [
+     92.15555555555555,
+     109.53538888888886
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 106.88025644034576,
+    "ci95": [
+     99.218033676801,
+     114.70283821042291
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 59.866666666666674,
+    "ci95": [
+     56.56638888888889,
+     63.38972222222224
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.270543761258683,
+    "ci95": [
+     0.23552304380033728,
+     0.30448413942410335
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.8925,
+    "ci95": [
+     0.8575,
+     0.925
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": null,
+    "ci95": null,
+    "decided": false,
+    "sign": 0
+   }
+  },
+  {
+   "pair": [
+    "mappo_s1",
+    "mappo_s2"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": -0.32333333333333336,
+    "ci95": [
+     -0.37780555555555567,
+     -0.26330555555555557
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win": {
+    "delta": -0.2166666666666667,
+    "ci95": [
+     -0.2555833333333334,
+     -0.17777777777777778
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash": {
+    "delta": -158.95,
+    "ci95": [
+     -167.49402777777775,
+     -150.0673611111111
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": -140.8036971522295,
+    "ci95": [
+     -151.03843465071552,
+     -130.01351466073734
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "survival_time": {
+    "delta": -5.122222222222206,
+    "ci95": [
+     -8.311111111111103,
+     -1.9552777777777999
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": -0.3285572174228346,
+    "ci95": [
+     -0.39432438841585155,
+     -0.2621919973421604
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_survival": {
+    "delta": -0.36750000000000005,
+    "ci95": [
+     -0.4475,
+     -0.2925
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": 5.3694197743174215,
+    "ci95": [
+     0.1947821193357573,
+     10.825234548430181
+    ],
+    "decided": true,
+    "sign": 1
+   }
+  },
+  {
+   "pair": [
+    "mappo_s1",
+    "mappo_s3"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": -0.39111111111111097,
+    "ci95": [
+     -0.43222222222222223,
+     -0.35000000000000003
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win": {
+    "delta": -0.14444444444444446,
+    "ci95": [
+     -0.17222222222222225,
+     -0.11663888888888901
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash": {
+    "delta": -138.28111111111113,
+    "ci95": [
+     -143.8227777777778,
+     -132.82541666666668
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": -137.6314554376551,
+    "ci95": [
+     -146.8974954855227,
+     -126.67706090867782
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "survival_time": {
+    "delta": -11.622222222222206,
+    "ci95": [
+     -14.211388888888886,
+     -9.188611111111092
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": -0.2241895334317006,
+    "ci95": [
+     -0.2714299905516908,
+     -0.16547649022201882
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_survival": {
+    "delta": -0.365,
+    "ci95": [
+     -0.43750000000000006,
+     -0.2925
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": 4.893505450508442,
+    "ci95": [
+     -0.15151673599514015,
+     10.185792678951662
+    ],
+    "decided": false,
+    "sign": 1
+   }
+  },
+  {
+   "pair": [
+    "mappo_s1",
+    "mappo_s4"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": 0.2477777777777778,
+    "ci95": [
+     0.21219444444444444,
+     0.2866666666666667
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.03777777777777778,
+    "ci95": [
+     0.025555555555555557,
+     0.05
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": -7.031111111111111,
+    "ci95": [
+     -9.70941666666667,
+     -4.257583333333332
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "cash_given_survival": {
+    "delta": 18.758497152337736,
+    "ci95": [
+     13.846460680796485,
+     23.624649216451658
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 50.933333333333366,
+    "ci95": [
+     47.11055555555556,
+     54.77805555555556
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.1760933466247476,
+    "ci95": [
+     0.1386239763560942,
+     0.21884027299143577
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.5675,
+    "ci95": [
+     0.4975,
+     0.6375
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": null,
+    "ci95": null,
+    "decided": false,
+    "sign": 0
+   }
+  },
+  {
+   "pair": [
+    "mappo_s2",
+    "mappo_s3"
+   ],
+   "healthy_pair": true,
+   "survival": {
+    "delta": -0.0677777777777776,
+    "ci95": [
+     -0.11777777777777765,
+     -0.018861111111111113
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win": {
+    "delta": 0.07222222222222224,
+    "ci95": [
+     0.03666666666666665,
+     0.1111111111111111
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 20.66888888888886,
+    "ci95": [
+     12.769861111111123,
+     28.736250000000044
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 3.1722417145743975,
+    "ci95": [
+     -7.810585837210103,
+     15.61084739703728
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": -6.5,
+    "ci95": [
+     -8.822500000000026,
+     -4.200000000000016
+    ],
+    "decided": true,
+    "sign": -1
+   },
+   "win_given_survival": {
+    "delta": 0.10436768399113405,
+    "ci95": [
+     0.05265537729763472,
+     0.16319087005108385
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.0025000000000000577,
+    "ci95": [
+     -0.03749999999999998,
+     0.04500000000000004
+    ],
+    "decided": false,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": -0.47591432380897913,
+    "ci95": [
+     -2.8669386932148777,
+     1.854867484742116
+    ],
+    "decided": false,
+    "sign": -1
+   }
+  },
+  {
+   "pair": [
+    "mappo_s2",
+    "mappo_s4"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": 0.5711111111111112,
+    "ci95": [
+     0.5355555555555556,
+     0.6055555555555556
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.2544444444444445,
+    "ci95": [
+     0.2188888888888889,
+     0.2889166666666666
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 151.91888888888886,
+    "ci95": [
+     143.16416666666666,
+     160.07258333333334
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 159.5621943045672,
+    "ci95": [
+     150.49915964063845,
+     168.44495319704495
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 56.05555555555557,
+    "ci95": [
+     52.58777777777775,
+     59.65583333333334
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.5046505640475822,
+    "ci95": [
+     0.4541564010494136,
+     0.5562521870642535
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.935,
+    "ci95": [
+     0.9075,
+     0.9625
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": null,
+    "ci95": null,
+    "decided": false,
+    "sign": 0
+   }
+  },
+  {
+   "pair": [
+    "mappo_s3",
+    "mappo_s4"
+   ],
+   "healthy_pair": false,
+   "survival": {
+    "delta": 0.6388888888888888,
+    "ci95": [
+     0.6066666666666667,
+     0.67
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win": {
+    "delta": 0.18222222222222223,
+    "ci95": [
+     0.1588888888888889,
+     0.20666666666666667
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash": {
+    "delta": 131.25,
+    "ci95": [
+     125.39313888888888,
+     136.63916666666665
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "cash_given_survival": {
+    "delta": 156.38995258999282,
+    "ci95": [
+     147.86383701248096,
+     164.20517490219677
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "survival_time": {
+    "delta": 62.55555555555557,
+    "ci95": [
+     59.9994444444444,
+     65.34472222222225
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "win_given_survival": {
+    "delta": 0.4002828800564482,
+    "ci95": [
+     0.36553235284228414,
+     0.4275047160127805
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_survival": {
+    "delta": 0.9325,
+    "ci95": [
+     0.9025,
+     0.96
+    ],
+    "decided": true,
+    "sign": 1
+   },
+   "selfplay_cash_given_survival": {
+    "delta": null,
+    "ci95": null,
+    "decided": false,
+    "sign": 0
+   }
+  }
+ ],
+ "flip_summary": [
+  {
+   "metric_a": "survival",
+   "metric_b": "win",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 12,
+   "n_strict_inversions": 7,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s2",
+     "mappo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival",
+   "metric_b": "win",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 12,
+   "n_strict_inversions": 7,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s2",
+     "mappo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival",
+   "metric_b": "cash",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 17,
+   "n_strict_inversions": 10,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s1"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s1",
+     "mappo_s4"
+    ],
+    [
+     "mappo_s2",
+     "mappo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival",
+   "metric_b": "cash",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 16,
+   "n_strict_inversions": 9,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s1"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s2",
+     "mappo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival",
+   "metric_b": "cash_given_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 17,
+   "n_strict_inversions": 6,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival",
+   "metric_b": "cash_given_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 17,
+   "n_strict_inversions": 6,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival",
+   "metric_b": "survival_time",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 8,
+   "n_strict_inversions": 0,
+   "strict_pairs": []
+  },
+  {
+   "metric_a": "survival",
+   "metric_b": "survival_time",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 8,
+   "n_strict_inversions": 0,
+   "strict_pairs": []
+  },
+  {
+   "metric_a": "survival",
+   "metric_b": "win_given_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 15,
+   "n_strict_inversions": 7,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s2",
+     "mappo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival",
+   "metric_b": "win_given_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 15,
+   "n_strict_inversions": 7,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s2",
+     "mappo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival",
+   "metric_b": "selfplay_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 10,
+   "n_strict_inversions": 1,
+   "strict_pairs": [
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival",
+   "metric_b": "selfplay_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 10,
+   "n_strict_inversions": 1,
+   "strict_pairs": [
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival",
+   "metric_b": "selfplay_cash_given_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 36,
+   "n_strict_inversions": 6,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s1"
+    ],
+    [
+     "mappo_s1",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival",
+   "metric_b": "selfplay_cash_given_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 19,
+   "n_strict_inversions": 1,
+   "strict_pairs": [
+    [
+     "ippo_s2",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "win",
+   "metric_b": "cash",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 9,
+   "n_strict_inversions": 1,
+   "strict_pairs": [
+    [
+     "mappo_s1",
+     "mappo_s4"
+    ]
+   ]
+  },
+  {
+   "metric_a": "win",
+   "metric_b": "cash",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 8,
+   "n_strict_inversions": 0,
+   "strict_pairs": []
+  },
+  {
+   "metric_a": "win",
+   "metric_b": "cash_given_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 9,
+   "n_strict_inversions": 0,
+   "strict_pairs": []
+  },
+  {
+   "metric_a": "win",
+   "metric_b": "cash_given_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 9,
+   "n_strict_inversions": 0,
+   "strict_pairs": []
+  },
+  {
+   "metric_a": "win",
+   "metric_b": "survival_time",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 12,
+   "n_strict_inversions": 9,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s3"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s2",
+     "mappo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "win",
+   "metric_b": "survival_time",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 12,
+   "n_strict_inversions": 9,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s3"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s2",
+     "mappo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "win",
+   "metric_b": "win_given_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 5,
+   "n_strict_inversions": 0,
+   "strict_pairs": []
+  },
+  {
+   "metric_a": "win",
+   "metric_b": "win_given_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 5,
+   "n_strict_inversions": 0,
+   "strict_pairs": []
+  },
+  {
+   "metric_a": "win",
+   "metric_b": "selfplay_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 12,
+   "n_strict_inversions": 1,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "win",
+   "metric_b": "selfplay_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 12,
+   "n_strict_inversions": 1,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "win",
+   "metric_b": "selfplay_cash_given_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 34,
+   "n_strict_inversions": 12,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s1",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s2",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s3"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s3"
+    ],
+    [
+     "mappo_s1",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "win",
+   "metric_b": "selfplay_cash_given_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 17,
+   "n_strict_inversions": 7,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s1",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s2",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s3"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "cash",
+   "metric_b": "cash_given_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 2,
+   "n_strict_inversions": 1,
+   "strict_pairs": [
+    [
+     "mappo_s1",
+     "mappo_s4"
+    ]
+   ]
+  },
+  {
+   "metric_a": "cash",
+   "metric_b": "cash_given_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 1,
+   "n_strict_inversions": 0,
+   "strict_pairs": []
+  },
+  {
+   "metric_a": "cash",
+   "metric_b": "survival_time",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 19,
+   "n_strict_inversions": 11,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s1"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s1",
+     "mappo_s4"
+    ],
+    [
+     "mappo_s2",
+     "mappo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "cash",
+   "metric_b": "survival_time",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 18,
+   "n_strict_inversions": 10,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s1"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s2",
+     "mappo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "cash",
+   "metric_b": "win_given_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 6,
+   "n_strict_inversions": 1,
+   "strict_pairs": [
+    [
+     "mappo_s1",
+     "mappo_s4"
+    ]
+   ]
+  },
+  {
+   "metric_a": "cash",
+   "metric_b": "win_given_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 5,
+   "n_strict_inversions": 0,
+   "strict_pairs": []
+  },
+  {
+   "metric_a": "cash",
+   "metric_b": "selfplay_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 15,
+   "n_strict_inversions": 4,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s1"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s0"
+    ],
+    [
+     "mappo_s1",
+     "mappo_s4"
+    ]
+   ]
+  },
+  {
+   "metric_a": "cash",
+   "metric_b": "selfplay_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 14,
+   "n_strict_inversions": 3,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s1"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s0"
+    ]
+   ]
+  },
+  {
+   "metric_a": "cash",
+   "metric_b": "selfplay_cash_given_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 34,
+   "n_strict_inversions": 11,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s1",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s2",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s3"
+    ],
+    [
+     "mappo_s1",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "cash",
+   "metric_b": "selfplay_cash_given_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 17,
+   "n_strict_inversions": 6,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s1",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s2",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "cash_given_survival",
+   "metric_b": "survival_time",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 19,
+   "n_strict_inversions": 7,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "cash_given_survival",
+   "metric_b": "survival_time",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 19,
+   "n_strict_inversions": 7,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "cash_given_survival",
+   "metric_b": "win_given_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 6,
+   "n_strict_inversions": 0,
+   "strict_pairs": []
+  },
+  {
+   "metric_a": "cash_given_survival",
+   "metric_b": "win_given_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 6,
+   "n_strict_inversions": 0,
+   "strict_pairs": []
+  },
+  {
+   "metric_a": "cash_given_survival",
+   "metric_b": "selfplay_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 15,
+   "n_strict_inversions": 1,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "cash_given_survival",
+   "metric_b": "selfplay_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 15,
+   "n_strict_inversions": 1,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "cash_given_survival",
+   "metric_b": "selfplay_cash_given_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 35,
+   "n_strict_inversions": 11,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s1",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s2",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s3"
+    ],
+    [
+     "mappo_s1",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "cash_given_survival",
+   "metric_b": "selfplay_cash_given_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 18,
+   "n_strict_inversions": 6,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s1",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s2",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival_time",
+   "metric_b": "win_given_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 17,
+   "n_strict_inversions": 9,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s3"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s2",
+     "mappo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival_time",
+   "metric_b": "win_given_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 17,
+   "n_strict_inversions": 9,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ],
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s3"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ],
+    [
+     "mappo_s2",
+     "mappo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival_time",
+   "metric_b": "selfplay_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 10,
+   "n_strict_inversions": 1,
+   "strict_pairs": [
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival_time",
+   "metric_b": "selfplay_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 10,
+   "n_strict_inversions": 1,
+   "strict_pairs": [
+    [
+     "mappo_s0",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival_time",
+   "metric_b": "selfplay_cash_given_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 28,
+   "n_strict_inversions": 5,
+   "strict_pairs": [
+    [
+     "ippo_s1",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s1"
+    ],
+    [
+     "mappo_s1",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "survival_time",
+   "metric_b": "selfplay_cash_given_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 11,
+   "n_strict_inversions": 1,
+   "strict_pairs": [
+    [
+     "ippo_s2",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "win_given_survival",
+   "metric_b": "selfplay_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 12,
+   "n_strict_inversions": 1,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "win_given_survival",
+   "metric_b": "selfplay_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 12,
+   "n_strict_inversions": 1,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "win_given_survival",
+   "metric_b": "selfplay_cash_given_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 37,
+   "n_strict_inversions": 12,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s0",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s1",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s2",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s3"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s3"
+    ],
+    [
+     "mappo_s1",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "win_given_survival",
+   "metric_b": "selfplay_cash_given_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 20,
+   "n_strict_inversions": 7,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s1",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s2",
+     "ippo_s4"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s0"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s3"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s2"
+    ],
+    [
+     "ippo_s4",
+     "mappo_s3"
+    ]
+   ]
+  },
+  {
+   "metric_a": "selfplay_survival",
+   "metric_b": "selfplay_cash_given_survival",
+   "group": "all10",
+   "n_pairs": 45,
+   "n_sign_flips": 34,
+   "n_strict_inversions": 5,
+   "strict_pairs": [
+    [
+     "ippo_s0",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s1",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s2",
+     "mappo_s1"
+    ],
+    [
+     "ippo_s3",
+     "mappo_s1"
+    ],
+    [
+     "mappo_s1",
+     "mappo_s2"
+    ]
+   ]
+  },
+  {
+   "metric_a": "selfplay_survival",
+   "metric_b": "selfplay_cash_given_survival",
+   "group": "healthy8",
+   "n_pairs": 28,
+   "n_sign_flips": 17,
+   "n_strict_inversions": 0,
+   "strict_pairs": []
+  }
+ ],
+ "headline_all10": {
+  "n_pairs": 45,
+  "n_flip_vs_survival_any_peer_metric": 24,
+  "n_strict_inversions_vs_survival": 10,
+  "strict_pairs": [
+   [
+    "ippo_s0",
+    "ippo_s1"
+   ],
+   [
+    "ippo_s0",
+    "ippo_s3"
+   ],
+   [
+    "ippo_s0",
+    "ippo_s4"
+   ],
+   [
+    "ippo_s0",
+    "mappo_s0"
+   ],
+   [
+    "ippo_s1",
+    "mappo_s2"
+   ],
+   [
+    "ippo_s2",
+    "mappo_s2"
+   ],
+   [
+    "ippo_s3",
+    "mappo_s2"
+   ],
+   [
+    "mappo_s0",
+    "mappo_s2"
+   ],
+   [
+    "mappo_s1",
+    "mappo_s4"
+   ],
+   [
+    "mappo_s2",
+    "mappo_s3"
+   ]
+  ]
+ },
+ "headline_healthy8": {
+  "n_pairs": 28,
+  "n_flip_vs_survival_any_peer_metric": 23,
+  "n_strict_inversions_vs_survival": 9,
+  "strict_pairs": [
+   [
+    "ippo_s0",
+    "ippo_s1"
+   ],
+   [
+    "ippo_s0",
+    "ippo_s3"
+   ],
+   [
+    "ippo_s0",
+    "ippo_s4"
+   ],
+   [
+    "ippo_s0",
+    "mappo_s0"
+   ],
+   [
+    "ippo_s1",
+    "mappo_s2"
+   ],
+   [
+    "ippo_s2",
+    "mappo_s2"
+   ],
+   [
+    "ippo_s3",
+    "mappo_s2"
+   ],
+   [
+    "mappo_s0",
+    "mappo_s2"
+   ],
+   [
+    "mappo_s2",
+    "mappo_s3"
+   ]
+  ]
+ }
+}

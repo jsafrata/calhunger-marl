@@ -1,0 +1,91 @@
+{
+  "experiment": "v3_shared_vs_independent",
+  "status": "complete",
+  "started_at_utc": "2026-07-21T07:59:32.069371+00:00",
+  "algo": "ippo",
+  "condition": "shared",
+  "seed": 2,
+  "parameterization": "shared",
+  "include_agent_id": false,
+  "policy_ids": [
+    "shared_policy"
+  ],
+  "fixed_configuration": {
+    "horizon": 180,
+    "reward_kind": "terminal_only",
+    "death_reward": -1,
+    "surviving_nonwinner_reward": 0,
+    "winner_reward": 1,
+    "max_qty": 5,
+    "max_price": 50,
+    "num_actions": 2049,
+    "head_kind": "mlp",
+    "torso": "mlp",
+    "gamma": 1.0,
+    "lambda": 1.0,
+    "lr": 0.0003,
+    "entropy_coeff": 0.01,
+    "clip_param": 0.2,
+    "train_batch_size_environment_steps": 4096,
+    "minibatch_size": 1024,
+    "num_epochs": 4,
+    "num_env_runners": 2,
+    "local_observation_dim": 171,
+    "global_observation_dim": 305
+  },
+  "requested_iterations": 1100,
+  "requested_environment_steps": 4505600,
+  "requested_agent_steps": 18022400,
+  "resume_from_checkpoint": null,
+  "network_manifest": {
+    "shared_policy": {
+      "trainable_parameters": 791298,
+      "actor_parameters": 306433,
+      "critic_parameters": 484865,
+      "actor_observation_dim": 171,
+      "critic_observation_dim": 171,
+      "parameter_tensor_count": 56,
+      "storage_is_disjoint_from_previous_policies": true
+    }
+  },
+  "completed_at_utc": "2026-07-21T11:30:11.762404+00:00",
+  "wall_clock_seconds": 12639.675351858139,
+  "final_accounting": {
+    "iter": 1100,
+    "episodes_lifetime": 26452.0,
+    "return_mean": 0.16666666666666669,
+    "return_min": -2.0,
+    "return_max": 1.0,
+    "policy_loss": -0.0527537539601326,
+    "vf_loss": 0.28117871284484863,
+    "entropy": 4.373425483703613,
+    "vf_explained_var": 0.32699817419052124,
+    "grad_norm": 0.9477733969688416,
+    "reward_dense_per_seat": 0.0,
+    "reward_terminal_per_seat": -0.1736111111111111,
+    "game_n_survivors": 3.291666666666667,
+    "game_n_survived_to_180": null,
+    "game_episode_length": 169.08333333333331,
+    "wall_clock_seconds": 12639.425689935684,
+    "env_steps_sampled_lifetime": 4505600.0,
+    "agent_steps_sampled_lifetime_by_seat": {
+      "seat_3": 4029363.0,
+      "seat_1": 4053155.0,
+      "seat_0": 4056615.0,
+      "seat_2": 4053739.0
+    },
+    "module_steps_sampled_lifetime": {
+      "shared_policy": 16192872.0
+    },
+    "per_policy/shared_policy/policy_loss": -0.0527537539601326,
+    "per_policy/shared_policy/vf_loss": 0.28117871284484863,
+    "per_policy/shared_policy/entropy": 4.373425483703613,
+    "per_policy/shared_policy/vf_explained_var": 0.32699817419052124,
+    "per_policy/shared_policy/module_steps_trained_lifetime": 66012160.0,
+    "per_policy/shared_policy/learner_updates_lifetime": 1100.0,
+    "per_policy/shared_policy/optimizer_steps_lifetime": 64465.0,
+    "per_policy/shared_policy/train_batch_size_mean": 1024.0,
+    "total_optimizer_steps_lifetime": 64465.0,
+    "total_agent_steps_sampled_lifetime": 16192872.0
+  }
+}

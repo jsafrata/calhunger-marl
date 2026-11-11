@@ -1,0 +1,11 @@
+signal,n_runs,mean_at_700,mean_at_1200,mean_delta,runs_up,runs_down,verdict_700_to_1200
+self-play survival,8,73.56,90.31,16.75,7,0,certifies improvement
+self-play price|POST entropy (fingerprint),8,2.62,2.29,-0.33,0,8,certifies (sharpening)
+cross-play cash vs v4 (raw score),8,97.18,174.11,76.93,8,0,certifies improvement
+cross-play survival vs v4,8,36.75,17.0,-19.75,1,7,FLAGS DECLINE
+cross-play survival vs v2,8,24.75,26.38,1.63,3,3,silent / mixed
+cross-play survival vs v3,8,73.0,94.12,21.12,7,1,certifies improvement
+cross-play survival vs v5,8,13.25,16.25,3.0,3,1,silent / mixed
+cross-play win vs v4,8,9.38,6.75,-2.62,2,5,FLAGS DECLINE
+portfolio mean survival (v2..v5),8,36.94,38.44,1.5,3,5,FLAGS DECLINE
+"held-out portfolio mean survival (v2,v3,v5)",8,37.0,45.58,8.58,6,1,certifies improvement

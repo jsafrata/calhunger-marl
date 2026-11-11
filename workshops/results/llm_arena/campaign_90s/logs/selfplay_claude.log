@@ -1,0 +1,160 @@
+=== claude_selfplay attempt 1 2026-08-28 15:33:46 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_claude vs 3x llm_claude
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_claude) provider request failed: HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Grammar compilation timed out."},"request_id":"req_011CeW2hzE8xYstkNEcSgYmE"}
+=== attempt failed; resuming in 120s ===
+=== claude_selfplay attempt 2 2026-08-28 16:42:35 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_claude vs 3x llm_claude
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 2 (llm_claude) provider request failed: HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Grammar compilation timed out."},"request_id":"req_011CeW39vqiDsiGrTxuktGbA"}
+=== attempt failed; resuming in 120s ===
+=== claude_selfplay attempt 3 2026-08-28 16:48:27 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_claude vs 3x llm_claude
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 0 (llm_claude) provider request failed: HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Grammar compilation timed out."},"request_id":"req_011CeW4MP3Umcc7sirjEj7bE"}
+=== attempt failed; resuming in 120s ===
+=== claude_selfplay attempt 4 2026-08-28 17:04:09 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_claude vs 3x llm_claude
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 0 (llm_claude) provider request failed: HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Grammar compilation timed out."},"request_id":"req_011CeW6yPFN7UTvd6mGC6Piv"}
+=== attempt failed; resuming in 120s ===
+=== claude_selfplay attempt 5 2026-08-28 17:38:32 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_claude vs 3x llm_claude
+Traceback (most recent call last):
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 362, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/run_llm_arena.py", line 299, in main
+    records = asyncio.run(
+              ^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 608, in play_arena_games
+    game = await _play_one_game(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 476, in _play_one_game
+    results = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 242, in act_async
+    records = await asyncio.gather(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/llm_arena/arena.py", line 268, in _one_decision
+    raise ArenaAbort(
+llm_arena.arena.ArenaAbort: seat 3 (llm_claude) provider request failed: HTTP 400: {"type":"error","error":{"type":"invalid_request_error","message":"Grammar compilation timed out."},"request_id":"req_011CeW8Q51pGG1PubJUVfc4G"}
+=== attempt failed; resuming in 120s ===
+=== claude_selfplay attempt 6 2026-08-28 17:57:13 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_claude vs 3x llm_claude
+                llm_claude vs self                     survival= 89.5%  win= 25.0%  cash=  100.00  malformed=0.0%  rejected=15.5%  latency=0.86s
+100 games in 2069.6s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/claude_selfplay/arena_summary.csv
+=== claude_selfplay done ===

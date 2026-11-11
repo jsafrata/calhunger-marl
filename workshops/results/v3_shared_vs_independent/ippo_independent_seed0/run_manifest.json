@@ -1,0 +1,101 @@
+{
+  "experiment": "v3_shared_vs_independent",
+  "status": "stopped_by_user",
+  "started_at_utc": "2026-07-21T15:03:04.045755+00:00",
+  "resumed_at_utc": null,
+  "algo": "ippo",
+  "condition": "independent",
+  "seed": 0,
+  "parameterization": "independent",
+  "include_agent_id": false,
+  "policy_ids": [
+    "pi_0",
+    "pi_1",
+    "pi_2",
+    "pi_3"
+  ],
+  "fixed_configuration": {
+    "horizon": 180,
+    "reward_kind": "terminal_only",
+    "death_reward": -1,
+    "surviving_nonwinner_reward": 0,
+    "winner_reward": 1,
+    "max_qty": 5,
+    "max_price": 50,
+    "num_actions": 2049,
+    "head_kind": "mlp",
+    "torso": "mlp",
+    "gamma": 1.0,
+    "lambda": 1.0,
+    "lr": 0.0003,
+    "entropy_coeff": 0.01,
+    "clip_param": 0.2,
+    "train_batch_size_environment_steps": 4096,
+    "minibatch_size": 1024,
+    "num_epochs": 4,
+    "num_env_runners": 2,
+    "local_observation_dim": 171,
+    "global_observation_dim": 305
+  },
+  "requested_iterations": 1100,
+  "requested_environment_steps": 4505600,
+  "requested_agent_steps": 18022400,
+  "resume_from_checkpoint": null,
+  "network_manifest": {
+    "pi_0": {
+      "trainable_parameters": 791298,
+      "actor_parameters": 306433,
+      "critic_parameters": 484865,
+      "actor_observation_dim": 171,
+      "critic_observation_dim": 171,
+      "parameter_tensor_count": 56,
+      "storage_is_disjoint_from_previous_policies": true
+    },
+    "pi_1": {
+      "trainable_parameters": 791298,
+      "actor_parameters": 306433,
+      "critic_parameters": 484865,
+      "actor_observation_dim": 171,
+      "critic_observation_dim": 171,
+      "parameter_tensor_count": 56,
+      "storage_is_disjoint_from_previous_policies": true
+    },
+    "pi_2": {
+      "trainable_parameters": 791298,
+      "actor_parameters": 306433,
+      "critic_parameters": 484865,
+      "actor_observation_dim": 171,
+      "critic_observation_dim": 171,
+      "parameter_tensor_count": 56,
+      "storage_is_disjoint_from_previous_policies": true
+    },
+    "pi_3": {
+      "trainable_parameters": 791298,
+      "actor_parameters": 306433,
+      "critic_parameters": 484865,
+      "actor_observation_dim": 171,
+      "critic_observation_dim": 171,
+      "parameter_tensor_count": 56,
+      "storage_is_disjoint_from_previous_policies": true
+    }
+  },
+  "stopped_by_user_at_utc": "2026-07-21T16:16:01Z",
+  "partial_progress": {
+    "last_logged_iteration": 237,
+    "last_checkpoint_iteration": 200,
+    "environment_transitions": 970752,
+    "agent_transitions": 3253335,
+    "unique_trajectory_samples_by_network": {
+      "pi_0": 767217,
+      "pi_1": 799358,
+      "pi_2": 834841,
+      "pi_3": 851919
+    },
+    "learner_samples_processed_per_network": 3662848,
+    "optimizer_steps_per_network": 3577,
+    "total_optimizer_steps": 14308,
+    "wall_clock_seconds": 4328.775,
+    "resume_checkpoint": "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/eval/results/v3_shared_vs_independent/ippo_independent_seed0/checkpoints/iter_0200",
+    "note": "Iterations 201-237 are metric rows only; exact four-policy model/critic/optimizer recovery is available through iteration 200."
+  }
+}

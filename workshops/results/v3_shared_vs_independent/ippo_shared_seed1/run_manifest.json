@@ -1,0 +1,92 @@
+{
+  "experiment": "v3_shared_vs_independent",
+  "status": "complete",
+  "started_at_utc": "2026-07-21T07:59:32.100664+00:00",
+  "resumed_at_utc": "2026-07-21T17:00:49.476722+00:00",
+  "algo": "ippo",
+  "condition": "shared",
+  "seed": 1,
+  "parameterization": "shared",
+  "include_agent_id": false,
+  "policy_ids": [
+    "shared_policy"
+  ],
+  "fixed_configuration": {
+    "horizon": 180,
+    "reward_kind": "terminal_only",
+    "death_reward": -1,
+    "surviving_nonwinner_reward": 0,
+    "winner_reward": 1,
+    "max_qty": 5,
+    "max_price": 50,
+    "num_actions": 2049,
+    "head_kind": "mlp",
+    "torso": "mlp",
+    "gamma": 1.0,
+    "lambda": 1.0,
+    "lr": 0.0003,
+    "entropy_coeff": 0.01,
+    "clip_param": 0.2,
+    "train_batch_size_environment_steps": 4096,
+    "minibatch_size": 1024,
+    "num_epochs": 4,
+    "num_env_runners": 2,
+    "local_observation_dim": 171,
+    "global_observation_dim": 305
+  },
+  "requested_iterations": 1400,
+  "requested_environment_steps": 5734400,
+  "requested_agent_steps": 22937600,
+  "resume_from_checkpoint": "/Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/research/eval/results/v3_shared_vs_independent/ippo_shared_seed1/checkpoints/iter_1100",
+  "network_manifest": {
+    "shared_policy": {
+      "trainable_parameters": 791298,
+      "actor_parameters": 306433,
+      "critic_parameters": 484865,
+      "actor_observation_dim": 171,
+      "critic_observation_dim": 171,
+      "parameter_tensor_count": 56,
+      "storage_is_disjoint_from_previous_policies": true
+    }
+  },
+  "completed_at_utc": "2026-07-21T17:54:11.153362+00:00",
+  "wall_clock_seconds": 15710.241933107376,
+  "final_accounting": {
+    "iter": 1400,
+    "episodes_lifetime": 34640.0,
+    "return_mean": 0.09090909090909091,
+    "return_min": -2.0,
+    "return_max": 1.0,
+    "policy_loss": -0.04666319116950035,
+    "vf_loss": 0.25413545966148376,
+    "entropy": 4.338388442993164,
+    "vf_explained_var": 0.40599673986434937,
+    "grad_norm": 0.8378506302833557,
+    "reward_dense_per_seat": 0.0,
+    "reward_terminal_per_seat": -0.18181818181818182,
+    "game_n_survivors": 3.272727272727273,
+    "game_n_survived_to_180": null,
+    "game_episode_length": 175.8181818181818,
+    "wall_clock_seconds": 15709.729649066925,
+    "env_steps_sampled_lifetime": 5734400.0,
+    "agent_steps_sampled_lifetime_by_seat": {
+      "seat_0": 5175712.0,
+      "seat_1": 5195385.0,
+      "seat_2": 5197861.0,
+      "seat_3": 5183178.0
+    },
+    "module_steps_sampled_lifetime": {
+      "shared_policy": 20752136.0
+    },
+    "per_policy/shared_policy/policy_loss": -0.04666319116950035,
+    "per_policy/shared_policy/vf_loss": 0.25413545966148376,
+    "per_policy/shared_policy/entropy": 4.338388442993164,
+    "per_policy/shared_policy/vf_explained_var": 0.40599673986434937,
+    "per_policy/shared_policy/module_steps_trained_lifetime": 84618240.0,
+    "per_policy/shared_policy/learner_updates_lifetime": 1400.0,
+    "per_policy/shared_policy/optimizer_steps_lifetime": 82635.0,
+    "per_policy/shared_policy/train_batch_size_mean": 1024.0,
+    "total_optimizer_steps_lifetime": 82635.0,
+    "total_agent_steps_sampled_lifetime": 20752136.0
+  }
+}

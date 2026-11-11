@@ -1,0 +1,7 @@
+{
+  "runs_where_heldout_portfolio_flags": "6/8",
+  "median_games_per_cell_v4": 21,
+  "max_games_per_cell_v4": 205,
+  "median_games_per_cell_heldout": 473,
+  "note": "independent-binomial approximation; the actual protocol pairs seeds across checkpoints, so these are upper bounds. held-out budget divides by its 3 pooled archetype cells."
+}

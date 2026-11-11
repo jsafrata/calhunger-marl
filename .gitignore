@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv*/
+venv/
+*.egg-info/
+build/
+dist/
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
+
+# Secrets: LLM provider keys live only in workshops/llm_arena/.env (never committed)
+.env
+*.env
+!workshops/llm_arena/.env.example
+
+# Local training/evaluation outputs (campaign roots), cluster logs, git bundles
+research/eval/results/
+research/logs/
+research/hpc/**/campaign.env
+research/hpc/**/slurm/*.out
+research/hpc/**/slurm/*.err
+*.bundle
+
+# Raw per-game outputs and trained checkpoints are distributed as a separate
+# data archive (see data/README.md), not through git.
+workshops/results/**/raw/
+workshops/results/llm_arena/**/games/
+workshops/econml/results/**/raw/
+checkpoints/
+*.tar.gz

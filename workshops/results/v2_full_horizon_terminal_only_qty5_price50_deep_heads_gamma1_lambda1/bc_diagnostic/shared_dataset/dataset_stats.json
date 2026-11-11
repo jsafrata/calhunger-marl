@@ -1,0 +1,71 @@
+{
+  "train": {
+    "n_games": 2000,
+    "n_rows": 1440000,
+    "type_counts": {
+      "wait": 8010,
+      "cancel": 0,
+      "take": 0,
+      "post": 1431990
+    },
+    "type_fractions": {
+      "wait": 0.0055625,
+      "cancel": 0.0,
+      "take": 0.0,
+      "post": 0.9944375
+    },
+    "seed_range": [
+      100000,
+      102000
+    ],
+    "file": "eval/results/v2_full_horizon_terminal_only_qty5_price50_deep_heads_gamma1_lambda1/bc_diagnostic/shared_dataset/train.npz",
+    "file_size_mb": 44.160402,
+    "gen_seconds": 293.17818093299866
+  },
+  "val": {
+    "n_games": 300,
+    "n_rows": 216000,
+    "type_counts": {
+      "wait": 1200,
+      "cancel": 0,
+      "take": 0,
+      "post": 214800
+    },
+    "type_fractions": {
+      "wait": 0.005555555555555556,
+      "cancel": 0.0,
+      "take": 0.0,
+      "post": 0.9944444444444445
+    },
+    "seed_range": [
+      500000,
+      500300
+    ],
+    "file": "eval/results/v2_full_horizon_terminal_only_qty5_price50_deep_heads_gamma1_lambda1/bc_diagnostic/shared_dataset/val.npz",
+    "file_size_mb": 6.623503,
+    "gen_seconds": 45.40719389915466
+  },
+  "test": {
+    "n_games": 300,
+    "n_rows": 216000,
+    "type_counts": {
+      "wait": 1200,
+      "cancel": 0,
+      "take": 0,
+      "post": 214800
+    },
+    "type_fractions": {
+      "wait": 0.005555555555555556,
+      "cancel": 0.0,
+      "take": 0.0,
+      "post": 0.9944444444444445
+    },
+    "seed_range": [
+      900000,
+      900300
+    ],
+    "file": "eval/results/v2_full_horizon_terminal_only_qty5_price50_deep_heads_gamma1_lambda1/bc_diagnostic/shared_dataset/test.npz",
+    "file_size_mb": 6.614644,
+    "gen_seconds": 40.703728914260864
+  }
+}

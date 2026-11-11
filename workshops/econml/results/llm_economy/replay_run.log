@@ -1,0 +1,80 @@
+claude_selfplay: 100/100 validated (100.0%)
+2026-08-29 01:46:52,651	INFO worker.py:2007 -- Started a local Ray instance.
+2026-08-29 01:46:53,379	WARNING algorithm_config.py:5118 -- You are running PPO on the new API stack! This is the new default behavior for this algorithm. If you don't want to use the new API stack, set `config.api_stack(enable_rl_module_and_learner=False,enable_env_runner_and_connector_v2=False)`. For a detailed migration guide, see here: https://docs.ray.io/en/master/rllib/new-api-stack-migration-guide.html
+/Users/honzasafrata/Library/Python/3.12/lib/python/site-packages/ray/rllib/algorithms/algorithm.py:527: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+`UnifiedLogger` will be removed in Ray 2.7.
+  return UnifiedLogger(config, logdir, loggers=None)
+/Users/honzasafrata/Library/Python/3.12/lib/python/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `JsonLogger interface is deprecated in favor of the `ray.tune.json.JsonLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/Users/honzasafrata/Library/Python/3.12/lib/python/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `CSVLogger interface is deprecated in favor of the `ray.tune.csv.CSVLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/Users/honzasafrata/Library/Python/3.12/lib/python/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `TBXLogger interface is deprecated in favor of the `ray.tune.tensorboardx.TBXLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+[2026-08-29 01:46:54,662 E 82469 4851887] core_worker.cc:2223: Actor with class name: 'MultiAgentEnvRunner' and ID: 'fb8baae9284d00f2f3841b9101000000' has constructor arguments in the object store and max_restarts > 0. If the arguments in the object store go out of scope or are lost, the actor restart will fail. See https://github.com/ray-project/ray/issues/53727 for more details.
+2026-08-29 01:46:59,533	WARNING rl_module.py:459 -- DeprecationWarning: `RLModule(config=[RLModuleConfig object])` has been deprecated. Use `RLModule(observation_space=.., action_space=.., inference_only=.., model_config=.., catalog_class=..)` instead. This will raise an error in the future!
+2026-08-29 01:46:59,609	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+claude_vs_ippo_s0: 100/100 validated (100.0%)
+/Users/honzasafrata/Library/Python/3.12/lib/python/site-packages/ray/rllib/algorithms/algorithm.py:527: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+`UnifiedLogger` will be removed in Ray 2.7.
+  return UnifiedLogger(config, logdir, loggers=None)
+/Users/honzasafrata/Library/Python/3.12/lib/python/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `JsonLogger interface is deprecated in favor of the `ray.tune.json.JsonLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/Users/honzasafrata/Library/Python/3.12/lib/python/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `CSVLogger interface is deprecated in favor of the `ray.tune.csv.CSVLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/Users/honzasafrata/Library/Python/3.12/lib/python/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `TBXLogger interface is deprecated in favor of the `ray.tune.tensorboardx.TBXLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+[2026-08-29 01:47:23,353 E 82469 4852143] core_worker_process.cc:842: Failed to establish connection to the metrics exporter agent. Metrics will not be exported. Exporter agent status: RpcError: Running out of retries to initialize the metrics agent. rpc_code: 14
+2026-08-29 01:47:30,204	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+claude_vs_ippo_s2: 100/100 validated (100.0%)
+2026-08-29 01:48:11,685	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+claude_vs_mappo_s1: 100/100 validated (100.0%)
+2026-08-29 01:49:18,956	INFO trainable.py:161 -- Trainable.setup took 26.570 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+2026-08-29 01:49:19,000	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+claude_vs_mappo_s3: 100/100 validated (100.0%)
+claude_vs_v2: 100/100 validated (100.0%)
+claude_vs_v3: 100/100 validated (100.0%)
+claude_vs_v4: 100/100 validated (100.0%)
+claude_vs_v5: 100/100 validated (100.0%)
+deepseek_selfplay: 100/100 validated (100.0%)
+2026-08-29 01:50:29,950	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+deepseek_vs_ippo_s0: 100/100 validated (100.0%)
+2026-08-29 01:51:12,312	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+deepseek_vs_ippo_s2: 93/100 validated (93.0%)
+2026-08-29 01:51:52,640	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+deepseek_vs_mappo_s1: 100/100 validated (100.0%)
+2026-08-29 01:52:23,753	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+deepseek_vs_mappo_s3: 100/100 validated (100.0%)
+deepseek_vs_v2: 100/100 validated (100.0%)
+deepseek_vs_v3: 100/100 validated (100.0%)
+deepseek_vs_v4: 100/100 validated (100.0%)
+deepseek_vs_v5: 100/100 validated (100.0%)
+2026-08-29 01:53:27,989	INFO trainable.py:161 -- Trainable.setup took 11.633 seconds. If your trainable is slow to initialize, consider setting reuse_actors=True to reduce actor creation overheads.
+2026-08-29 01:53:28,003	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+gemini_vs_ippo_s0: 12/100 validated (12.0%)
+2026-08-29 01:54:05,446	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+gemini_vs_ippo_s2: 14/88 validated (15.91%), 12 originals missing
+gemini_vs_v2: 100/100 validated (100.0%)
+gemini_vs_v3: 49/49 validated (100.0%), 51 originals missing
+gemini_vs_v4: 100/100 validated (100.0%)
+gemini_vs_v5: 2/2 validated (100.0%), 98 originals missing
+gpt_selfplay: 100/100 validated (100.0%)
+2026-08-29 01:54:54,610	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+gpt_vs_ippo_s0: 100/100 validated (100.0%)
+2026-08-29 01:55:23,348	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+gpt_vs_ippo_s2: 100/100 validated (100.0%)
+2026-08-29 01:55:55,877	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+gpt_vs_mappo_s1: 100/100 validated (100.0%)
+2026-08-29 01:56:30,248	WARNING util.py:61 -- Install gputil for GPU system monitoring.
+gpt_vs_mappo_s3: 100/100 validated (100.0%)
+gpt_vs_v2: 100/100 validated (100.0%)
+gpt_vs_v3: 100/100 validated (100.0%)
+gpt_vs_v4: 100/100 validated (100.0%)
+gpt_vs_v5: 100/100 validated (100.0%)
+mixed_4llm: 100/100 validated (100.0%)
+validation table appended: /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/econml/results/llm_economy/validation.csv

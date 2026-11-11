@@ -1,0 +1,12 @@
+.venv*/
+venv/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+*.egg-info/
+eval/results/
+logs/
+hpc/**/campaign.env
+hpc/**/slurm/*.out
+hpc/**/slurm/*.err

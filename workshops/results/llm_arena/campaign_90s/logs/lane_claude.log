@@ -1,0 +1,25 @@
+=== 2026-08-27 14:39:09 claude vs v2 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_claude vs 3x scripted_v2
+                llm_claude vs 3xscripted_v2            survival= 84.0%  win=  0.0%  cash=    4.74  malformed=0.0%  rejected=4.9%  latency=0.94s
+               scripted_v2 vs llm_claude               survival= 96.7%  win= 33.0%  cash=  131.75
+100 games in 8160.1s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/claude_vs_v2/arena_summary.csv
+=== claude vs v2 exit=0 ===
+=== 2026-08-27 16:55:09 claude vs v3 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_claude vs 3x scripted_v3
+                llm_claude vs 3xscripted_v3            survival= 92.0%  win=  0.0%  cash=    0.54  malformed=0.0%  rejected=3.9%  latency=0.91s
+               scripted_v3 vs llm_claude               survival= 99.7%  win= 33.3%  cash=  133.15
+100 games in 8157.4s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/claude_vs_v3/arena_summary.csv
+=== claude vs v3 exit=0 ===
+=== 2026-08-27 19:11:07 claude vs v4 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_claude vs 3x scripted_v4
+                llm_claude vs 3xscripted_v4            survival= 39.0%  win=  0.0%  cash=    8.88  malformed=0.0%  rejected=7.4%  latency=0.96s
+               scripted_v4 vs llm_claude               survival= 97.7%  win= 33.3%  cash=  130.37
+100 games in 7738.9s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/claude_vs_v4/arena_summary.csv
+=== claude vs v4 exit=0 ===
+=== 2026-08-27 21:20:06 claude vs v5 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_claude vs 3x scripted_v5
+                llm_claude vs 3xscripted_v5            survival= 18.0%  win=  0.0%  cash=   19.11  malformed=0.0%  rejected=6.2%  latency=0.94s
+               scripted_v5 vs llm_claude               survival= 89.0%  win= 31.7%  cash=  126.96
+100 games in 5969.1s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/claude_vs_v5/arena_summary.csv
+=== claude vs v5 exit=0 ===
+=== 2026-08-27 22:59:36 lane claude complete ===

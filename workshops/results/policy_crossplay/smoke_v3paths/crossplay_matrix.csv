@@ -1,0 +1,5 @@
+focal,opponent,lineup_mode,mode,n_games,n_focal_seat_games,game_seed_base,environment_variant,environment_class,game_duration_seconds,survival_percentage,win_percentage,win_given_survival_percentage,mean_terminal_cash,mean_terminal_cash_given_survival,mean_survival_time_ticks,mean_trades_as_buyer,mean_trades_as_seller
+indep_s0_pi0_iter200,3xscripted_v1,1v3,stochastic,4,4,900000,default,FoodTradingEnv,180,0.0,0.0,0.0,39.75,nan,150.0,71.0,80.5
+scripted_v1,indep_s0_pi0_iter200,1v3,stochastic,4,12,900000,default,FoodTradingEnv,180,91.66666666666667,33.333333333333336,36.36363636363637,120.08333333333333,119.0909090909091,180.0,35.833333333333336,32.666666666666664
+shared_s1_iter1100,sharedid_s0_iter1100,1v3,stochastic,4,12,900000,default,FoodTradingEnv,180,41.666666666666664,25.0,60.0,124.83333333333333,132.4,163.33333333333334,46.166666666666664,45.5
+sharedid_s0_iter1100,3xshared_s1_iter1100,1v3,stochastic,4,4,900000,default,FoodTradingEnv,180,0.0,0.0,0.0,25.5,nan,115.0,17.0,19.0

@@ -1,0 +1,17 @@
+match,environment_variant,game_duration_seconds,n_games,version,n_seat_games,survival_rate_percent,win_rate_percent,mean_terminal_cash,mean_survival_time_seconds
+V2 vs V3 vs V4 vs V5,small,30,100,v2,100,99.0,16.0,86.99,30.0
+V2 vs V3 vs V4 vs V5,small,30,100,v3,100,97.0,8.0,80.98,30.0
+V2 vs V3 vs V4 vs V5,small,30,100,v4,100,99.0,54.0,130.24,30.0
+V2 vs V3 vs V4 vs V5,small,30,100,v5,100,100.0,22.0,101.79,30.0
+V2 vs V3 (2 seats each),small,30,50,v2,100,100.0,35.0,110.18,30.0
+V2 vs V3 (2 seats each),small,30,50,v3,100,99.0,15.0,89.82,29.9
+V2 vs V4 (2 seats each),small,30,50,v2,100,100.0,11.0,89.84,30.0
+V2 vs V4 (2 seats each),small,30,50,v4,100,100.0,39.0,110.16,30.0
+V2 vs V5 (2 seats each),small,30,50,v2,100,100.0,28.000000000000004,93.42,30.0
+V2 vs V5 (2 seats each),small,30,50,v5,100,100.0,22.0,106.58,30.0
+V3 vs V4 (2 seats each),small,30,50,v3,100,99.0,12.0,83.71,30.0
+V3 vs V4 (2 seats each),small,30,50,v4,100,96.0,38.0,116.29,29.9
+V3 vs V5 (2 seats each),small,30,50,v3,100,100.0,5.0,62.25,30.0
+V3 vs V5 (2 seats each),small,30,50,v5,100,98.0,45.0,137.75,29.9
+V4 vs V5 (2 seats each),small,30,50,v4,100,100.0,34.0,100.18,30.0
+V4 vs V5 (2 seats each),small,30,50,v5,100,100.0,17.0,99.82,30.0

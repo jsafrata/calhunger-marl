@@ -1,0 +1,224 @@
+{
+  "checkpoint": "eval/results/v2_full_horizon_terminal_only_qty5_price50_deep_heads_gamma1_lambda1/long_baseline/ippo_seed0_headmlp/checkpoints/iter_0100",
+  "algo_label": "ippo_v2_seed0_headmlp_iter0100",
+  "lineups": {
+    "learned_selfplay": {
+      "deterministic": {
+        "n_games": 500,
+        "mode": "deterministic",
+        "n_learned_seats": 4,
+        "lineup_mean_survivors": 0.024,
+        "lineup_reach_time_limit_frac": 0.036,
+        "lineup_mean_trades": 62.968,
+        "learned_seat_survival_rate": 0.006,
+        "learned_seat_mean_death_tick": 126.02,
+        "learned_seat_mean_final_cash": 100.0,
+        "learned_seat_completed_trades_as_buyer_mean": 15.742,
+        "learned_seat_completed_trades_as_seller_mean": 15.742,
+        "learned_seat_posted_bids_mean": 12.5255,
+        "learned_seat_posted_asks_mean": 26.474,
+        "learned_seat_takes_mean": 17.6925,
+        "action_type_freq": {
+          "wait": 0.5000659997221064,
+          "cancel": 0.10607544810337641,
+          "take": 0.12291579824927053,
+          "post": 0.27094275392524664
+        },
+        "learned_seat_type_freq_mean": {
+          "wait": 0.5012441682296461,
+          "cancel": 0.10658464431401932,
+          "take": 0.12088175223469341,
+          "post": 0.2712894352216411
+        },
+        "head_diagnostics": {
+          "n_obs_sampled": 512,
+          "type/mean_prob_wait": 0.3793772757053375,
+          "type/mean_prob_cancel": 0.11709117889404297,
+          "type/mean_prob_take": 0.1866922229528427,
+          "type/mean_prob_post": 0.3168393075466156,
+          "type/entropy_mean": 0.9014997482299805,
+          "type/argmax_freq_wait": 0.3828125,
+          "type/argmax_freq_cancel": 0.083984375,
+          "type/argmax_freq_take": 0.2109375,
+          "type/argmax_freq_post": 0.322265625,
+          "food_given_post/entropy_mean": 1.311559796333313,
+          "side_given_post/entropy_mean": 0.6549730896949768,
+          "price_given_post/entropy_mean": 3.410101890563965,
+          "qty_given_post/entropy_mean": 1.2798442840576172,
+          "price_given_post/argmax_median": 17.0,
+          "qty_given_post/argmax_median": 1.0
+        }
+      },
+      "stochastic": {
+        "n_games": 500,
+        "mode": "stochastic",
+        "n_learned_seats": 4,
+        "lineup_mean_survivors": 0.014,
+        "lineup_reach_time_limit_frac": 0.054,
+        "lineup_mean_trades": 99.536,
+        "learned_seat_survival_rate": 0.0035,
+        "learned_seat_mean_death_tick": 120.91,
+        "learned_seat_mean_final_cash": 100.0,
+        "learned_seat_completed_trades_as_buyer_mean": 24.884,
+        "learned_seat_completed_trades_as_seller_mean": 24.884,
+        "learned_seat_posted_bids_mean": 16.213,
+        "learned_seat_posted_asks_mean": 22.79,
+        "learned_seat_takes_mean": 28.0035,
+        "action_type_freq": {
+          "wait": 0.39489541487740687,
+          "cancel": 0.14100637207369443,
+          "take": 0.1939569192408921,
+          "post": 0.27014129380800667
+        },
+        "learned_seat_type_freq_mean": {
+          "wait": 0.392407794982795,
+          "cancel": 0.14135098756635522,
+          "take": 0.19512216054778553,
+          "post": 0.27111905690306426
+        },
+        "head_diagnostics": {
+          "n_obs_sampled": 512,
+          "type/mean_prob_wait": 0.2904559373855591,
+          "type/mean_prob_cancel": 0.17385676503181458,
+          "type/mean_prob_take": 0.26791033148765564,
+          "type/mean_prob_post": 0.2677769660949707,
+          "type/entropy_mean": 0.9276332259178162,
+          "type/argmax_freq_wait": 0.265625,
+          "type/argmax_freq_cancel": 0.205078125,
+          "type/argmax_freq_take": 0.361328125,
+          "type/argmax_freq_post": 0.16796875,
+          "food_given_post/entropy_mean": 1.3284717798233032,
+          "side_given_post/entropy_mean": 0.6206064820289612,
+          "price_given_post/entropy_mean": 3.4736831188201904,
+          "qty_given_post/entropy_mean": 1.265552282333374,
+          "price_given_post/argmax_median": 26.0,
+          "qty_given_post/argmax_median": 1.0
+        }
+      }
+    },
+    "1learned_3scripted": {
+      "deterministic": {
+        "n_games": 500,
+        "mode": "deterministic",
+        "n_learned_seats": 1,
+        "lineup_mean_survivors": 2.6,
+        "lineup_reach_time_limit_frac": 0.998,
+        "lineup_mean_trades": 130.822,
+        "learned_seat_survival_rate": 0.074,
+        "learned_seat_mean_death_tick": 137.1,
+        "learned_seat_mean_final_cash": 37.158,
+        "learned_seat_completed_trades_as_buyer_mean": 43.512,
+        "learned_seat_completed_trades_as_seller_mean": 42.348,
+        "learned_seat_posted_bids_mean": 13.452,
+        "learned_seat_posted_asks_mean": 15.566,
+        "learned_seat_takes_mean": 67.992,
+        "action_type_freq": {
+          "wait": 0.42853650405600624,
+          "cancel": 0.03245916212912546,
+          "take": 0.3777753083675964,
+          "post": 0.1612290254472719
+        },
+        "learned_seat_type_freq_mean": {
+          "wait": 0.42858823529411755,
+          "cancel": 0.03245947712418301,
+          "take": 0.37773529411764706,
+          "post": 0.16121699346405227
+        },
+        "head_diagnostics": {
+          "n_obs_sampled": 512,
+          "type/mean_prob_wait": 0.3652648329734802,
+          "type/mean_prob_cancel": 0.09980618953704834,
+          "type/mean_prob_take": 0.2694534361362457,
+          "type/mean_prob_post": 0.2654755413532257,
+          "type/entropy_mean": 1.0518887042999268,
+          "type/argmax_freq_wait": 0.421875,
+          "type/argmax_freq_cancel": 0.048828125,
+          "type/argmax_freq_take": 0.4375,
+          "type/argmax_freq_post": 0.091796875,
+          "food_given_post/entropy_mean": 1.3043136596679688,
+          "side_given_post/entropy_mean": 0.6191046237945557,
+          "price_given_post/entropy_mean": 3.1763815879821777,
+          "qty_given_post/entropy_mean": 1.0405839681625366,
+          "price_given_post/argmax_median": 17.0,
+          "qty_given_post/argmax_median": 3.0
+        }
+      },
+      "stochastic": {
+        "n_games": 500,
+        "mode": "stochastic",
+        "n_learned_seats": 1,
+        "lineup_mean_survivors": 3.032,
+        "lineup_reach_time_limit_frac": 1.0,
+        "lineup_mean_trades": 125.84,
+        "learned_seat_survival_rate": 0.176,
+        "learned_seat_mean_death_tick": 158.68,
+        "learned_seat_mean_final_cash": 34.24,
+        "learned_seat_completed_trades_as_buyer_mean": 42.064,
+        "learned_seat_completed_trades_as_seller_mean": 39.668,
+        "learned_seat_posted_bids_mean": 21.57,
+        "learned_seat_posted_asks_mean": 26.246,
+        "learned_seat_takes_mean": 49.922,
+        "action_type_freq": {
+          "wait": 0.30402222222222225,
+          "cancel": 0.1529888888888889,
+          "take": 0.27734444444444445,
+          "post": 0.26564444444444446
+        },
+        "learned_seat_type_freq_mean": {
+          "wait": 0.30402222222222225,
+          "cancel": 0.15298888888888887,
+          "take": 0.27734444444444445,
+          "post": 0.26564444444444446
+        },
+        "head_diagnostics": {
+          "n_obs_sampled": 512,
+          "type/mean_prob_wait": 0.3341844379901886,
+          "type/mean_prob_cancel": 0.1791638880968094,
+          "type/mean_prob_take": 0.16425639390945435,
+          "type/mean_prob_post": 0.32239529490470886,
+          "type/entropy_mean": 1.0313388109207153,
+          "type/argmax_freq_wait": 0.3125,
+          "type/argmax_freq_cancel": 0.1875,
+          "type/argmax_freq_take": 0.0546875,
+          "type/argmax_freq_post": 0.4453125,
+          "food_given_post/entropy_mean": 1.3425389528274536,
+          "side_given_post/entropy_mean": 0.6469465494155884,
+          "price_given_post/entropy_mean": 3.319413185119629,
+          "qty_given_post/entropy_mean": 1.2288273572921753,
+          "price_given_post/argmax_median": 23.0,
+          "qty_given_post/argmax_median": 1.0
+        }
+      }
+    },
+    "4scripted_baseline": {
+      "deterministic": {
+        "n_games": 500,
+        "mode": "deterministic",
+        "n_learned_seats": 0,
+        "lineup_mean_survivors": 3.99,
+        "lineup_reach_time_limit_frac": 1.0,
+        "lineup_mean_trades": 105.396,
+        "learned_seat_survival_rate": NaN,
+        "learned_seat_mean_death_tick": NaN,
+        "learned_seat_mean_final_cash": NaN,
+        "learned_seat_completed_trades_as_buyer_mean": 0.0,
+        "learned_seat_completed_trades_as_seller_mean": 0.0,
+        "learned_seat_posted_bids_mean": 0.0,
+        "learned_seat_posted_asks_mean": 0.0,
+        "learned_seat_takes_mean": 0.0,
+        "action_type_freq": {
+          "wait": 0.0,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.0
+        },
+        "learned_seat_type_freq_mean": {
+          "wait": 0.0,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.0
+        }
+      }
+    }
+  }
+}

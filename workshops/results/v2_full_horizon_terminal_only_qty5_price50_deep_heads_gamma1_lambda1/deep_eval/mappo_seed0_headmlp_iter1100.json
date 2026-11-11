@@ -1,0 +1,1314 @@
+{
+  "checkpoint": "eval/results/v2_full_horizon_terminal_only_qty5_price50_deep_heads_gamma1_lambda1/long_baseline/mappo_seed0_headmlp/checkpoints/iter_1100",
+  "algo_label": "mappo_v2c_seed0_headmlp_iter1100",
+  "lineups": {
+    "learned_selfplay": {
+      "deterministic": {
+        "n_games": 500,
+        "mode": "deterministic",
+        "terminal_metrics": {
+          "terminal_cash_by_outcome": {
+            "all": {
+              "n": 2000,
+              "mean": 100.0,
+              "median": 87.0,
+              "std": 77.84108169854784
+            },
+            "dead": {
+              "n": 1639,
+              "mean": 102.89383770591824,
+              "median": 91.0,
+              "std": 78.27161890278299
+            },
+            "alive_nonwinner": {
+              "n": 185,
+              "mean": 52.13513513513514,
+              "median": 42.0,
+              "std": 44.63604298198763
+            },
+            "winner": {
+              "n": 176,
+              "mean": 123.36363636363636,
+              "median": 117.0,
+              "std": 81.70737446107489
+            }
+          },
+          "required_food_by_outcome": {
+            "all": {
+              "inv_required_mean": {
+                "n": 2000,
+                "mean": 4.896,
+                "median": 4.0,
+                "std": 3.5932483910801376
+              },
+              "inv_required_min": {
+                "n": 2000,
+                "mean": 2.024,
+                "median": 1.0,
+                "std": 2.64941955907327
+              },
+              "inv_required_total": {
+                "n": 2000,
+                "mean": 9.792,
+                "median": 8.0,
+                "std": 7.186496782160275
+              },
+              "inv_required_1": {
+                "n": 2000,
+                "mean": 5.498,
+                "median": 4.0,
+                "std": 5.565787994525124
+              },
+              "inv_required_2": {
+                "n": 2000,
+                "mean": 4.294,
+                "median": 3.0,
+                "std": 4.824786420143383
+              },
+              "inv_total": {
+                "n": 2000,
+                "mean": 103.7875,
+                "median": 105.0,
+                "std": 11.11626482906916
+              },
+              "inv_produced_total": {
+                "n": 2000,
+                "mean": 93.9955,
+                "median": 95.0,
+                "std": 11.734201283001752
+              }
+            },
+            "dead": {
+              "inv_required_mean": {
+                "n": 1639,
+                "mean": 4.334045149481391,
+                "median": 3.5,
+                "std": 2.9420226759257555
+              },
+              "inv_required_min": {
+                "n": 1639,
+                "mean": 1.4807809640024405,
+                "median": 1.0,
+                "std": 1.6954060960748414
+              },
+              "inv_required_total": {
+                "n": 1639,
+                "mean": 8.668090298962783,
+                "median": 7.0,
+                "std": 5.884045351851511
+              },
+              "inv_required_1": {
+                "n": 1639,
+                "mean": 4.9908480780964,
+                "median": 4.0,
+                "std": 5.1646982315094965
+              },
+              "inv_required_2": {
+                "n": 1639,
+                "mean": 3.6772422208663817,
+                "median": 3.0,
+                "std": 4.295112730867404
+              },
+              "inv_total": {
+                "n": 1639,
+                "mean": 103.50091519219036,
+                "median": 105.0,
+                "std": 9.984910782560837
+              },
+              "inv_produced_total": {
+                "n": 1639,
+                "mean": 94.83282489322758,
+                "median": 96.0,
+                "std": 10.780074325029917
+              }
+            },
+            "alive_nonwinner": {
+              "inv_required_mean": {
+                "n": 185,
+                "mean": 8.32972972972973,
+                "median": 7.5,
+                "std": 4.916814221537778
+              },
+              "inv_required_min": {
+                "n": 185,
+                "mean": 5.308108108108108,
+                "median": 4.0,
+                "std": 4.4072654007487415
+              },
+              "inv_required_total": {
+                "n": 185,
+                "mean": 16.65945945945946,
+                "median": 15.0,
+                "std": 9.833628443075556
+              },
+              "inv_required_1": {
+                "n": 185,
+                "mean": 8.502702702702702,
+                "median": 7.0,
+                "std": 6.750474917686682
+              },
+              "inv_required_2": {
+                "n": 185,
+                "mean": 8.156756756756756,
+                "median": 7.0,
+                "std": 5.891108303956127
+              },
+              "inv_total": {
+                "n": 185,
+                "mean": 102.78378378378379,
+                "median": 104.0,
+                "std": 15.102416372143063
+              },
+              "inv_produced_total": {
+                "n": 185,
+                "mean": 86.12432432432432,
+                "median": 88.0,
+                "std": 15.057751984068958
+              }
+            },
+            "winner": {
+              "inv_required_mean": {
+                "n": 176,
+                "mean": 6.519886363636363,
+                "median": 5.0,
+                "std": 4.768016310012092
+              },
+              "inv_required_min": {
+                "n": 176,
+                "mean": 3.6306818181818183,
+                "median": 2.0,
+                "std": 3.989328319932426
+              },
+              "inv_required_total": {
+                "n": 176,
+                "mean": 13.039772727272727,
+                "median": 10.0,
+                "std": 9.536032620024184
+              },
+              "inv_required_1": {
+                "n": 176,
+                "mean": 7.0625,
+                "median": 5.0,
+                "std": 6.433361423435299
+              },
+              "inv_required_2": {
+                "n": 176,
+                "mean": 5.9772727272727275,
+                "median": 4.0,
+                "std": 5.847449468721914
+              },
+              "inv_total": {
+                "n": 176,
+                "mean": 107.51136363636364,
+                "median": 108.0,
+                "std": 14.84388021908954
+              },
+              "inv_produced_total": {
+                "n": 176,
+                "mean": 94.4715909090909,
+                "median": 96.5,
+                "std": 13.124806915148023
+              }
+            }
+          },
+          "survivor_min_required_buckets": {
+            "n_survivors": 361,
+            "frac_0_to_1": 0.29362880886426596,
+            "frac_2_to_3": 0.2299168975069252,
+            "frac_4_to_5": 0.13850415512465375,
+            "frac_gt_5": 0.3379501385041551
+          },
+          "outcome_counts": {
+            "dead": 1639,
+            "alive_nonwinner": 185,
+            "winner": 176
+          }
+        },
+        "n_learned_seats": 4,
+        "lineup_mean_survivors": 0.722,
+        "lineup_reach_time_limit_frac": 0.444,
+        "lineup_mean_trades": 51.764,
+        "learned_seat_survival_rate": 0.1805,
+        "learned_seat_mean_death_tick": 150.825,
+        "learned_seat_mean_final_cash": 100.0,
+        "learned_seat_completed_trades_as_buyer_mean": 12.941,
+        "learned_seat_completed_trades_as_seller_mean": 12.941,
+        "learned_seat_posted_bids_mean": 34.285,
+        "learned_seat_posted_asks_mean": 73.92,
+        "learned_seat_takes_mean": 9.725,
+        "action_type_freq": {
+          "wait": 0.2307634460353748,
+          "cancel": 0.05975514378534472,
+          "take": 0.05850679821922753,
+          "post": 0.6509746119600529
+        },
+        "learned_seat_type_freq_mean": {
+          "wait": 0.23252627760719674,
+          "cancel": 0.05869439511060834,
+          "take": 0.05608153109961933,
+          "post": 0.6526977961825755
+        },
+        "head_diagnostics": {
+          "n_obs_sampled": 512,
+          "type/mean_prob_wait": 0.1295742690563202,
+          "type/mean_prob_cancel": 0.16220568120479584,
+          "type/mean_prob_take": 0.1137300431728363,
+          "type/mean_prob_post": 0.5944899916648865,
+          "type/entropy_mean": 0.7222718596458435,
+          "type/argmax_freq_wait": 0.1328125,
+          "type/argmax_freq_cancel": 0.07421875,
+          "type/argmax_freq_take": 0.0625,
+          "type/argmax_freq_post": 0.73046875,
+          "food_given_post/entropy_mean": 1.221619963645935,
+          "side_given_post/entropy_mean": 0.31252482533454895,
+          "price_given_post/entropy_mean": 2.891484498977661,
+          "qty_given_post/entropy_mean": 1.182019591331482,
+          "price_given_post/argmax_median": 28.0,
+          "qty_given_post/argmax_median": 3.0
+        }
+      },
+      "stochastic": {
+        "n_games": 500,
+        "mode": "stochastic",
+        "terminal_metrics": {
+          "terminal_cash_by_outcome": {
+            "all": {
+              "n": 2000,
+              "mean": 100.0,
+              "median": 73.0,
+              "std": 86.79762093513854
+            },
+            "dead": {
+              "n": 297,
+              "mean": 96.74410774410775,
+              "median": 60.0,
+              "std": 93.7735389472716
+            },
+            "alive_nonwinner": {
+              "n": 1204,
+              "mean": 57.92192691029901,
+              "median": 46.0,
+              "std": 44.04770010635186
+            },
+            "winner": {
+              "n": 499,
+              "mean": 203.46492985971943,
+              "median": 200.0,
+              "std": 72.78171906326958
+            }
+          },
+          "required_food_by_outcome": {
+            "all": {
+              "inv_required_mean": {
+                "n": 2000,
+                "mean": 9.889,
+                "median": 9.5,
+                "std": 4.626978387673753
+              },
+              "inv_required_min": {
+                "n": 2000,
+                "mean": 6.2445,
+                "median": 5.0,
+                "std": 4.763477694919962
+              },
+              "inv_required_total": {
+                "n": 2000,
+                "mean": 19.778,
+                "median": 19.0,
+                "std": 9.253956775347506
+              },
+              "inv_required_1": {
+                "n": 2000,
+                "mean": 10.227,
+                "median": 10.0,
+                "std": 6.652328239045334
+              },
+              "inv_required_2": {
+                "n": 2000,
+                "mean": 9.551,
+                "median": 9.0,
+                "std": 6.304395212865387
+              },
+              "inv_total": {
+                "n": 2000,
+                "mean": 100.787,
+                "median": 100.0,
+                "std": 15.688295987773815
+              },
+              "inv_produced_total": {
+                "n": 2000,
+                "mean": 81.009,
+                "median": 81.0,
+                "std": 13.017869218885247
+              }
+            },
+            "dead": {
+              "inv_required_mean": {
+                "n": 297,
+                "mean": 7.006734006734007,
+                "median": 7.0,
+                "std": 3.4252412886505583
+              },
+              "inv_required_min": {
+                "n": 297,
+                "mean": 1.6161616161616161,
+                "median": 1.0,
+                "std": 1.760244114003391
+              },
+              "inv_required_total": {
+                "n": 297,
+                "mean": 14.013468013468014,
+                "median": 14.0,
+                "std": 6.850482577301117
+              },
+              "inv_required_1": {
+                "n": 297,
+                "mean": 7.8686868686868685,
+                "median": 5.0,
+                "std": 7.577629398384113
+              },
+              "inv_required_2": {
+                "n": 297,
+                "mean": 6.1447811447811445,
+                "median": 4.0,
+                "std": 6.57686343907262
+              },
+              "inv_total": {
+                "n": 297,
+                "mean": 95.51515151515152,
+                "median": 95.0,
+                "std": 13.497996087483378
+              },
+              "inv_produced_total": {
+                "n": 297,
+                "mean": 81.5016835016835,
+                "median": 81.0,
+                "std": 12.796286440243966
+              }
+            },
+            "alive_nonwinner": {
+              "inv_required_mean": {
+                "n": 1204,
+                "mean": 10.537790697674419,
+                "median": 10.0,
+                "std": 4.704298462325464
+              },
+              "inv_required_min": {
+                "n": 1204,
+                "mean": 7.117109634551495,
+                "median": 7.0,
+                "std": 4.760413270182583
+              },
+              "inv_required_total": {
+                "n": 1204,
+                "mean": 21.075581395348838,
+                "median": 20.0,
+                "std": 9.408596924650928
+              },
+              "inv_required_1": {
+                "n": 1204,
+                "mean": 10.763289036544851,
+                "median": 10.0,
+                "std": 6.528593979437806
+              },
+              "inv_required_2": {
+                "n": 1204,
+                "mean": 10.312292358803987,
+                "median": 10.0,
+                "std": 6.170513022246667
+              },
+              "inv_total": {
+                "n": 1204,
+                "mean": 101.2765780730897,
+                "median": 100.0,
+                "std": 15.83487518142617
+              },
+              "inv_produced_total": {
+                "n": 1204,
+                "mean": 80.20099667774086,
+                "median": 80.0,
+                "std": 12.76647391214546
+              }
+            },
+            "winner": {
+              "inv_required_mean": {
+                "n": 499,
+                "mean": 10.039078156312625,
+                "median": 9.5,
+                "std": 4.4096332821755535
+              },
+              "inv_required_min": {
+                "n": 499,
+                "mean": 6.8937875751503,
+                "median": 6.0,
+                "std": 4.406083138140535
+              },
+              "inv_required_total": {
+                "n": 499,
+                "mean": 20.07815631262525,
+                "median": 19.0,
+                "std": 8.819266564351107
+              },
+              "inv_required_1": {
+                "n": 499,
+                "mean": 10.336673346693386,
+                "median": 10.0,
+                "std": 6.027897548334531
+              },
+              "inv_required_2": {
+                "n": 499,
+                "mean": 9.741482965931864,
+                "median": 9.0,
+                "std": 5.774599085165932
+              },
+              "inv_total": {
+                "n": 499,
+                "mean": 102.7434869739479,
+                "median": 104.0,
+                "std": 15.876853643861173
+              },
+              "inv_produced_total": {
+                "n": 499,
+                "mean": 82.66533066132264,
+                "median": 83.0,
+                "std": 13.56636698114185
+              }
+            }
+          },
+          "survivor_min_required_buckets": {
+            "n_survivors": 1703,
+            "frac_0_to_1": 0.11274221961244862,
+            "frac_2_to_3": 0.13681738109219024,
+            "frac_4_to_5": 0.1655901350557839,
+            "frac_gt_5": 0.5848502642395772
+          },
+          "outcome_counts": {
+            "dead": 297,
+            "alive_nonwinner": 1204,
+            "winner": 499
+          }
+        },
+        "n_learned_seats": 4,
+        "lineup_mean_survivors": 3.406,
+        "lineup_reach_time_limit_frac": 1.0,
+        "lineup_mean_trades": 178.912,
+        "learned_seat_survival_rate": 0.8515,
+        "learned_seat_mean_death_tick": 176.735,
+        "learned_seat_mean_final_cash": 100.0,
+        "learned_seat_completed_trades_as_buyer_mean": 44.728,
+        "learned_seat_completed_trades_as_seller_mean": 44.728,
+        "learned_seat_posted_bids_mean": 41.2055,
+        "learned_seat_posted_asks_mean": 54.2245,
+        "learned_seat_takes_mean": 33.3135,
+        "action_type_freq": {
+          "wait": 0.1501472222222222,
+          "cancel": 0.1346111111111111,
+          "take": 0.185075,
+          "post": 0.5301666666666667
+        },
+        "learned_seat_type_freq_mean": {
+          "wait": 0.1501472222222222,
+          "cancel": 0.13461111111111113,
+          "take": 0.185075,
+          "post": 0.5301666666666668
+        },
+        "head_diagnostics": {
+          "n_obs_sampled": 512,
+          "type/mean_prob_wait": 0.10536018013954163,
+          "type/mean_prob_cancel": 0.1348206251859665,
+          "type/mean_prob_take": 0.2255510687828064,
+          "type/mean_prob_post": 0.5342681407928467,
+          "type/entropy_mean": 0.8769914507865906,
+          "type/argmax_freq_wait": 0.048828125,
+          "type/argmax_freq_cancel": 0.080078125,
+          "type/argmax_freq_take": 0.185546875,
+          "type/argmax_freq_post": 0.685546875,
+          "food_given_post/entropy_mean": 1.1632639169692993,
+          "side_given_post/entropy_mean": 0.39185550808906555,
+          "price_given_post/entropy_mean": 2.6858959197998047,
+          "qty_given_post/entropy_mean": 1.2563451528549194,
+          "price_given_post/argmax_median": 13.0,
+          "qty_given_post/argmax_median": 3.0
+        }
+      }
+    },
+    "1learned_3scripted": {
+      "deterministic": {
+        "n_games": 500,
+        "mode": "deterministic",
+        "terminal_metrics": {
+          "terminal_cash_by_outcome": {
+            "all": {
+              "n": 500,
+              "mean": 177.812,
+              "median": 176.0,
+              "std": 56.34625680557671
+            },
+            "dead": {
+              "n": 497,
+              "mean": 177.72837022132796,
+              "median": 176.0,
+              "std": 56.38789076842322
+            },
+            "alive_nonwinner": {
+              "n": 1,
+              "mean": 126.0,
+              "median": 126.0,
+              "std": 0.0
+            },
+            "winner": {
+              "n": 2,
+              "mean": 224.5,
+              "median": 224.5,
+              "std": 8.5
+            }
+          },
+          "required_food_by_outcome": {
+            "all": {
+              "inv_required_mean": {
+                "n": 500,
+                "mean": 2.742,
+                "median": 2.5,
+                "std": 1.9918423632406255
+              },
+              "inv_required_min": {
+                "n": 500,
+                "mean": 1.054,
+                "median": 0.0,
+                "std": 1.3693370658826116
+              },
+              "inv_required_total": {
+                "n": 500,
+                "mean": 5.484,
+                "median": 5.0,
+                "std": 3.983684726481251
+              },
+              "inv_required_1": {
+                "n": 500,
+                "mean": 2.792,
+                "median": 2.0,
+                "std": 3.049710805961772
+              },
+              "inv_required_2": {
+                "n": 500,
+                "mean": 2.692,
+                "median": 2.0,
+                "std": 3.0260760069766914
+              },
+              "inv_total": {
+                "n": 500,
+                "mean": 96.284,
+                "median": 97.0,
+                "std": 7.707875453067467
+              },
+              "inv_produced_total": {
+                "n": 500,
+                "mean": 90.8,
+                "median": 92.0,
+                "std": 7.968939703624316
+              }
+            },
+            "dead": {
+              "inv_required_mean": {
+                "n": 497,
+                "mean": 2.7525150905432594,
+                "median": 2.5,
+                "std": 1.9924704119076921
+              },
+              "inv_required_min": {
+                "n": 497,
+                "mean": 1.0583501006036218,
+                "median": 0.0,
+                "std": 1.3718262050955696
+              },
+              "inv_required_total": {
+                "n": 497,
+                "mean": 5.505030181086519,
+                "median": 5.0,
+                "std": 3.9849408238153843
+              },
+              "inv_required_1": {
+                "n": 497,
+                "mean": 2.800804828973843,
+                "median": 2.0,
+                "std": 3.0552523229148987
+              },
+              "inv_required_2": {
+                "n": 497,
+                "mean": 2.704225352112676,
+                "median": 2.0,
+                "std": 3.030867731982669
+              },
+              "inv_total": {
+                "n": 497,
+                "mean": 96.28772635814889,
+                "median": 97.0,
+                "std": 7.650811707279884
+              },
+              "inv_produced_total": {
+                "n": 497,
+                "mean": 90.78269617706238,
+                "median": 92.0,
+                "std": 7.924763316083397
+              }
+            },
+            "alive_nonwinner": {
+              "inv_required_mean": {
+                "n": 1,
+                "mean": 2.0,
+                "median": 2.0,
+                "std": 0.0
+              },
+              "inv_required_min": {
+                "n": 1,
+                "mean": 1.0,
+                "median": 1.0,
+                "std": 0.0
+              },
+              "inv_required_total": {
+                "n": 1,
+                "mean": 4.0,
+                "median": 4.0,
+                "std": 0.0
+              },
+              "inv_required_1": {
+                "n": 1,
+                "mean": 3.0,
+                "median": 3.0,
+                "std": 0.0
+              },
+              "inv_required_2": {
+                "n": 1,
+                "mean": 1.0,
+                "median": 1.0,
+                "std": 0.0
+              },
+              "inv_total": {
+                "n": 1,
+                "mean": 113.0,
+                "median": 113.0,
+                "std": 0.0
+              },
+              "inv_produced_total": {
+                "n": 1,
+                "mean": 109.0,
+                "median": 109.0,
+                "std": 0.0
+              }
+            },
+            "winner": {
+              "inv_required_mean": {
+                "n": 2,
+                "mean": 0.5,
+                "median": 0.5,
+                "std": 0.0
+              },
+              "inv_required_min": {
+                "n": 2,
+                "mean": 0.0,
+                "median": 0.0,
+                "std": 0.0
+              },
+              "inv_required_total": {
+                "n": 2,
+                "mean": 1.0,
+                "median": 1.0,
+                "std": 0.0
+              },
+              "inv_required_1": {
+                "n": 2,
+                "mean": 0.5,
+                "median": 0.5,
+                "std": 0.5
+              },
+              "inv_required_2": {
+                "n": 2,
+                "mean": 0.5,
+                "median": 0.5,
+                "std": 0.5
+              },
+              "inv_total": {
+                "n": 2,
+                "mean": 87.0,
+                "median": 87.0,
+                "std": 9.0
+              },
+              "inv_produced_total": {
+                "n": 2,
+                "mean": 86.0,
+                "median": 86.0,
+                "std": 9.0
+              }
+            }
+          },
+          "survivor_min_required_buckets": {
+            "n_survivors": 3,
+            "frac_0_to_1": 1.0,
+            "frac_2_to_3": 0.0,
+            "frac_4_to_5": 0.0,
+            "frac_gt_5": 0.0
+          },
+          "outcome_counts": {
+            "dead": 497,
+            "alive_nonwinner": 1,
+            "winner": 2
+          }
+        },
+        "n_learned_seats": 1,
+        "lineup_mean_survivors": 2.12,
+        "lineup_reach_time_limit_frac": 0.992,
+        "lineup_mean_trades": 80.962,
+        "learned_seat_survival_rate": 0.006,
+        "learned_seat_mean_death_tick": 134.32,
+        "learned_seat_mean_final_cash": 177.812,
+        "learned_seat_completed_trades_as_buyer_mean": 6.668,
+        "learned_seat_completed_trades_as_seller_mean": 14.994,
+        "learned_seat_posted_bids_mean": 26.526,
+        "learned_seat_posted_asks_mean": 72.99,
+        "learned_seat_takes_mean": 10.438,
+        "action_type_freq": {
+          "wait": 0.3182192085371276,
+          "cancel": 0.07065362383281458,
+          "take": 0.05801467318808359,
+          "post": 0.5531124944419742
+        },
+        "learned_seat_type_freq_mean": {
+          "wait": 0.31818888888888885,
+          "cancel": 0.07065294117647059,
+          "take": 0.058014379084967316,
+          "post": 0.5531437908496732
+        },
+        "head_diagnostics": {
+          "n_obs_sampled": 512,
+          "type/mean_prob_wait": 0.2552124261856079,
+          "type/mean_prob_cancel": 0.15621048212051392,
+          "type/mean_prob_take": 0.1375906765460968,
+          "type/mean_prob_post": 0.45098641514778137,
+          "type/entropy_mean": 0.7398132085800171,
+          "type/argmax_freq_wait": 0.22265625,
+          "type/argmax_freq_cancel": 0.02734375,
+          "type/argmax_freq_take": 0.033203125,
+          "type/argmax_freq_post": 0.716796875,
+          "food_given_post/entropy_mean": 1.1486434936523438,
+          "side_given_post/entropy_mean": 0.21918772161006927,
+          "price_given_post/entropy_mean": 3.1744115352630615,
+          "qty_given_post/entropy_mean": 1.4082181453704834,
+          "price_given_post/argmax_median": 29.0,
+          "qty_given_post/argmax_median": 3.0
+        }
+      },
+      "stochastic": {
+        "n_games": 500,
+        "mode": "stochastic",
+        "terminal_metrics": {
+          "terminal_cash_by_outcome": {
+            "all": {
+              "n": 500,
+              "mean": 200.54,
+              "median": 204.5,
+              "std": 59.955586895634674
+            },
+            "dead": {
+              "n": 459,
+              "mean": 199.78867102396515,
+              "median": 206.0,
+              "std": 59.51928892390469
+            },
+            "alive_nonwinner": {
+              "n": 5,
+              "mean": 115.6,
+              "median": 112.0,
+              "std": 32.178253526255894
+            },
+            "winner": {
+              "n": 36,
+              "mean": 221.91666666666666,
+              "median": 205.0,
+              "std": 56.11168179027727
+            }
+          },
+          "required_food_by_outcome": {
+            "all": {
+              "inv_required_mean": {
+                "n": 500,
+                "mean": 3.842,
+                "median": 3.5,
+                "std": 2.292168405680525
+              },
+              "inv_required_min": {
+                "n": 500,
+                "mean": 1.446,
+                "median": 1.0,
+                "std": 1.4639275938378922
+              },
+              "inv_required_total": {
+                "n": 500,
+                "mean": 7.684,
+                "median": 7.0,
+                "std": 4.58433681136105
+              },
+              "inv_required_1": {
+                "n": 500,
+                "mean": 4.476,
+                "median": 3.0,
+                "std": 4.14360036683076
+              },
+              "inv_required_2": {
+                "n": 500,
+                "mean": 3.208,
+                "median": 2.0,
+                "std": 3.3658187711164724
+              },
+              "inv_total": {
+                "n": 500,
+                "mean": 88.706,
+                "median": 87.5,
+                "std": 9.008638298877361
+              },
+              "inv_produced_total": {
+                "n": 500,
+                "mean": 81.022,
+                "median": 80.0,
+                "std": 8.73118067617433
+              }
+            },
+            "dead": {
+              "inv_required_mean": {
+                "n": 459,
+                "mean": 3.979302832244009,
+                "median": 3.5,
+                "std": 2.2966554146144382
+              },
+              "inv_required_min": {
+                "n": 459,
+                "mean": 1.5206971677559913,
+                "median": 1.0,
+                "std": 1.4808533847321241
+              },
+              "inv_required_total": {
+                "n": 459,
+                "mean": 7.958605664488018,
+                "median": 7.0,
+                "std": 4.5933108292288765
+              },
+              "inv_required_1": {
+                "n": 459,
+                "mean": 4.640522875816994,
+                "median": 4.0,
+                "std": 4.198683857094939
+              },
+              "inv_required_2": {
+                "n": 459,
+                "mean": 3.318082788671024,
+                "median": 3.0,
+                "std": 3.401127556481145
+              },
+              "inv_total": {
+                "n": 459,
+                "mean": 89.09803921568627,
+                "median": 88.0,
+                "std": 8.757765086731105
+              },
+              "inv_produced_total": {
+                "n": 459,
+                "mean": 81.13943355119825,
+                "median": 80.0,
+                "std": 8.577352285417415
+              }
+            },
+            "alive_nonwinner": {
+              "inv_required_mean": {
+                "n": 5,
+                "mean": 3.6,
+                "median": 4.0,
+                "std": 0.9695359714832659
+              },
+              "inv_required_min": {
+                "n": 5,
+                "mean": 0.4,
+                "median": 0.0,
+                "std": 0.48989794855663565
+              },
+              "inv_required_total": {
+                "n": 5,
+                "mean": 7.2,
+                "median": 8.0,
+                "std": 1.9390719429665317
+              },
+              "inv_required_1": {
+                "n": 5,
+                "mean": 3.4,
+                "median": 1.0,
+                "std": 3.49857113690718
+              },
+              "inv_required_2": {
+                "n": 5,
+                "mean": 3.8,
+                "median": 3.0,
+                "std": 3.6
+              },
+              "inv_total": {
+                "n": 5,
+                "mean": 94.4,
+                "median": 93.0,
+                "std": 14.732277488562318
+              },
+              "inv_produced_total": {
+                "n": 5,
+                "mean": 87.2,
+                "median": 84.0,
+                "std": 15.091719583930786
+              }
+            },
+            "winner": {
+              "inv_required_mean": {
+                "n": 36,
+                "mean": 2.125,
+                "median": 1.75,
+                "std": 1.547287052302262
+              },
+              "inv_required_min": {
+                "n": 36,
+                "mean": 0.6388888888888888,
+                "median": 0.0,
+                "std": 0.9472996058322185
+              },
+              "inv_required_total": {
+                "n": 36,
+                "mean": 4.25,
+                "median": 3.5,
+                "std": 3.094574104604524
+              },
+              "inv_required_1": {
+                "n": 36,
+                "mean": 2.5277777777777777,
+                "median": 1.5,
+                "std": 2.7737470756192195
+              },
+              "inv_required_2": {
+                "n": 36,
+                "mean": 1.7222222222222223,
+                "median": 1.0,
+                "std": 2.3759338644825663
+              },
+              "inv_total": {
+                "n": 36,
+                "mean": 82.91666666666667,
+                "median": 84.0,
+                "std": 8.895613775588757
+              },
+              "inv_produced_total": {
+                "n": 36,
+                "mean": 78.66666666666667,
+                "median": 78.5,
+                "std": 8.838049055708568
+              }
+            }
+          },
+          "survivor_min_required_buckets": {
+            "n_survivors": 41,
+            "frac_0_to_1": 0.8536585365853658,
+            "frac_2_to_3": 0.14634146341463414,
+            "frac_4_to_5": 0.0,
+            "frac_gt_5": 0.0
+          },
+          "outcome_counts": {
+            "dead": 459,
+            "alive_nonwinner": 5,
+            "winner": 36
+          }
+        },
+        "n_learned_seats": 1,
+        "lineup_mean_survivors": 2.88,
+        "lineup_reach_time_limit_frac": 1.0,
+        "lineup_mean_trades": 108.926,
+        "learned_seat_survival_rate": 0.082,
+        "learned_seat_mean_death_tick": 149.86,
+        "learned_seat_mean_final_cash": 200.54,
+        "learned_seat_completed_trades_as_buyer_mean": 22.026,
+        "learned_seat_completed_trades_as_seller_mean": 37.718,
+        "learned_seat_posted_bids_mean": 30.784,
+        "learned_seat_posted_asks_mean": 47.032,
+        "learned_seat_takes_mean": 26.232,
+        "action_type_freq": {
+          "wait": 0.2748777777777778,
+          "cancel": 0.14707777777777778,
+          "take": 0.14573333333333333,
+          "post": 0.4323111111111111
+        },
+        "learned_seat_type_freq_mean": {
+          "wait": 0.2748777777777777,
+          "cancel": 0.14707777777777778,
+          "take": 0.14573333333333333,
+          "post": 0.43231111111111115
+        },
+        "head_diagnostics": {
+          "n_obs_sampled": 512,
+          "type/mean_prob_wait": 0.22069737315177917,
+          "type/mean_prob_cancel": 0.1367078423500061,
+          "type/mean_prob_take": 0.18215635418891907,
+          "type/mean_prob_post": 0.46043840050697327,
+          "type/entropy_mean": 0.6939982175827026,
+          "type/argmax_freq_wait": 0.197265625,
+          "type/argmax_freq_cancel": 0.044921875,
+          "type/argmax_freq_take": 0.15234375,
+          "type/argmax_freq_post": 0.60546875,
+          "food_given_post/entropy_mean": 1.1964366436004639,
+          "side_given_post/entropy_mean": 0.4695027768611908,
+          "price_given_post/entropy_mean": 3.1330361366271973,
+          "qty_given_post/entropy_mean": 1.3602042198181152,
+          "price_given_post/argmax_median": 17.0,
+          "qty_given_post/argmax_median": 2.0
+        }
+      }
+    },
+    "4scripted_baseline": {
+      "deterministic": {
+        "n_games": 500,
+        "mode": "deterministic",
+        "terminal_metrics": {
+          "terminal_cash_by_outcome": {
+            "all": {
+              "n": 0,
+              "mean": NaN,
+              "median": NaN,
+              "std": NaN
+            },
+            "dead": {
+              "n": 0,
+              "mean": NaN,
+              "median": NaN,
+              "std": NaN
+            },
+            "alive_nonwinner": {
+              "n": 0,
+              "mean": NaN,
+              "median": NaN,
+              "std": NaN
+            },
+            "winner": {
+              "n": 0,
+              "mean": NaN,
+              "median": NaN,
+              "std": NaN
+            }
+          },
+          "required_food_by_outcome": {
+            "all": {
+              "inv_required_mean": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_required_min": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_required_total": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_required_1": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_required_2": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_total": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_produced_total": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              }
+            },
+            "dead": {
+              "inv_required_mean": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_required_min": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_required_total": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_required_1": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_required_2": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_total": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_produced_total": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              }
+            },
+            "alive_nonwinner": {
+              "inv_required_mean": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_required_min": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_required_total": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_required_1": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_required_2": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_total": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_produced_total": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              }
+            },
+            "winner": {
+              "inv_required_mean": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_required_min": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_required_total": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_required_1": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_required_2": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_total": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              },
+              "inv_produced_total": {
+                "n": 0,
+                "mean": NaN,
+                "median": NaN,
+                "std": NaN
+              }
+            }
+          },
+          "survivor_min_required_buckets": {
+            "n_survivors": 0,
+            "frac_0_to_1": NaN,
+            "frac_2_to_3": NaN,
+            "frac_4_to_5": NaN,
+            "frac_gt_5": NaN
+          },
+          "outcome_counts": {
+            "dead": 0,
+            "alive_nonwinner": 0,
+            "winner": 0
+          }
+        },
+        "n_learned_seats": 0,
+        "lineup_mean_survivors": 3.99,
+        "lineup_reach_time_limit_frac": 1.0,
+        "lineup_mean_trades": 105.396,
+        "learned_seat_survival_rate": NaN,
+        "learned_seat_mean_death_tick": NaN,
+        "learned_seat_mean_final_cash": NaN,
+        "learned_seat_completed_trades_as_buyer_mean": 0.0,
+        "learned_seat_completed_trades_as_seller_mean": 0.0,
+        "learned_seat_posted_bids_mean": 0.0,
+        "learned_seat_posted_asks_mean": 0.0,
+        "learned_seat_takes_mean": 0.0,
+        "action_type_freq": {
+          "wait": 0.0,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.0
+        },
+        "learned_seat_type_freq_mean": {
+          "wait": 0.0,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.0
+        }
+      }
+    }
+  }
+}

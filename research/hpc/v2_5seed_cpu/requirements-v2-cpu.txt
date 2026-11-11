@@ -1,0 +1,16 @@
+# Critical package lock for the v2 baseline campaign.
+#
+# These versions match the environment that produced the existing v2
+# checkpoints. The Linux selector intentionally uses PyTorch's CPU wheel so
+# the environment does not download or depend on CUDA libraries.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+numpy==2.4.6
+torch==2.12.0+cpu; platform_system == "Linux"
+torch==2.12.0; platform_system == "Darwin"
+ray[rllib]==2.53.0
+gymnasium==1.1.1
+pyarrow==25.0.0
+scipy==1.17.1
+lz4==4.4.5
+dm-tree==0.1.10

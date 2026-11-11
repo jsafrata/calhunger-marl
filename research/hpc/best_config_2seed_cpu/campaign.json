@@ -1,0 +1,100 @@
+{
+  "campaign_name": "best_config_2seed_ippo_mappo_1200",
+  "arms": [
+    {
+      "name": "small_90_mlp",
+      "env_variant": "small_90",
+      "torso": "mlp",
+      "duration_seconds": 90,
+      "train_batch_size": 4050,
+      "minibatch_size": 1012,
+      "walltime": "14:00:00"
+    },
+    {
+      "name": "small_90_lstm",
+      "env_variant": "small_90",
+      "torso": "lstm",
+      "duration_seconds": 90,
+      "train_batch_size": 4050,
+      "minibatch_size": 1012,
+      "walltime": "28:00:00"
+    },
+    {
+      "name": "default_180_mlp",
+      "env_variant": "default",
+      "torso": "mlp",
+      "duration_seconds": 180,
+      "train_batch_size": 8100,
+      "minibatch_size": 2025,
+      "walltime": "30:00:00"
+    },
+    {
+      "name": "default_180_lstm",
+      "env_variant": "default",
+      "torso": "lstm",
+      "duration_seconds": 180,
+      "train_batch_size": 8100,
+      "minibatch_size": 2025,
+      "walltime": "56:00:00"
+    }
+  ],
+  "algorithms": [
+    "ippo",
+    "mappo"
+  ],
+  "seeds": [
+    0,
+    1
+  ],
+  "iterations": 1200,
+  "checkpoint_every": 100,
+  "checkpoint_start": 100,
+  "checkpoint_iterations": [
+    100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000,
+    1100,
+    1200
+  ],
+  "training": {
+    "games_per_update": 45,
+    "num_minibatches": 4,
+    "num_epochs": 4,
+    "num_env_runners": 2,
+    "head_kind": "mlp",
+    "gamma": 1.0,
+    "lambda": 1.0,
+    "entropy_coeff": 0.01,
+    "entropy_anneal_to": 0.001,
+    "lr_anneal_to": 0.0001,
+    "include_survival_features": true,
+    "include_trade_history": true,
+    "reward_kind": "terminal_only",
+    "reward_variant": "baseline",
+    "max_qty": 5,
+    "max_price": 50
+  },
+  "resources": {
+    "partition": "expansion",
+    "cpus_per_task": 6,
+    "memory_gb": 16,
+    "gpus": 0,
+    "array": "0-3%4"
+  },
+  "locked_versions": {
+    "python_major_minor": "3.11",
+    "ray": "2.53.0",
+    "torch": "2.12.0",
+    "numpy": "2.4.6",
+    "gymnasium": "1.1.1",
+    "pyarrow": "25.0.0",
+    "scipy": "1.17.1"
+  }
+}

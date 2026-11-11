@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper(s) below."
+type: software
+title: "CalHunger: code, data, and analyses for auditing multi-agent evaluation in a forced-interdependence market game"
+authors:
+  - family-names: Safrata
+    given-names: Jan
+    affiliation: California Institute of Technology
+    email: jsafrata@caltech.edu
+repository-code: "https://github.com/jsafrata/calhunger"
+license: MIT
+version: 1.0.0
+date-released: "2026-11-11"
+preferred-citation:
+  type: conference-paper
+  title: "When the Metric Lies: A Full-Stack Audit of a Multi-Agent Evaluation Protocol"
+  authors:
+    - family-names: Safrata
+      given-names: Jan
+      affiliation: California Institute of Technology
+  collection-title: "NeurIPS 2026 Workshop on Trust-AI-Eval (TAE): Can We Trust AI Evaluation?"
+  year: 2026
+  notes: "Non-archival workshop paper (poster)."
+references:
+  - type: conference-paper
+    title: "Self-Play Is a Broken Verifier: Measuring, Auditing, and Red-Teaming Verification Signals in a Forced-Interdependence Market Game"
+    authors:
+      - family-names: Safrata
+        given-names: Jan
+        affiliation: California Institute of Technology
+    collection-title: "NeurIPS 2026 Workshop: Who Verifies the Agents?"
+    year: 2026
+    notes: "Non-archival workshop paper (poster)."

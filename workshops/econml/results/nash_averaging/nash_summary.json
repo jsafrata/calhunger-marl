@@ -1,0 +1,520 @@
+{
+ "config": {
+  "B": 2000,
+  "rng_seed": 20260831,
+  "n_games_per_cell": 1000,
+  "scheme": "paired",
+  "tie_tol": 1e-07,
+  "eq_tol": 1e-06,
+  "labels": [
+   "ippo_s0",
+   "ippo_s1",
+   "ippo_s2",
+   "ippo_s3",
+   "ippo_s4",
+   "mappo_s0",
+   "mappo_s1",
+   "mappo_s2",
+   "mappo_s3",
+   "mappo_s4"
+  ],
+  "healthy": [
+   "ippo_s0",
+   "ippo_s1",
+   "ippo_s2",
+   "ippo_s3",
+   "ippo_s4",
+   "mappo_s0",
+   "mappo_s2",
+   "mappo_s3"
+  ]
+ },
+ "sanity": {
+  "macro_mean_matches_reference": true,
+  "max_abs_diff": 1.1102230246251565e-16
+ },
+ "point": {
+  "survival/all10": {
+   "labels": [
+    "ippo_s0",
+    "ippo_s1",
+    "ippo_s2",
+    "ippo_s3",
+    "ippo_s4",
+    "mappo_s0",
+    "mappo_s1",
+    "mappo_s2",
+    "mappo_s3",
+    "mappo_s4"
+   ],
+   "nash_weights": [
+    3.6489908317171924e-15,
+    0.0,
+    1.7633464133304142e-15,
+    3.4807226545474433e-15,
+    0.0,
+    0.0,
+    0.9999999999999888,
+    0.0,
+    0.0,
+    2.1449855780453097e-15
+   ],
+   "ratings": [
+    -0.10549999999999896,
+    -0.08549999999999808,
+    -0.09649999999999834,
+    -0.07449999999999876,
+    -0.08099999999999882,
+    -0.04399999999999896,
+    1.017146436521615e-15,
+    -0.11749999999999887,
+    -0.06099999999999895,
+    -0.09449999999999988
+   ],
+   "support": [
+    "mappo_s1"
+   ],
+   "equilibrium_residual": 1.017146436521615e-15,
+   "game_value_pAp": 9.860761315262648e-32,
+   "entropy": 3.8075199973463054e-13,
+   "lp_fallback": false
+  },
+  "survival/healthy8": {
+   "labels": [
+    "ippo_s0",
+    "ippo_s1",
+    "ippo_s2",
+    "ippo_s3",
+    "ippo_s4",
+    "mappo_s0",
+    "mappo_s2",
+    "mappo_s3"
+   ],
+   "nash_weights": [
+    0.0,
+    0.10169491525423789,
+    0.0,
+    0.7754237288135519,
+    0.0,
+    0.1228813559322103,
+    0.0,
+    0.0
+   ],
+   "ratings": [
+    -0.06414618644067831,
+    7.758386682628374e-16,
+    -0.048970338983050254,
+    -7.993255892396658e-17,
+    -0.031745762711863953,
+    -1.3778526342477215e-16,
+    -0.07441313559322095,
+    -0.013771186440677789
+   ],
+   "support": [
+    "ippo_s1",
+    "ippo_s3",
+    "mappo_s0"
+   ],
+   "equilibrium_residual": 7.758386682628374e-16,
+   "game_value_pAp": 1.3995271593874447e-20,
+   "entropy": 0.6873028348224949,
+   "lp_fallback": false
+  },
+  "win/all10": {
+   "labels": [
+    "ippo_s0",
+    "ippo_s1",
+    "ippo_s2",
+    "ippo_s3",
+    "ippo_s4",
+    "mappo_s0",
+    "mappo_s1",
+    "mappo_s2",
+    "mappo_s3",
+    "mappo_s4"
+   ],
+   "nash_weights": [
+    8.933843201428286e-13,
+    1.4370622671597153e-13,
+    0.9999999999975665,
+    4.480738673127473e-13,
+    9.567568946959089e-21,
+    3.297240935114842e-13,
+    3.307232942283804e-13,
+    1.4387276194069419e-13,
+    1.4420582707441965e-13,
+    1.3148638397351056e-20
+   ],
+   "ratings": [
+    -0.13549999999961582,
+    -0.01599999999988535,
+    2.390910078039729e-13,
+    -0.10999999999978055,
+    -0.12699999999985345,
+    -0.14399999999981805,
+    -0.0005000000000461563,
+    -0.04349999999968599,
+    -0.0869999999997648,
+    -0.22549999999967404
+   ],
+   "support": [
+    "ippo_s2"
+   ],
+   "equilibrium_residual": 2.390910078039729e-13,
+   "game_value_pAp": -7.573064690121713e-29,
+   "entropy": 7.170803428631233e-11,
+   "lp_fallback": false
+  },
+  "win/healthy8": {
+   "labels": [
+    "ippo_s0",
+    "ippo_s1",
+    "ippo_s2",
+    "ippo_s3",
+    "ippo_s4",
+    "mappo_s0",
+    "mappo_s2",
+    "mappo_s3"
+   ],
+   "nash_weights": [
+    7.679620843901435e-15,
+    2.74086309128544e-15,
+    0.9999999999999845,
+    0.0,
+    1.2429293701936823e-15,
+    3.7947076124634605e-15,
+    0.0,
+    1.9366222457064116e-24
+   ],
+   "ratings": [
+    -0.13549999999999732,
+    -0.01599999999999915,
+    1.7887323601870335e-15,
+    -0.10999999999999854,
+    -0.12699999999999942,
+    -0.14399999999999885,
+    -0.043499999999997825,
+    -0.08699999999999843
+   ],
+   "support": [
+    "ippo_s2"
+   ],
+   "equilibrium_residual": 1.7887323601870335e-15,
+   "game_value_pAp": -1.9721522630525295e-31,
+   "entropy": 5.256977693187668e-13,
+   "lp_fallback": false
+  }
+ },
+ "stability": [
+  {
+   "metric": "survival",
+   "group": "all10",
+   "estimator": "nash",
+   "mean_spearman_vs_full": 0.961815466774674,
+   "p5_spearman_vs_full": 0.893621149209695,
+   "top1_stability": 1.0,
+   "n_tied_at_top_point": 1,
+   "mean_pair_flip_prob": 0.05306666666666666,
+   "max_pair_flip_prob": 0.4195,
+   "n_pairs": 45,
+   "n_pairs_flip_ge_5pct": 12,
+   "n_pairs_flip_ge_25pct": 3,
+   "mean_adjacent_flip_prob": 0.18383333333333335
+  },
+  {
+   "metric": "survival",
+   "group": "all10",
+   "estimator": "macro_mean",
+   "mean_spearman_vs_full": 0.9883116185577455,
+   "p5_spearman_vs_full": 0.9636363636363635,
+   "top1_stability": 0.892,
+   "n_tied_at_top_point": 1,
+   "mean_pair_flip_prob": 0.018355555555555556,
+   "max_pair_flip_prob": 0.249,
+   "n_pairs": 45,
+   "n_pairs_flip_ge_5pct": 5,
+   "n_pairs_flip_ge_25pct": 0,
+   "mean_adjacent_flip_prob": 0.07688888888888888
+  },
+  {
+   "metric": "survival",
+   "group": "healthy8",
+   "estimator": "nash",
+   "mean_spearman_vs_full": 0.9596420237314103,
+   "p5_spearman_vs_full": 0.8295150620062532,
+   "top1_stability": 0.9075,
+   "n_tied_at_top_point": 3,
+   "mean_pair_flip_prob": 0.05692857142857143,
+   "max_pair_flip_prob": 0.2145,
+   "n_pairs": 28,
+   "n_pairs_flip_ge_5pct": 11,
+   "n_pairs_flip_ge_25pct": 0,
+   "mean_adjacent_flip_prob": 0.14921428571428574
+  },
+  {
+   "metric": "survival",
+   "group": "healthy8",
+   "estimator": "macro_mean",
+   "mean_spearman_vs_full": 0.977039718967947,
+   "p5_spearman_vs_full": 0.9285714285714286,
+   "top1_stability": 0.892,
+   "n_tied_at_top_point": 1,
+   "mean_pair_flip_prob": 0.029500000000000002,
+   "max_pair_flip_prob": 0.249,
+   "n_pairs": 28,
+   "n_pairs_flip_ge_5pct": 5,
+   "n_pairs_flip_ge_25pct": 0,
+   "mean_adjacent_flip_prob": 0.09885714285714285
+  },
+  {
+   "metric": "win",
+   "group": "all10",
+   "estimator": "nash",
+   "mean_spearman_vs_full": 0.9666951898636691,
+   "p5_spearman_vs_full": 0.8773666603699839,
+   "top1_stability": 1.0,
+   "n_tied_at_top_point": 1,
+   "mean_pair_flip_prob": 0.06745555555555555,
+   "max_pair_flip_prob": 0.51,
+   "n_pairs": 45,
+   "n_pairs_flip_ge_5pct": 10,
+   "n_pairs_flip_ge_25pct": 4,
+   "mean_adjacent_flip_prob": 0.22955555555555554
+  },
+  {
+   "metric": "win",
+   "group": "all10",
+   "estimator": "macro_mean",
+   "mean_spearman_vs_full": 0.9897374891324275,
+   "p5_spearman_vs_full": 0.9636363636363636,
+   "top1_stability": 1.0,
+   "n_tied_at_top_point": 1,
+   "mean_pair_flip_prob": 0.017611111111111112,
+   "max_pair_flip_prob": 0.4535,
+   "n_pairs": 45,
+   "n_pairs_flip_ge_5pct": 4,
+   "n_pairs_flip_ge_25pct": 1,
+   "mean_adjacent_flip_prob": 0.08094444444444443
+  },
+  {
+   "metric": "win",
+   "group": "healthy8",
+   "estimator": "nash",
+   "mean_spearman_vs_full": 0.9853203396248871,
+   "p5_spearman_vs_full": 0.9285714285714287,
+   "top1_stability": 1.0,
+   "n_tied_at_top_point": 1,
+   "mean_pair_flip_prob": 0.02085714285714286,
+   "max_pair_flip_prob": 0.199,
+   "n_pairs": 28,
+   "n_pairs_flip_ge_5pct": 3,
+   "n_pairs_flip_ge_25pct": 0,
+   "mean_adjacent_flip_prob": 0.06878571428571428
+  },
+  {
+   "metric": "win",
+   "group": "healthy8",
+   "estimator": "macro_mean",
+   "mean_spearman_vs_full": 0.9798407521211582,
+   "p5_spearman_vs_full": 0.9285714285714287,
+   "top1_stability": 1.0,
+   "n_tied_at_top_point": 1,
+   "mean_pair_flip_prob": 0.028303571428571428,
+   "max_pair_flip_prob": 0.4535,
+   "n_pairs": 28,
+   "n_pairs_flip_ge_5pct": 4,
+   "n_pairs_flip_ge_25pct": 1,
+   "mean_adjacent_flip_prob": 0.10407142857142858
+  }
+ ],
+ "support_stability": {
+  "survival/all10": {
+   "point_support": [
+    "mappo_s1"
+   ],
+   "point_support_size": 1,
+   "mean_replicate_support_size": 1.0,
+   "support_exact_match_rate": 1.0,
+   "mean_jaccard_vs_point": 1.0,
+   "per_policy_support_freq": {
+    "ippo_s0": 0.0,
+    "ippo_s1": 0.0,
+    "ippo_s2": 0.0,
+    "ippo_s3": 0.0,
+    "ippo_s4": 0.0,
+    "mappo_s0": 0.0,
+    "mappo_s1": 1.0,
+    "mappo_s2": 0.0,
+    "mappo_s3": 0.0,
+    "mappo_s4": 0.0
+   },
+   "n_lp_fallbacks": 0
+  },
+  "survival/healthy8": {
+   "point_support": [
+    "ippo_s1",
+    "ippo_s3",
+    "mappo_s0"
+   ],
+   "point_support_size": 3,
+   "mean_replicate_support_size": 2.6475,
+   "support_exact_match_rate": 0.7775,
+   "mean_jaccard_vs_point": 0.8630416666666667,
+   "per_policy_support_freq": {
+    "ippo_s0": 0.0,
+    "ippo_s1": 0.901,
+    "ippo_s2": 0.0,
+    "ippo_s3": 0.918,
+    "ippo_s4": 0.0,
+    "mappo_s0": 0.7895,
+    "mappo_s2": 0.0,
+    "mappo_s3": 0.039
+   },
+   "n_lp_fallbacks": 0
+  },
+  "win/all10": {
+   "point_support": [
+    "ippo_s2"
+   ],
+   "point_support_size": 1,
+   "mean_replicate_support_size": 1.942,
+   "support_exact_match_rate": 0.4945,
+   "mean_jaccard_vs_point": 0.6745,
+   "per_policy_support_freq": {
+    "ippo_s0": 0.0,
+    "ippo_s1": 0.4405,
+    "ippo_s2": 1.0,
+    "ippo_s3": 0.0,
+    "ippo_s4": 0.0005,
+    "mappo_s0": 0.0,
+    "mappo_s1": 0.4885,
+    "mappo_s2": 0.0125,
+    "mappo_s3": 0.0,
+    "mappo_s4": 0.0
+   },
+   "n_lp_fallbacks": 0
+  },
+  "win/healthy8": {
+   "point_support": [
+    "ippo_s2"
+   ],
+   "point_support_size": 1,
+   "mean_replicate_support_size": 1.0295,
+   "support_exact_match_rate": 0.983,
+   "mean_jaccard_vs_point": 0.9894166666666666,
+   "per_policy_support_freq": {
+    "ippo_s0": 0.0,
+    "ippo_s1": 0.017,
+    "ippo_s2": 1.0,
+    "ippo_s3": 0.0,
+    "ippo_s4": 0.0,
+    "mappo_s0": 0.0,
+    "mappo_s2": 0.0125,
+    "mappo_s3": 0.0
+   },
+   "n_lp_fallbacks": 0
+  }
+ },
+ "reference_rows_E19_1000_paired": {
+  "survival/all10": {
+   "n_games_per_cell": 1000,
+   "scheme": "paired",
+   "metric": "survival",
+   "group": "all10",
+   "mean_spearman_vs_full": 0.9888862368494749,
+   "p5_spearman_vs_full": 0.9636363636363635,
+   "top1_stability": 0.906,
+   "mean_pair_flip_prob": 0.01758888888888889,
+   "max_pair_flip_prob": 0.2485,
+   "n_pairs": 45,
+   "n_pairs_flip_ge_5pct": 5,
+   "n_pairs_flip_ge_25pct": 0,
+   "mean_adjacent_flip_prob": 0.07433333333333333,
+   "adjacent_flip_probs": [
+    0.0785,
+    0.23,
+    0.2485,
+    0.112,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "survival/healthy8": {
+   "n_games_per_cell": 1000,
+   "scheme": "paired",
+   "metric": "survival",
+   "group": "healthy8",
+   "mean_spearman_vs_full": 0.978169151691124,
+   "p5_spearman_vs_full": 0.9285714285714286,
+   "top1_stability": 0.906,
+   "mean_pair_flip_prob": 0.028267857142857147,
+   "max_pair_flip_prob": 0.2485,
+   "n_pairs": 28,
+   "n_pairs_flip_ge_5pct": 5,
+   "n_pairs_flip_ge_25pct": 0,
+   "mean_adjacent_flip_prob": 0.09557142857142856,
+   "adjacent_flip_probs": [
+    0.0785,
+    0.23,
+    0.2485,
+    0.112,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "win/all10": {
+   "n_games_per_cell": 1000,
+   "scheme": "paired",
+   "metric": "win",
+   "group": "all10",
+   "mean_spearman_vs_full": 0.9896163185293214,
+   "p5_spearman_vs_full": 0.9636363636363636,
+   "top1_stability": 1.0,
+   "mean_pair_flip_prob": 0.017777777777777778,
+   "max_pair_flip_prob": 0.4425,
+   "n_pairs": 45,
+   "n_pairs_flip_ge_5pct": 5,
+   "n_pairs_flip_ge_25pct": 1,
+   "mean_adjacent_flip_prob": 0.0813888888888889,
+   "adjacent_flip_probs": [
+    0.0,
+    0.0,
+    0.0505,
+    0.1725,
+    0.0,
+    0.067,
+    0.4425,
+    0.0,
+    0.0
+   ]
+  },
+  "win/healthy8": {
+   "n_games_per_cell": 1000,
+   "scheme": "paired",
+   "metric": "win",
+   "group": "healthy8",
+   "mean_spearman_vs_full": 0.9796028178131891,
+   "p5_spearman_vs_full": 0.9285714285714287,
+   "top1_stability": 1.0,
+   "mean_pair_flip_prob": 0.028571428571428574,
+   "max_pair_flip_prob": 0.4425,
+   "n_pairs": 28,
+   "n_pairs_flip_ge_5pct": 5,
+   "n_pairs_flip_ge_25pct": 1,
+   "mean_adjacent_flip_prob": 0.10464285714285713,
+   "adjacent_flip_probs": [
+    0.0,
+    0.0,
+    0.0505,
+    0.1725,
+    0.0,
+    0.067,
+    0.4425
+   ]
+  }
+ }
+}

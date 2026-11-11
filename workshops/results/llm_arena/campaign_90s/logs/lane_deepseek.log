@@ -1,0 +1,25 @@
+=== 2026-08-27 14:39:14 deepseek vs v2 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_deepseek vs 3x scripted_v2
+              llm_deepseek vs 3xscripted_v2            survival= 99.0%  win=  0.0%  cash=    4.59  malformed=0.0%  rejected=1.1%  latency=1.01s
+               scripted_v2 vs llm_deepseek             survival= 94.7%  win= 33.7%  cash=  131.80
+100 games in 9100.2s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/deepseek_vs_v2/arena_summary.csv
+=== deepseek vs v2 exit=0 ===
+=== 2026-08-27 17:10:54 deepseek vs v3 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_deepseek vs 3x scripted_v3
+              llm_deepseek vs 3xscripted_v3            survival= 95.0%  win=  0.0%  cash=    2.23  malformed=0.0%  rejected=1.2%  latency=1.08s
+               scripted_v3 vs llm_deepseek             survival= 99.3%  win= 33.3%  cash=  132.59
+100 games in 9650.0s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/deepseek_vs_v3/arena_summary.csv
+=== deepseek vs v3 exit=0 ===
+=== 2026-08-27 19:51:45 deepseek vs v4 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_deepseek vs 3x scripted_v4
+              llm_deepseek vs 3xscripted_v4            survival= 95.0%  win=  0.0%  cash=    2.35  malformed=0.0%  rejected=1.0%  latency=0.95s
+               scripted_v4 vs llm_deepseek             survival= 94.7%  win= 33.3%  cash=  132.55
+100 games in 8535.5s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/deepseek_vs_v4/arena_summary.csv
+=== deepseek vs v4 exit=0 ===
+=== 2026-08-27 22:14:01 deepseek vs v5 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_deepseek vs 3x scripted_v5
+              llm_deepseek vs 3xscripted_v5            survival= 52.0%  win=  2.0%  cash=   55.15  malformed=0.0%  rejected=2.8%  latency=0.97s
+               scripted_v5 vs llm_deepseek             survival= 89.0%  win= 30.7%  cash=  114.95
+100 games in 7759.3s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/deepseek_vs_v5/arena_summary.csv
+=== deepseek vs v5 exit=0 ===
+=== 2026-08-28 00:23:21 lane deepseek complete ===

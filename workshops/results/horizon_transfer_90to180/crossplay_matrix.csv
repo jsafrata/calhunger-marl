@@ -1,0 +1,11 @@
+focal,opponent,lineup_mode,mode,n_games,n_focal_seat_games,game_seed_base,environment_variant,environment_class,game_duration_seconds,survival_percentage,win_percentage,win_given_survival_percentage,mean_terminal_cash,mean_terminal_cash_given_survival,mean_survival_time_ticks,mean_trades_as_buyer,mean_trades_as_seller
+ippo_s0_90,self,mixed,stochastic,100,400,900000,default,FoodTradingEnv,180,79.0,24.25,30.696202531645568,100.0,97.63607594936708,174.5,24.235,24.235
+ippo_s1_90,self,mixed,stochastic,100,400,900000,default,FoodTradingEnv,180,96.75,25.0,25.839793281653748,100.0,102.0,179.225,38.6575,38.6575
+ippo_s2_90,self,mixed,stochastic,100,400,900000,default,FoodTradingEnv,180,83.0,24.25,29.216867469879517,100.0,98.28614457831326,176.975,21.13,21.13
+ippo_s3_90,self,mixed,stochastic,100,400,900000,default,FoodTradingEnv,180,86.0,24.75,28.77906976744186,100.0,104.70348837209302,178.15,31.4975,31.4975
+ippo_s4_90,self,mixed,stochastic,100,400,900000,default,FoodTradingEnv,180,81.75,25.0,30.581039755351682,100.0,104.92966360856269,175.725,35.3875,35.3875
+mappo_s0_90,self,mixed,stochastic,100,400,900000,default,FoodTradingEnv,180,93.0,25.0,26.881720430107528,100.0,97.91666666666667,178.5,27.9225,27.9225
+mappo_s1_90,self,mixed,stochastic,100,400,900000,default,FoodTradingEnv,180,99.25,25.0,25.188916876574307,100.0,100.18639798488665,179.875,32.9525,32.9525
+mappo_s2_90,self,mixed,stochastic,100,400,900000,default,FoodTradingEnv,180,89.25,25.0,28.011204481792717,100.0,98.56022408963585,178.225,27.255,27.255
+mappo_s3_90,self,mixed,stochastic,100,400,900000,default,FoodTradingEnv,180,93.0,25.0,26.881720430107528,100.0,102.43817204301075,178.95,30.3675,30.3675
+mappo_s4_90,self,mixed,stochastic,100,400,900000,default,FoodTradingEnv,180,92.25,25.0,27.100271002710027,100.0,101.23577235772358,178.9,33.01,33.01

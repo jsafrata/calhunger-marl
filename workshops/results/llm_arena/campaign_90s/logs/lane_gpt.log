@@ -1,0 +1,25 @@
+=== 2026-08-27 14:39:10 gpt vs v2 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gpt vs 3x scripted_v2
+                   llm_gpt vs 3xscripted_v2            survival= 99.0%  win=  0.0%  cash=    3.62  malformed=0.0%  rejected=0.3%  latency=1.22s
+               scripted_v2 vs llm_gpt                  survival=100.0%  win= 33.3%  cash=  132.13
+100 games in 10988.3s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/gpt_vs_v2/arena_summary.csv
+=== gpt vs v2 exit=0 ===
+=== 2026-08-27 17:42:19 gpt vs v3 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gpt vs 3x scripted_v3
+                   llm_gpt vs 3xscripted_v3            survival= 97.0%  win=  0.0%  cash=    0.76  malformed=0.0%  rejected=0.3%  latency=1.17s
+               scripted_v3 vs llm_gpt                  survival=100.0%  win= 33.3%  cash=  133.08
+100 games in 10530.8s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/gpt_vs_v3/arena_summary.csv
+=== gpt vs v3 exit=0 ===
+=== 2026-08-27 20:37:50 gpt vs v4 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gpt vs 3x scripted_v4
+                   llm_gpt vs 3xscripted_v4            survival=100.0%  win=  0.0%  cash=    3.27  malformed=0.0%  rejected=0.1%  latency=1.19s
+               scripted_v4 vs llm_gpt                  survival=100.0%  win= 33.3%  cash=  132.24
+100 games in 10710.3s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/gpt_vs_v4/arena_summary.csv
+=== gpt vs v4 exit=0 ===
+=== 2026-08-27 23:36:21 gpt vs v5 ===
+playing 100 games (stochastic, small_90, seed base 910000): llm_gpt vs 3x scripted_v5
+                   llm_gpt vs 3xscripted_v5            survival= 69.0%  win=  8.0%  cash=   59.23  malformed=0.0%  rejected=1.7%  latency=1.17s
+               scripted_v5 vs llm_gpt                  survival= 97.3%  win= 30.3%  cash=  113.59
+100 games in 9915.1s; summary in /Users/honzasafrata/Desktop/CALTECH/Research/Hunger_games_2/workshops/results/llm_arena/campaign_90s/gpt_vs_v5/arena_summary.csv
+=== gpt vs v5 exit=0 ===
+=== 2026-08-28 02:21:36 lane gpt complete ===

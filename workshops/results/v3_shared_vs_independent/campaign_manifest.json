@@ -1,0 +1,26 @@
+{
+  "experiment": "v3_shared_vs_independent",
+  "started_at_utc": "2026-07-21T07:59:18.721664+00:00",
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "algorithms": [
+    "ippo",
+    "mappo"
+  ],
+  "conditions": [
+    "shared",
+    "shared_id",
+    "independent"
+  ],
+  "training_iterations": 1100,
+  "environment_steps_per_run": 4505600,
+  "evaluation_games_per_primary_cell": 100,
+  "permutation_games_per_cell": 10,
+  "shared_seed0_policy": "exact completed v2 reference, not retrained",
+  "status": "stopped_by_user",
+  "stopped_by_user_at_utc": "2026-07-21T16:16:01Z",
+  "note": "All live processes were stopped. Completed and partial artifacts remain on disk; see INTERRUPTED_RUNS.md."
+}

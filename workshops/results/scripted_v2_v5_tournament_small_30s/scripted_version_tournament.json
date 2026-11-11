@@ -1,0 +1,308 @@
+{
+  "environment_variant": "small",
+  "games_four_way": 100,
+  "games_per_pairwise_match": 50,
+  "total_games": 400,
+  "seed_base": 1300000,
+  "matches": [
+    {
+      "match": "V2 vs V3 vs V4 vs V5",
+      "environment_variant": "small",
+      "environment_class": "SmallFoodTradingEnv",
+      "game_duration_seconds": 30,
+      "n_games": 100,
+      "seed_base": 1300000,
+      "cadence": "fast",
+      "seat_exposure": {
+        "v2": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "v3": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "v4": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "v5": [
+          25,
+          25,
+          25,
+          25
+        ]
+      },
+      "per_version": {
+        "v2": {
+          "n_seat_games": 100,
+          "survival_rate_percent": 99.0,
+          "win_rate_percent": 16.0,
+          "mean_terminal_cash": 86.99,
+          "mean_survival_time_seconds": 30.0
+        },
+        "v3": {
+          "n_seat_games": 100,
+          "survival_rate_percent": 97.0,
+          "win_rate_percent": 8.0,
+          "mean_terminal_cash": 80.98,
+          "mean_survival_time_seconds": 30.0
+        },
+        "v4": {
+          "n_seat_games": 100,
+          "survival_rate_percent": 99.0,
+          "win_rate_percent": 54.0,
+          "mean_terminal_cash": 130.24,
+          "mean_survival_time_seconds": 30.0
+        },
+        "v5": {
+          "n_seat_games": 100,
+          "survival_rate_percent": 100.0,
+          "win_rate_percent": 22.0,
+          "mean_terminal_cash": 101.79,
+          "mean_survival_time_seconds": 30.0
+        }
+      }
+    },
+    {
+      "match": "V2 vs V3 (2 seats each)",
+      "environment_variant": "small",
+      "environment_class": "SmallFoodTradingEnv",
+      "game_duration_seconds": 30,
+      "n_games": 50,
+      "seed_base": 1300000,
+      "cadence": "fast",
+      "seat_exposure": {
+        "v2": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "v3": [
+          25,
+          25,
+          25,
+          25
+        ]
+      },
+      "per_version": {
+        "v2": {
+          "n_seat_games": 100,
+          "survival_rate_percent": 100.0,
+          "win_rate_percent": 35.0,
+          "mean_terminal_cash": 110.18,
+          "mean_survival_time_seconds": 30.0
+        },
+        "v3": {
+          "n_seat_games": 100,
+          "survival_rate_percent": 99.0,
+          "win_rate_percent": 15.0,
+          "mean_terminal_cash": 89.82,
+          "mean_survival_time_seconds": 29.9
+        }
+      }
+    },
+    {
+      "match": "V2 vs V4 (2 seats each)",
+      "environment_variant": "small",
+      "environment_class": "SmallFoodTradingEnv",
+      "game_duration_seconds": 30,
+      "n_games": 50,
+      "seed_base": 1300000,
+      "cadence": "fast",
+      "seat_exposure": {
+        "v2": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "v4": [
+          25,
+          25,
+          25,
+          25
+        ]
+      },
+      "per_version": {
+        "v2": {
+          "n_seat_games": 100,
+          "survival_rate_percent": 100.0,
+          "win_rate_percent": 11.0,
+          "mean_terminal_cash": 89.84,
+          "mean_survival_time_seconds": 30.0
+        },
+        "v4": {
+          "n_seat_games": 100,
+          "survival_rate_percent": 100.0,
+          "win_rate_percent": 39.0,
+          "mean_terminal_cash": 110.16,
+          "mean_survival_time_seconds": 30.0
+        }
+      }
+    },
+    {
+      "match": "V2 vs V5 (2 seats each)",
+      "environment_variant": "small",
+      "environment_class": "SmallFoodTradingEnv",
+      "game_duration_seconds": 30,
+      "n_games": 50,
+      "seed_base": 1300000,
+      "cadence": "fast",
+      "seat_exposure": {
+        "v2": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "v5": [
+          25,
+          25,
+          25,
+          25
+        ]
+      },
+      "per_version": {
+        "v2": {
+          "n_seat_games": 100,
+          "survival_rate_percent": 100.0,
+          "win_rate_percent": 28.000000000000004,
+          "mean_terminal_cash": 93.42,
+          "mean_survival_time_seconds": 30.0
+        },
+        "v5": {
+          "n_seat_games": 100,
+          "survival_rate_percent": 100.0,
+          "win_rate_percent": 22.0,
+          "mean_terminal_cash": 106.58,
+          "mean_survival_time_seconds": 30.0
+        }
+      }
+    },
+    {
+      "match": "V3 vs V4 (2 seats each)",
+      "environment_variant": "small",
+      "environment_class": "SmallFoodTradingEnv",
+      "game_duration_seconds": 30,
+      "n_games": 50,
+      "seed_base": 1300000,
+      "cadence": "fast",
+      "seat_exposure": {
+        "v3": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "v4": [
+          25,
+          25,
+          25,
+          25
+        ]
+      },
+      "per_version": {
+        "v3": {
+          "n_seat_games": 100,
+          "survival_rate_percent": 99.0,
+          "win_rate_percent": 12.0,
+          "mean_terminal_cash": 83.71,
+          "mean_survival_time_seconds": 30.0
+        },
+        "v4": {
+          "n_seat_games": 100,
+          "survival_rate_percent": 96.0,
+          "win_rate_percent": 38.0,
+          "mean_terminal_cash": 116.29,
+          "mean_survival_time_seconds": 29.9
+        }
+      }
+    },
+    {
+      "match": "V3 vs V5 (2 seats each)",
+      "environment_variant": "small",
+      "environment_class": "SmallFoodTradingEnv",
+      "game_duration_seconds": 30,
+      "n_games": 50,
+      "seed_base": 1300000,
+      "cadence": "fast",
+      "seat_exposure": {
+        "v3": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "v5": [
+          25,
+          25,
+          25,
+          25
+        ]
+      },
+      "per_version": {
+        "v3": {
+          "n_seat_games": 100,
+          "survival_rate_percent": 100.0,
+          "win_rate_percent": 5.0,
+          "mean_terminal_cash": 62.25,
+          "mean_survival_time_seconds": 30.0
+        },
+        "v5": {
+          "n_seat_games": 100,
+          "survival_rate_percent": 98.0,
+          "win_rate_percent": 45.0,
+          "mean_terminal_cash": 137.75,
+          "mean_survival_time_seconds": 29.9
+        }
+      }
+    },
+    {
+      "match": "V4 vs V5 (2 seats each)",
+      "environment_variant": "small",
+      "environment_class": "SmallFoodTradingEnv",
+      "game_duration_seconds": 30,
+      "n_games": 50,
+      "seed_base": 1300000,
+      "cadence": "fast",
+      "seat_exposure": {
+        "v4": [
+          25,
+          25,
+          25,
+          25
+        ],
+        "v5": [
+          25,
+          25,
+          25,
+          25
+        ]
+      },
+      "per_version": {
+        "v4": {
+          "n_seat_games": 100,
+          "survival_rate_percent": 100.0,
+          "win_rate_percent": 34.0,
+          "mean_terminal_cash": 100.18,
+          "mean_survival_time_seconds": 30.0
+        },
+        "v5": {
+          "n_seat_games": 100,
+          "survival_rate_percent": 100.0,
+          "win_rate_percent": 17.0,
+          "mean_terminal_cash": 99.82,
+          "mean_survival_time_seconds": 30.0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,284 @@
+{
+ "config": {
+  "n_blocks": 10,
+  "block_size": 100,
+  "reference": "merged 1000-game leaderboard",
+  "labels": [
+   "ippo_s0",
+   "ippo_s1",
+   "ippo_s2",
+   "ippo_s3",
+   "ippo_s4",
+   "mappo_s0",
+   "mappo_s1",
+   "mappo_s2",
+   "mappo_s3",
+   "mappo_s4"
+  ],
+  "healthy": [
+   "ippo_s0",
+   "ippo_s1",
+   "ippo_s2",
+   "ippo_s3",
+   "ippo_s4",
+   "mappo_s0",
+   "mappo_s2",
+   "mappo_s3"
+  ]
+ },
+ "reference_top1": "ippo_s2",
+ "blocks": [
+  {
+   "block": 0,
+   "seed_range": [
+    900000,
+    900099
+   ],
+   "is_original_campaign": true,
+   "top1": "ippo_s2",
+   "top1_matches_reference": true,
+   "spearman_vs_reference": 0.7857142857142858,
+   "pairwise_agreement": "23/28",
+   "e17_rho": 0.261904761904762,
+   "e17_significant": false,
+   "healthy_scores": {
+    "ippo_s0": 0.5288888888888889,
+    "ippo_s1": 0.6244444444444445,
+    "ippo_s2": 0.6555555555555556,
+    "ippo_s3": 0.6411111111111112,
+    "ippo_s4": 0.61,
+    "mappo_s0": 0.6244444444444444,
+    "mappo_s2": 0.5722222222222223,
+    "mappo_s3": 0.64
+   }
+  },
+  {
+   "block": 1,
+   "seed_range": [
+    900100,
+    900199
+   ],
+   "is_original_campaign": false,
+   "top1": "mappo_s3",
+   "top1_matches_reference": false,
+   "spearman_vs_reference": 0.8333333333333335,
+   "pairwise_agreement": "24/28",
+   "e17_rho": 0.2380952380952381,
+   "e17_significant": false,
+   "healthy_scores": {
+    "ippo_s0": 0.5044444444444445,
+    "ippo_s1": 0.6555555555555556,
+    "ippo_s2": 0.64,
+    "ippo_s3": 0.6366666666666666,
+    "ippo_s4": 0.6411111111111111,
+    "mappo_s0": 0.57,
+    "mappo_s2": 0.5177777777777779,
+    "mappo_s3": 0.6622222222222223
+   }
+  },
+  {
+   "block": 2,
+   "seed_range": [
+    900200,
+    900299
+   ],
+   "is_original_campaign": false,
+   "top1": "ippo_s2",
+   "top1_matches_reference": true,
+   "spearman_vs_reference": 0.9523809523809524,
+   "pairwise_agreement": "26/28",
+   "e17_rho": -0.09523809523809526,
+   "e17_significant": false,
+   "healthy_scores": {
+    "ippo_s0": 0.5244444444444444,
+    "ippo_s1": 0.6533333333333334,
+    "ippo_s2": 0.6588888888888889,
+    "ippo_s3": 0.6233333333333334,
+    "ippo_s4": 0.6166666666666667,
+    "mappo_s0": 0.5477777777777777,
+    "mappo_s2": 0.5544444444444444,
+    "mappo_s3": 0.6288888888888888
+   }
+  },
+  {
+   "block": 3,
+   "seed_range": [
+    900300,
+    900399
+   ],
+   "is_original_campaign": false,
+   "top1": "ippo_s2",
+   "top1_matches_reference": true,
+   "spearman_vs_reference": 0.8333333333333335,
+   "pairwise_agreement": "24/28",
+   "e17_rho": 0.19047619047619052,
+   "e17_significant": false,
+   "healthy_scores": {
+    "ippo_s0": 0.5022222222222221,
+    "ippo_s1": 0.6277777777777778,
+    "ippo_s2": 0.6566666666666667,
+    "ippo_s3": 0.6377777777777777,
+    "ippo_s4": 0.6055555555555556,
+    "mappo_s0": 0.6177777777777779,
+    "mappo_s2": 0.5455555555555556,
+    "mappo_s3": 0.6411111111111112
+   }
+  },
+  {
+   "block": 4,
+   "seed_range": [
+    900400,
+    900499
+   ],
+   "is_original_campaign": false,
+   "top1": "ippo_s2",
+   "top1_matches_reference": true,
+   "spearman_vs_reference": 0.9285714285714287,
+   "pairwise_agreement": "26/28",
+   "e17_rho": 0.09523809523809526,
+   "e17_significant": false,
+   "healthy_scores": {
+    "ippo_s0": 0.5255555555555556,
+    "ippo_s1": 0.6433333333333333,
+    "ippo_s2": 0.6499999999999999,
+    "ippo_s3": 0.6211111111111111,
+    "ippo_s4": 0.6333333333333333,
+    "mappo_s0": 0.5744444444444445,
+    "mappo_s2": 0.5677777777777778,
+    "mappo_s3": 0.61
+   }
+  },
+  {
+   "block": 5,
+   "seed_range": [
+    900500,
+    900599
+   ],
+   "is_original_campaign": false,
+   "top1": "ippo_s2",
+   "top1_matches_reference": true,
+   "spearman_vs_reference": 0.9047619047619048,
+   "pairwise_agreement": "25/28",
+   "e17_rho": 0.04761904761904763,
+   "e17_significant": false,
+   "healthy_scores": {
+    "ippo_s0": 0.5,
+    "ippo_s1": 0.6155555555555555,
+    "ippo_s2": 0.6433333333333333,
+    "ippo_s3": 0.601111111111111,
+    "ippo_s4": 0.6166666666666667,
+    "mappo_s0": 0.6044444444444445,
+    "mappo_s2": 0.5522222222222222,
+    "mappo_s3": 0.6188888888888889
+   }
+  },
+  {
+   "block": 6,
+   "seed_range": [
+    900600,
+    900699
+   ],
+   "is_original_campaign": false,
+   "top1": "ippo_s1",
+   "top1_matches_reference": false,
+   "spearman_vs_reference": 0.8571428571428572,
+   "pairwise_agreement": "24/28",
+   "e17_rho": 0.2142857142857143,
+   "e17_significant": false,
+   "healthy_scores": {
+    "ippo_s0": 0.508888888888889,
+    "ippo_s1": 0.6588888888888889,
+    "ippo_s2": 0.6444444444444444,
+    "ippo_s3": 0.6033333333333333,
+    "ippo_s4": 0.6488888888888888,
+    "mappo_s0": 0.5777777777777778,
+    "mappo_s2": 0.5055555555555555,
+    "mappo_s3": 0.6422222222222222
+   }
+  },
+  {
+   "block": 7,
+   "seed_range": [
+    900700,
+    900799
+   ],
+   "is_original_campaign": false,
+   "top1": "ippo_s2",
+   "top1_matches_reference": true,
+   "spearman_vs_reference": 0.9047619047619048,
+   "pairwise_agreement": "25/28",
+   "e17_rho": 0.09523809523809526,
+   "e17_significant": false,
+   "healthy_scores": {
+    "ippo_s0": 0.5033333333333333,
+    "ippo_s1": 0.6433333333333333,
+    "ippo_s2": 0.6622222222222223,
+    "ippo_s3": 0.6233333333333334,
+    "ippo_s4": 0.661111111111111,
+    "mappo_s0": 0.5755555555555556,
+    "mappo_s2": 0.5544444444444445,
+    "mappo_s3": 0.65
+   }
+  },
+  {
+   "block": 8,
+   "seed_range": [
+    900800,
+    900899
+   ],
+   "is_original_campaign": false,
+   "top1": "ippo_s2",
+   "top1_matches_reference": true,
+   "spearman_vs_reference": 0.9761904761904763,
+   "pairwise_agreement": "27/28",
+   "e17_rho": 0.023809523809523815,
+   "e17_significant": false,
+   "healthy_scores": {
+    "ippo_s0": 0.4922222222222223,
+    "ippo_s1": 0.64,
+    "ippo_s2": 0.6444444444444444,
+    "ippo_s3": 0.6177777777777778,
+    "ippo_s4": 0.6366666666666666,
+    "mappo_s0": 0.5722222222222222,
+    "mappo_s2": 0.5611111111111111,
+    "mappo_s3": 0.62
+   }
+  },
+  {
+   "block": 9,
+   "seed_range": [
+    900900,
+    900999
+   ],
+   "is_original_campaign": false,
+   "top1": "ippo_s2",
+   "top1_matches_reference": true,
+   "spearman_vs_reference": 0.9761904761904763,
+   "pairwise_agreement": "27/28",
+   "e17_rho": 0.023809523809523815,
+   "e17_significant": false,
+   "healthy_scores": {
+    "ippo_s0": 0.5244444444444444,
+    "ippo_s1": 0.6544444444444445,
+    "ippo_s2": 0.6566666666666667,
+    "ippo_s3": 0.6099999999999999,
+    "ippo_s4": 0.6522222222222223,
+    "mappo_s0": 0.5866666666666666,
+    "mappo_s2": 0.5377777777777778,
+    "mappo_s3": 0.6555555555555554
+   }
+  }
+ ],
+ "summary": {
+  "top1_reproduced": "8/10",
+  "mean_spearman_vs_reference": 0.8952380952380953,
+  "min_spearman_vs_reference": 0.7857142857142858,
+  "mean_pairwise_agreement": 25.1,
+  "min_pairwise_agreement": 23,
+  "e17_rho_range": [
+   -0.09523809523809526,
+   0.261904761904762
+  ],
+  "e17_significant_blocks": "0/10"
+ }
+}

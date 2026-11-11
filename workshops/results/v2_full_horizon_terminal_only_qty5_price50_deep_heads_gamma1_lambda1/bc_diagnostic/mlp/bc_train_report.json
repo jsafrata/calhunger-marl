@@ -1,0 +1,1393 @@
+{
+  "epochs": 40,
+  "batch_size": 2048,
+  "lr": 0.0003,
+  "head_kind": "mlp",
+  "patience": 5,
+  "n_train": 1440000,
+  "n_val": 216000,
+  "n_test": 216000,
+  "curves": [
+    {
+      "epoch": 1,
+      "train_loss": {
+        "type": 0.017659416646479673,
+        "food": 1.0730038388547571,
+        "side": 0.07462113628835967,
+        "price": 1.3136526408012619,
+        "qty": 0.015601735760025225,
+        "total": 2.4945387740365486
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.2434074074074074,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9945185185185185,
+          "food_rel_only": 0.4923929236499069,
+          "side_rel_only": 0.9998556797020485,
+          "price_rel_only": 0.5461219739292364,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.8014106145251396,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.5,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9972811918063315
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9998556797020485,
+          "food_accuracy": 0.4923929236499069,
+          "price_exact": 0.5461219739292364,
+          "price_l1_mae": 0.8014106145251396,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.999819460185956,
+          "acc_when_target_ask": 0.9998870537537251
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 83.40799522399902
+    },
+    {
+      "epoch": 2,
+      "train_loss": {
+        "type": 0.008100297930716559,
+        "food": 0.9857515035705133,
+        "side": 0.005164968986884394,
+        "price": 0.953196559694003,
+        "qty": 0.00023250718930450438,
+        "total": 1.9524458389390598
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.28056018518518516,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.994625,
+          "food_rel_only": 0.5158752327746741,
+          "side_rel_only": 0.9999487895716946,
+          "price_rel_only": 0.5752932960893855,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.6647672253258845,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.78,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9958240223463687
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999487895716946,
+          "food_accuracy": 0.5158752327746741,
+          "price_exact": 0.5752932960893855,
+          "price_l1_mae": 0.6647672253258845,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999197600826472,
+          "acc_when_target_ask": 0.9999739354816288
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 71.20366597175598
+    },
+    {
+      "epoch": 3,
+      "train_loss": {
+        "type": 0.007914929039543495,
+        "food": 0.9593998809260401,
+        "side": 0.0018849407011161516,
+        "price": 0.867615838281133,
+        "qty": 8.337470530829127e-05,
+        "total": 1.836898943070661
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.2896944444444444,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9947824074074074,
+          "food_rel_only": 0.5201396648044693,
+          "side_rel_only": 0.9999627560521416,
+          "price_rel_only": 0.5927327746741154,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.6085707635009311,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.31333333333333335,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9985893854748603
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999627560521416,
+          "food_accuracy": 0.5201396648044693,
+          "price_exact": 0.5927327746741154,
+          "price_l1_mae": 0.6085707635009311,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999297900723162,
+          "acc_when_target_ask": 0.9999913118272096
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 68.9721851348877
+    },
+    {
+      "epoch": 4,
+      "train_loss": {
+        "type": 0.007828402354789432,
+        "food": 0.9458413865755905,
+        "side": 0.0009239329917611692,
+        "price": 0.8126544411378828,
+        "qty": 4.0500588136699825e-05,
+        "total": 1.7672886481000618
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.3237638888888889,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9951064814814815,
+          "food_rel_only": 0.5268715083798883,
+          "side_rel_only": 0.9999720670391061,
+          "price_rel_only": 0.6077094972067039,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.57024208566108,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.6016666666666667,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.997304469273743
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999720670391061,
+          "food_accuracy": 0.5268715083798883,
+          "price_exact": 0.6077094972067039,
+          "price_l1_mae": 0.57024208566108,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999498500516545,
+          "acc_when_target_ask": 0.9999913118272096
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 69.68845176696777
+    },
+    {
+      "epoch": 5,
+      "train_loss": {
+        "type": 0.0077602653486378995,
+        "food": 0.9370476468042894,
+        "side": 0.0005164140368998977,
+        "price": 0.767869807779789,
+        "qty": 2.247650397180223e-05,
+        "total": 1.713216589425098
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.33082407407407405,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.994800925925926,
+          "food_rel_only": 0.531159217877095,
+          "side_rel_only": 0.9999767225325884,
+          "price_rel_only": 0.6188780260707635,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.5280446927374302,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.9316666666666666,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9951536312849162
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999767225325884,
+          "food_accuracy": 0.531159217877095,
+          "price_exact": 0.6188780260707635,
+          "price_l1_mae": 0.5280446927374302,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999598800413235,
+          "acc_when_target_ask": 0.9999913118272096
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 68.87357091903687
+    },
+    {
+      "epoch": 6,
+      "train_loss": {
+        "type": 0.007718373103919227,
+        "food": 0.9291552853008563,
+        "side": 0.0003097082791844679,
+        "price": 0.7296776432882656,
+        "qty": 1.3178554235599387e-05,
+        "total": 1.6668741733513095
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.32852777777777775,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9949444444444444,
+          "food_rel_only": 0.5319972067039106,
+          "side_rel_only": 0.9999767225325884,
+          "price_rel_only": 0.6341061452513966,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.4965316573556797,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.465,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9979050279329609
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999767225325884,
+          "food_accuracy": 0.5319972067039106,
+          "price_exact": 0.6341061452513966,
+          "price_l1_mae": 0.4965316573556797,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999498500516545,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 73.5516471862793
+    },
+    {
+      "epoch": 7,
+      "train_loss": {
+        "type": 0.007727457852359459,
+        "food": 0.923453354192051,
+        "side": 0.0001935943241939888,
+        "price": 0.6977265182543885,
+        "qty": 8.09997284921916e-06,
+        "total": 1.629109014333649
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.33917592592592594,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9948611111111111,
+          "food_rel_only": 0.5362523277467411,
+          "side_rel_only": 0.9999860335195531,
+          "price_rel_only": 0.6444366852886406,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.4660055865921788,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.1875,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9993715083798883
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999860335195531,
+          "food_accuracy": 0.5362523277467411,
+          "price_exact": 0.6444366852886406,
+          "price_l1_mae": 0.4660055865921788,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999699100309927,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 76.48253202438354
+    },
+    {
+      "epoch": 8,
+      "train_loss": {
+        "type": 0.007702409649606456,
+        "food": 0.9178077047690749,
+        "side": 0.0001237598424536786,
+        "price": 0.6705403491346673,
+        "qty": 5.072617746939366e-06,
+        "total": 1.5961792834780433
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.3419027777777778,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9948472222222222,
+          "food_rel_only": 0.5369785847299814,
+          "side_rel_only": 0.9999860335195531,
+          "price_rel_only": 0.652304469273743,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.4496973929236499,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.31666666666666665,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9986359404096834
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999860335195531,
+          "food_accuracy": 0.5369785847299814,
+          "price_exact": 0.652304469273743,
+          "price_l1_mae": 0.4496973929236499,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999699100309927,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 76.55037713050842
+    },
+    {
+      "epoch": 9,
+      "train_loss": {
+        "type": 0.0077085840536958794,
+        "food": 0.9132543478838422,
+        "side": 8.04512616448185e-05,
+        "price": 0.6476060913198374,
+        "qty": 3.2383792672099143e-06,
+        "total": 1.5686526935208926
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.35332870370370373,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9944444444444445,
+          "food_rel_only": 0.542486033519553,
+          "side_rel_only": 0.9999860335195531,
+          "price_rel_only": 0.6621322160148976,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.4290828677839851,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.0,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 1.0
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999860335195531,
+          "food_accuracy": 0.542486033519553,
+          "price_exact": 0.6621322160148976,
+          "price_l1_mae": 0.4290828677839851,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999699100309927,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 73.78477787971497
+    },
+    {
+      "epoch": 10,
+      "train_loss": {
+        "type": 0.007666816881034968,
+        "food": 0.909576259130104,
+        "side": 5.509905936791752e-05,
+        "price": 0.6273689221760089,
+        "qty": 2.093337580045717e-06,
+        "total": 1.544669177213853
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.3576666666666667,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9944444444444445,
+          "food_rel_only": 0.5438966480446927,
+          "side_rel_only": 0.9999860335195531,
+          "price_rel_only": 0.6669925512104283,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.42002793296089386,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.0,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 1.0
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999860335195531,
+          "food_accuracy": 0.5438966480446927,
+          "price_exact": 0.6669925512104283,
+          "price_l1_mae": 0.42002793296089386,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999699100309927,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 72.57098507881165
+    },
+    {
+      "epoch": 11,
+      "train_loss": {
+        "type": 0.007699780947653132,
+        "food": 0.9056488554078069,
+        "side": 3.609401400694878e-05,
+        "price": 0.6113894863731482,
+        "qty": 1.35346020694013e-06,
+        "total": 1.52477555942129
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.3745324074074074,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9947361111111112,
+          "food_rel_only": 0.5435847299813781,
+          "side_rel_only": 0.9999860335195531,
+          "price_rel_only": 0.6701862197392924,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.4107541899441341,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.9575,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9949441340782123
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999860335195531,
+          "food_accuracy": 0.5435847299813781,
+          "price_exact": 0.6701862197392924,
+          "price_l1_mae": 0.4107541899441341,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999699100309927,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 67.02455186843872
+    },
+    {
+      "epoch": 12,
+      "train_loss": {
+        "type": 0.007652016510374696,
+        "food": 0.902303583920002,
+        "side": 2.7322889074164117e-05,
+        "price": 0.5968271543017842,
+        "qty": 8.895388396788142e-07,
+        "total": 1.5068109502846545
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.3843611111111111,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.99475,
+          "food_rel_only": 0.5423277467411546,
+          "side_rel_only": 0.9999767225325884,
+          "price_rel_only": 0.6773417132216015,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.391340782122905,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.3308333333333333,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9984590316573557
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999767225325884,
+          "food_accuracy": 0.5423277467411546,
+          "price_exact": 0.6773417132216015,
+          "price_l1_mae": 0.391340782122905,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999598800413235,
+          "acc_when_target_ask": 0.9999913118272096
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 61.04022574424744
+    },
+    {
+      "epoch": 13,
+      "train_loss": {
+        "type": 0.0076380286462319254,
+        "food": 0.8991448430513794,
+        "side": 2.4660410871164956e-05,
+        "price": 0.5840529625896703,
+        "qty": 5.716666662471745e-07,
+        "total": 1.4908610546792096
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.3806157407407407,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9946388888888889,
+          "food_rel_only": 0.550498137802607,
+          "side_rel_only": 0.9999906890130353,
+          "price_rel_only": 0.6811731843575419,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.38236964618249536,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.49416666666666664,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9974348230912476
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999906890130353,
+          "food_accuracy": 0.550498137802607,
+          "price_exact": 0.6811731843575419,
+          "price_l1_mae": 0.38236964618249536,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999799400206618,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 63.563520669937134
+    },
+    {
+      "epoch": 14,
+      "train_loss": {
+        "type": 0.0076426737806204155,
+        "food": 0.8956969474357638,
+        "side": 1.0680788830344765e-05,
+        "price": 0.5728859622878107,
+        "qty": 4.0641552236728917e-07,
+        "total": 1.4762366447936406
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.38428240740740743,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9944444444444445,
+          "food_rel_only": 0.5501396648044693,
+          "side_rel_only": 0.9999860335195531,
+          "price_rel_only": 0.6872951582867785,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.3697392923649907,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 1.0,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.994413407821229
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999860335195531,
+          "food_accuracy": 0.5501396648044693,
+          "price_exact": 0.6872951582867785,
+          "price_l1_mae": 0.3697392923649907,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999699100309927,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 62.42337226867676
+    },
+    {
+      "epoch": 15,
+      "train_loss": {
+        "type": 0.00758933423540756,
+        "food": 0.893698415888304,
+        "side": 7.5950223351707215e-06,
+        "price": 0.5633192772723057,
+        "qty": 2.6971104180343014e-07,
+        "total": 1.4646148693493821
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.3928935185185185,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9956388888888889,
+          "food_rel_only": 0.548282122905028,
+          "side_rel_only": 0.9999906890130353,
+          "price_rel_only": 0.6896182495344506,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.3625698324022346,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.3908333333333333,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9990176908752327
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999906890130353,
+          "food_accuracy": 0.548282122905028,
+          "price_exact": 0.6896182495344506,
+          "price_l1_mae": 0.3625698324022346,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999799400206618,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 61.62387990951538
+    },
+    {
+      "epoch": 16,
+      "train_loss": {
+        "type": 0.007568276791888903,
+        "food": 0.8915467703376304,
+        "side": 5.437829981373583e-06,
+        "price": 0.5548800469630144,
+        "qty": 1.2058493040453558e-07,
+        "total": 1.4540006391365419
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.39425925925925925,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9960324074074074,
+          "food_rel_only": 0.5512337057728119,
+          "side_rel_only": 0.9999953445065177,
+          "price_rel_only": 0.6900931098696462,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.3590502793296089,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.6358333333333334,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9980446927374301
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999953445065177,
+          "food_accuracy": 0.5512337057728119,
+          "price_exact": 0.6900931098696462,
+          "price_l1_mae": 0.3590502793296089,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999899700103309,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 60.29635787010193
+    },
+    {
+      "epoch": 17,
+      "train_loss": {
+        "type": 0.007576283288720085,
+        "food": 0.8891827576709065,
+        "side": 3.8231599901259665e-06,
+        "price": 0.5474873340095986,
+        "qty": 4.351848979410423e-08,
+        "total": 1.4442502373660153
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.39367129629629627,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9946805555555556,
+          "food_rel_only": 0.5533659217877095,
+          "side_rel_only": 0.9999953445065177,
+          "price_rel_only": 0.6936638733705773,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.35364990689013037,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.0425,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 1.0
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999953445065177,
+          "food_accuracy": 0.5533659217877095,
+          "price_exact": 0.6936638733705773,
+          "price_l1_mae": 0.35364990689013037,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999899700103309,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 61.581485748291016
+    },
+    {
+      "epoch": 18,
+      "train_loss": {
+        "type": 0.007491581288129303,
+        "food": 0.8876371915367517,
+        "side": 2.610735552915406e-06,
+        "price": 0.5406670307063244,
+        "qty": 1.3921716414147774e-08,
+        "total": 1.4357984304766764
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.4015138888888889,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.995199074074074,
+          "food_rel_only": 0.55469739292365,
+          "side_rel_only": 1.0,
+          "price_rel_only": 0.6930353817504655,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.35386871508379886,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.9866666666666667,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9952467411545624
+        },
+        "post_conditional": {
+          "side_accuracy": 1.0,
+          "food_accuracy": 0.55469739292365,
+          "price_exact": 0.6930353817504655,
+          "price_l1_mae": 0.35386871508379886,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 1.0,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 55.16931486129761
+    },
+    {
+      "epoch": 19,
+      "train_loss": {
+        "type": 0.007483754330843856,
+        "food": 0.8852548962458968,
+        "side": 1.8038598802147279e-06,
+        "price": 0.5343162538060411,
+        "qty": 4.328284750614599e-09,
+        "total": 1.4270567181096836
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.40273611111111113,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9951203703703704,
+          "food_rel_only": 0.5512383612662942,
+          "side_rel_only": 0.9999953445065177,
+          "price_rel_only": 0.6902374301675978,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.36509310986964616,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.95,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9953724394785848
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999953445065177,
+          "food_accuracy": 0.5512383612662942,
+          "price_exact": 0.6902374301675978,
+          "price_l1_mae": 0.36509310986964616,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999899700103309,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 54.4508318901062
+    },
+    {
+      "epoch": 20,
+      "train_loss": {
+        "type": 0.007504161419836402,
+        "food": 0.884216148998927,
+        "side": 1.2244510346254793e-06,
+        "price": 0.5282504460351034,
+        "qty": 1.3370397327321455e-09,
+        "total": 1.4199719857424498
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.3955185185185185,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9951574074074074,
+          "food_rel_only": 0.5500093109869646,
+          "side_rel_only": 1.0,
+          "price_rel_only": 0.6949813780260707,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.35045623836126627,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.16083333333333333,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9998184357541899
+        },
+        "post_conditional": {
+          "side_accuracy": 1.0,
+          "food_accuracy": 0.5500093109869646,
+          "price_exact": 0.6949813780260707,
+          "price_l1_mae": 0.35045623836126627,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 1.0,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 58.65332293510437
+    },
+    {
+      "epoch": 21,
+      "train_loss": {
+        "type": 0.007506170925229195,
+        "food": 0.882085894911804,
+        "side": 8.66881778724152e-07,
+        "price": 0.5232854780148376,
+        "qty": 4.0613067766473725e-10,
+        "total": 1.412878412922675
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.3975138888888889,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9952175925925926,
+          "food_rel_only": 0.5534590316573557,
+          "side_rel_only": 1.0,
+          "price_rel_only": 0.6983612662942272,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.3431052141527002,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.9741666666666666,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9953351955307262
+        },
+        "post_conditional": {
+          "side_accuracy": 1.0,
+          "food_accuracy": 0.5534590316573557,
+          "price_exact": 0.6983612662942272,
+          "price_l1_mae": 0.3431052141527002,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 1.0,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 57.25043320655823
+    },
+    {
+      "epoch": 22,
+      "train_loss": {
+        "type": 0.007481772209178995,
+        "food": 0.880707370879298,
+        "side": 5.934582962829893e-07,
+        "price": 0.5181994982571765,
+        "qty": 1.228644526711887e-10,
+        "total": 1.4063892383128405
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.38352314814814814,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9958564814814815,
+          "food_rel_only": 0.5538640595903166,
+          "side_rel_only": 1.0,
+          "price_rel_only": 0.6991340782122905,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.34202048417132214,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.4116666666666667,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9991201117318436
+        },
+        "post_conditional": {
+          "side_accuracy": 1.0,
+          "food_accuracy": 0.5538640595903166,
+          "price_exact": 0.6991340782122905,
+          "price_l1_mae": 0.34202048417132214,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 1.0,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 27.69801902770996
+    },
+    {
+      "epoch": 23,
+      "train_loss": {
+        "type": 0.007419881639427992,
+        "food": 0.8791618242182515,
+        "side": 5.048320028274005e-07,
+        "price": 0.5135474100031636,
+        "qty": 3.125354218046911e-11,
+        "total": 1.4001296306536957
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.41506944444444444,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9944444444444445,
+          "food_rel_only": 0.5556890130353818,
+          "side_rel_only": 1.0,
+          "price_rel_only": 0.698854748603352,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.3385288640595903,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 1.0,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.994413407821229
+        },
+        "post_conditional": {
+          "side_accuracy": 1.0,
+          "food_accuracy": 0.5556890130353818,
+          "price_exact": 0.698854748603352,
+          "price_l1_mae": 0.3385288640595903,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 1.0,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 29.783388137817383
+    },
+    {
+      "epoch": 24,
+      "train_loss": {
+        "type": 0.00744311082433507,
+        "food": 0.8772870602763512,
+        "side": 2.7607977035805997e-07,
+        "price": 0.5090971111573956,
+        "qty": 8.681539487456253e-12,
+        "total": 1.3938275668770075
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.4132222222222222,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.996125,
+          "food_rel_only": 0.5581983240223464,
+          "side_rel_only": 1.0,
+          "price_rel_only": 0.7016759776536313,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.33940875232774675,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.47583333333333333,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9990316573556797
+        },
+        "post_conditional": {
+          "side_accuracy": 1.0,
+          "food_accuracy": 0.5581983240223464,
+          "price_exact": 0.7016759776536313,
+          "price_l1_mae": 0.33940875232774675,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 1.0,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 30.567429065704346
+    },
+    {
+      "epoch": 25,
+      "train_loss": {
+        "type": 0.0073837918475460765,
+        "food": 0.8765151542188092,
+        "side": 1.754808834706558e-07,
+        "price": 0.505602502391081,
+        "qty": 2.1497145328046687e-12,
+        "total": 1.3895016314292497
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.40197222222222223,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9955277777777778,
+          "food_rel_only": 0.5598370577281192,
+          "side_rel_only": 1.0,
+          "price_rel_only": 0.6993854748603352,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.343975791433892,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.20416666666666666,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9999487895716946
+        },
+        "post_conditional": {
+          "side_accuracy": 1.0,
+          "food_accuracy": 0.5598370577281192,
+          "price_exact": 0.6993854748603352,
+          "price_l1_mae": 0.343975791433892,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 1.0,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 31.851306915283203
+    },
+    {
+      "epoch": 26,
+      "train_loss": {
+        "type": 0.00734033177451982,
+        "food": 0.8751661382107572,
+        "side": 1.609051800991165e-07,
+        "price": 0.5014660102315247,
+        "qty": 1.2402199148109991e-12,
+        "total": 1.3839726463298907
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.413125,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9955046296296296,
+          "food_rel_only": 0.5540130353817505,
+          "side_rel_only": 1.0,
+          "price_rel_only": 0.7018435754189944,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.33358938547486033,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.9575,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9957169459962756
+        },
+        "post_conditional": {
+          "side_accuracy": 1.0,
+          "food_accuracy": 0.5540130353817505,
+          "price_exact": 0.7018435754189944,
+          "price_l1_mae": 0.33358938547486033,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 1.0,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 32.19661211967468
+    },
+    {
+      "epoch": 27,
+      "train_loss": {
+        "type": 0.007317837403454839,
+        "food": 0.873681314797564,
+        "side": 5.921665057589449e-06,
+        "price": 0.4981734199364754,
+        "qty": 1.6536266319323992e-13,
+        "total": 1.3791785091161728
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.4100416666666667,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9964351851851851,
+          "food_rel_only": 0.5574115456238361,
+          "side_rel_only": 0.9999953445065177,
+          "price_rel_only": 0.7019320297951583,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.3355400372439479,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.7591666666666667,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9977607076350093
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999953445065177,
+          "food_accuracy": 0.5574115456238361,
+          "price_exact": 0.7019320297951583,
+          "price_l1_mae": 0.3355400372439479,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999899700103309,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 32.73131203651428
+    },
+    {
+      "epoch": 28,
+      "train_loss": {
+        "type": 0.007257597989419909,
+        "food": 0.8724201706830751,
+        "side": 2.33079702498125e-07,
+        "price": 0.49546209553425963,
+        "qty": 3.307253017455214e-13,
+        "total": 1.375140100886876
+      },
+      "val_metrics": {
+        "n": 216000,
+        "flat_accuracy": 0.4024861111111111,
+        "flat_legal_fraction": 1.0,
+        "per_head_accuracy": {
+          "type": 0.9950277777777777,
+          "food_rel_only": 0.559622905027933,
+          "side_rel_only": 0.9999953445065177,
+          "price_rel_only": 0.7005679702048417,
+          "qty_rel_only": 1.0
+        },
+        "per_head_l1_mae_rel": {
+          "price": 0.3420670391061453,
+          "qty": 0.0
+        },
+        "type_accuracy_by_target": {
+          "wait": 0.1075,
+          "cancel": 0.0,
+          "take": 0.0,
+          "post": 0.9999860335195531
+        },
+        "post_conditional": {
+          "side_accuracy": 0.9999953445065177,
+          "food_accuracy": 0.559622905027933,
+          "price_exact": 0.7005679702048417,
+          "price_l1_mae": 0.3420670391061453,
+          "qty_accuracy": 1.0
+        },
+        "post_side_bid_vs_ask": {
+          "n_target_bid": 99701,
+          "n_target_ask": 115099,
+          "acc_when_target_bid": 0.9999899700103309,
+          "acc_when_target_ask": 1.0
+        },
+        "take_type_accuracy": 0.0
+      },
+      "train_seconds": 35.03769016265869
+    }
+  ],
+  "best_val_flat_accuracy": 0.41506944444444444,
+  "test_metrics": {
+    "n": 216000,
+    "flat_accuracy": 0.4167175925925926,
+    "flat_legal_fraction": 1.0,
+    "per_head_accuracy": {
+      "type": 0.9944444444444445,
+      "food_rel_only": 0.5560614525139664,
+      "side_rel_only": 1.0,
+      "price_rel_only": 0.7018947858472998,
+      "qty_rel_only": 1.0
+    },
+    "per_head_l1_mae_rel": {
+      "price": 0.33073091247672254,
+      "qty": 0.0
+    },
+    "type_accuracy_by_target": {
+      "wait": 1.0,
+      "cancel": 0.0,
+      "take": 0.0,
+      "post": 0.994413407821229
+    },
+    "post_conditional": {
+      "side_accuracy": 1.0,
+      "food_accuracy": 0.5560614525139664,
+      "price_exact": 0.7018947858472998,
+      "price_l1_mae": 0.33073091247672254,
+      "qty_accuracy": 1.0
+    },
+    "post_side_bid_vs_ask": {
+      "n_target_bid": 99858,
+      "n_target_ask": 114942,
+      "acc_when_target_bid": 1.0,
+      "acc_when_target_ask": 1.0
+    },
+    "take_type_accuracy": 0.0
+  }
+}

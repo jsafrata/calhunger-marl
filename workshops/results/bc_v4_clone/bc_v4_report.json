@@ -1,0 +1,92 @@
+{
+  "fidelity": {
+    "fourway": {
+      "real": {
+        "survival_pct": 99.0,
+        "win_pct": 53.0,
+        "mean_cash": 171.49,
+        "n_seat_games": 100
+      },
+      "clone": {
+        "survival_pct": 57.0,
+        "win_pct": 31.0,
+        "mean_cash": 147.23,
+        "n_seat_games": 100
+      }
+    },
+    "pair_v2": {
+      "real": {
+        "survival_pct": 100.0,
+        "win_pct": 15.5,
+        "mean_cash": 72.955,
+        "n_seat_games": 200
+      },
+      "clone": {
+        "survival_pct": 78.5,
+        "win_pct": 8.5,
+        "mean_cash": 65.94,
+        "n_seat_games": 200
+      }
+    },
+    "pair_v3": {
+      "real": {
+        "survival_pct": 44.5,
+        "win_pct": 1.0,
+        "mean_cash": 34.35,
+        "n_seat_games": 200
+      },
+      "clone": {
+        "survival_pct": 30.5,
+        "win_pct": 0.0,
+        "mean_cash": 51.78,
+        "n_seat_games": 200
+      }
+    },
+    "pair_v5": {
+      "real": {
+        "survival_pct": 86.0,
+        "win_pct": 35.5,
+        "mean_cash": 141.085,
+        "n_seat_games": 200
+      },
+      "clone": {
+        "survival_pct": 6.5,
+        "win_pct": 6.0,
+        "mean_cash": 139.905,
+        "n_seat_games": 200
+      }
+    }
+  },
+  "ladder": {
+    "bc_selfplay": {
+      "survival_pct": 27.0,
+      "win_pct": 7.0,
+      "mean_cash": 98.46,
+      "n_games": 100
+    },
+    "v2": {
+      "survival_pct": 70.0,
+      "win_pct": 0.0,
+      "mean_cash": 25.54,
+      "n_games": 100
+    },
+    "v3": {
+      "survival_pct": 0.0,
+      "win_pct": 0.0,
+      "mean_cash": 63.96,
+      "n_games": 100
+    },
+    "v4": {
+      "survival_pct": 69.0,
+      "win_pct": 11.0,
+      "mean_cash": 91.96,
+      "n_games": 100
+    },
+    "v5": {
+      "survival_pct": 8.0,
+      "win_pct": 3.0,
+      "mean_cash": 120.19,
+      "n_games": 100
+    }
+  }
+}

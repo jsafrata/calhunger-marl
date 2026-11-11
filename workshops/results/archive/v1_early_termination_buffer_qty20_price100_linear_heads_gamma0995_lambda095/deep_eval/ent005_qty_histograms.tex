@@ -1,0 +1,87 @@
+% Compile with:  pdflatex ent005_qty_histograms.tex
+\documentclass[border=6pt,tikz]{standalone}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usetikzlibrary{positioning}
+
+% -------- data (qty 1..20; missing bins = 0) --------
+% Columns: qty  ippo_det_bid  ippo_det_ask  ippo_stc_bid  ippo_stc_ask
+%               mappo_det_bid mappo_det_ask mappo_stc_bid mappo_stc_ask
+\pgfplotstableread{
+qty  IdB   IdA   IsB   IsA   MdB    MdA   MsB   MsA
+1    606   246   4935  935   1444   23    5131  633
+2     85     2   1536  420    981  109    1473  477
+3    553   196    951  578    119    1     822  515
+4     41    18    355  356  12814  670     737  516
+5     83     0    468  329      0    0     400  265
+6     50     3    282  357      1    0     277  338
+7      0     0    171  306     13    0     206  357
+8     87   112    187  339     52    6     176  314
+9      0     0    104  188      0    2     139  216
+10     7     0    171  304    102    0     157  294
+11     2     0    116  259     21    0     185  273
+12     0     9     83  186     17    0     110  217
+13     0     0     93  219      4    0      77  153
+14     4     0     51  175   1937   25     103  264
+15    64     0     82  173     20   21     102  272
+16     0     0     54  163      0    0      74  158
+17    14     0     78  192      0    0      28  134
+18   109     0     74  221    186    0      76  154
+19     6     0     52  142    958    6     127  204
+20     7    36     61  144      0    0      68   99
+}\qtydata
+
+% -------- style ----------
+\pgfplotsset{
+  qhist/.style={
+    width=8.4cm, height=4.6cm,
+    ybar=0pt, bar width=3.1pt,
+    xmin=0.4, xmax=20.6,
+    xtick={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20},
+    xtick pos=bottom, ytick pos=left,
+    xlabel={posted quantity},
+    ylabel={\#\,posts},
+    ylabel style={yshift=-6pt},
+    xlabel style={yshift=3pt},
+    tick label style={font=\scriptsize},
+    label style={font=\small},
+    title style={font=\small\bfseries},
+    enlarge x limits=0.02,
+    legend style={draw=none, font=\scriptsize, at={(0.98,0.97)}, anchor=north east},
+    legend cell align=left,
+  },
+  bidstyle/.style={fill=blue!25, draw=blue!70!black, thick},
+  askstyle/.style={fill=red!25,  draw=red!70!black,  thick},
+}
+
+\begin{document}
+\begin{tikzpicture}
+  % IPPO deterministic
+  \begin{axis}[qhist, name=ipd, title={IPPO ent0.05 --- deterministic}]
+    \addplot[bidstyle] table[x=qty, y=IdB] {\qtydata};
+    \addplot[askstyle] table[x=qty, y=IdA] {\qtydata};
+    \legend{bid, ask}
+  \end{axis}
+  % IPPO stochastic
+  \begin{axis}[qhist, right=8pt of ipd.east, anchor=west,
+               title={IPPO ent0.05 --- stochastic}]
+    \addplot[bidstyle] table[x=qty, y=IsB] {\qtydata};
+    \addplot[askstyle] table[x=qty, y=IsA] {\qtydata};
+    \legend{bid, ask}
+  \end{axis}
+  % MAPPO deterministic
+  \begin{axis}[qhist, below=18pt of ipd.south west, anchor=north west,
+               title={MAPPO ent0.05 --- deterministic}, name=mpd]
+    \addplot[bidstyle] table[x=qty, y=MdB] {\qtydata};
+    \addplot[askstyle] table[x=qty, y=MdA] {\qtydata};
+    \legend{bid, ask}
+  \end{axis}
+  % MAPPO stochastic
+  \begin{axis}[qhist, right=8pt of mpd.east, anchor=west,
+               title={MAPPO ent0.05 --- stochastic}]
+    \addplot[bidstyle] table[x=qty, y=MsB] {\qtydata};
+    \addplot[askstyle] table[x=qty, y=MsA] {\qtydata};
+    \legend{bid, ask}
+  \end{axis}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,15 @@
+voter_set,rule,B,n_games_per_cell,scheme,top1_stability,mean_self_spearman,p5_self_spearman,full_winner
+pop_all10judges_healthy8,borda,2000,1000,paired,0.804,0.9705519856686151,0.9221722216732093,ippo_s2
+pop_all10judges_healthy8,copeland,2000,1000,paired,0.806,0.9664592401668257,0.9030468880657603,ippo_s2
+pop_all10judges_healthy8,plurality,2000,1000,paired,0.3845,0.8427890027447408,0.6602564102564101,ippo_s1
+pop_all10judges_healthy8,mean_score,2000,1000,paired,0.904,0.9766624485526706,0.9285714285714286,ippo_s2
+pop_all10judges_healthy8,kemeny,2000,1000,paired,0.411,0.9041785714285716,0.7857142857142858,ippo_s2
+pop_healthy8judges_healthy8,borda,2000,1000,paired,0.4945,0.9743548078457198,0.9216867469879517,ippo_s2
+pop_healthy8judges_healthy8,copeland,2000,1000,paired,0.4505,0.9723340970321998,0.9326733179802502,ippo_s1
+pop_healthy8judges_healthy8,plurality,2000,1000,paired,0.6325,0.867459470978572,0.728492796385774,ippo_s1
+pop_healthy8judges_healthy8,mean_score,2000,1000,paired,0.9635,0.9422016313722977,0.8333333333333335,ippo_s1
+pop_healthy8judges_healthy8,kemeny,2000,1000,paired,0.9145,0.9638214285714287,0.8571428571428573,mappo_s3
+metrics6_healthy8,borda,2000,1000,paired,0.9875,0.9929338475921495,0.9700772721497397,ippo_s2
+metrics6_healthy8,copeland,2000,1000,paired,0.831,0.9902007589300352,0.9695121951219511,ippo_s2
+metrics6_healthy8,plurality,2000,1000,paired,0.993,0.9839651764940252,0.8366600265340755,mappo_s2
+metrics6_healthy8,kemeny,2000,1000,paired,0.993,0.9883095238095239,0.9523809523809524,mappo_s2
