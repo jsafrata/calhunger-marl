@@ -1,9 +1,9 @@
 # The external data archive
 
 The repository ships the per-cell summaries every analysis script reads (`workshops/results/`, 18 MB).
-Everything larger lives in three tarballs, archived on Zenodo:
-
-**DOI: 10.5281/zenodo.XXXXXXX** (placeholder until the record is published)
+Everything larger lives in three tarballs attached to the GitHub release
+[`v1.0.0`](https://github.com/jsafrata/calhunger-marl/releases/tag/v1.0.0) of this repository (they are
+too large for git itself):
 
 | archive | size | contents |
 |---|---|---|
@@ -13,9 +13,31 @@ Everything larger lives in three tarballs, archived on Zenodo:
 
 Checksums (`*.sha256`) and file manifests (`*.MANIFEST.txt`) for all three are in this directory.
 
+## Downloading and verifying
+
+From the repository root (`*.tar.gz` is git-ignored, so the downloads do not dirty the working tree):
+
+```bash
+REL=https://github.com/jsafrata/calhunger-marl/releases/download/v1.0.0
+curl -L -O "$REL/calhunger-results-v1.tar.gz"                 #  89 MB
+curl -L -O "$REL/calhunger-checkpoints-v1-small90.tar.gz"     #  97 MB
+curl -L -O "$REL/calhunger-checkpoints-v1.tar.gz"             # 1.93 GB
+shasum -a 256 -c data/calhunger-results-v1.sha256 \
+                 data/calhunger-checkpoints-v1-small90.sha256 \
+                 data/calhunger-checkpoints-v1.sha256         # sha256sum -c on Linux
+```
+
+Expected checksums (identical to the `.sha256` files in this directory):
+
+```
+759dd82088e4cd39b715f2eb8df702e4d53c1659374ecfb3d6af39131884f72c  calhunger-results-v1.tar.gz
+1717b0739d1e47901df23582b0e9b701159c2dbffb83fc5171d7fc1852e7c3ea  calhunger-checkpoints-v1.tar.gz
+5a0ee139fe86fe501510720cec7ef3c1442ea4eb8e4b6d49bc43d364dc3b2a7c  calhunger-checkpoints-v1-small90.tar.gz
+```
+
 ## Extracting
 
-From the repository root:
+Still from the repository root:
 
 ```bash
 # Raw per-game outputs: extracts in place under workshops/ (adds raw/ and games/ next to the summaries)

@@ -10,7 +10,7 @@ authors:
 repository-code: "https://github.com/jsafrata/calhunger-marl"
 license: MIT
 version: 1.0.0
-date-released: "2026-11-11"
+date-released: "2026-11-15"
 preferred-citation:
   type: conference-paper
   title: "When the Metric Lies: A Full-Stack Audit of a Multi-Agent Evaluation Protocol"

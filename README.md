@@ -12,8 +12,8 @@ agent can survive without repeatedly trading with its competitors:
   [`papers/2026_NeurIPS_WhoVerifies_Self_Play_Is_a_Broken_Verifier.pdf`](papers/2026_NeurIPS_WhoVerifies_Self_Play_Is_a_Broken_Verifier.pdf)
 
 Both are non-archival workshop papers (posters). Everything needed to re-run every number in them is
-either in this repository (code, per-cell summaries, figures) or in the accompanying data archive
-(raw per-game outputs and trained checkpoints; see [`data/README.md`](data/README.md)).
+either in this repository (code, per-cell summaries, figures) or in the data archives attached to its
+GitHub release (raw per-game outputs and trained checkpoints; see [`data/README.md`](data/README.md)).
 
 ## The game in one paragraph
 
@@ -202,8 +202,9 @@ files; the scripts are deterministic given the data and their fixed bootstrap se
 
 ## Data and checkpoints
 
-The repository ships per-cell summaries (18 MB). Two archives hold the rest; see
-[`data/README.md`](data/README.md) for their layout, checksums, and where to extract them:
+The repository ships per-cell summaries (18 MB). Three archives attached to the
+[v1.0.0 GitHub release](https://github.com/jsafrata/calhunger-marl/releases/tag/v1.0.0) hold the rest;
+see [`data/README.md`](data/README.md) for download commands, checksums, layout, and where to extract them:
 
 - `calhunger-results-v1.tar.gz` — every raw per-game JSON behind `workshops/results/` and
   `workshops/econml/results/` (bootstrap, replication, and inversion analyses read these), including the
