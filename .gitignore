@@ -31,6 +31,7 @@ research/hpc/**/slurm/*.err
 # data archive (see data/README.md), not through git.
 workshops/results/**/raw/
 workshops/results/llm_arena/**/games/
+workshops/results/llm_arena/debug_*/
 workshops/econml/results/**/raw/
 checkpoints/
 *.tar.gz

@@ -7,7 +7,7 @@ too large for git itself):
 
 | archive | size | contents |
 |---|---|---|
-| `calhunger-results-v1.tar.gz` | 89 MB | the complete `workshops/results/` and `workshops/econml/results/` trees, i.e. the shipped summaries **plus** every raw per-game JSON (`raw/` directories, 8,400 files) and the full LLM-arena transcripts (`llm_arena/campaign_90s/*/games/`, one JSON per game with every prompt hash, raw response, parsed action, latency, and token count) |
+| `calhunger-results-v1.tar.gz` | 89 MB | the complete `workshops/results/` and `workshops/econml/results/` trees, i.e. the shipped summaries **plus** every raw per-game JSON (`raw/` directories, 4,696 files, plus 3,271 more inside the EconML bundles `microstructure_hpc/raw.tar.gz` and `llm_economy/replay_all_cells.tar.gz`) and the full LLM-arena transcripts (`llm_arena/campaign_90s/*/games/`, 3,350 files, one JSON per game with every prompt hash, raw response, parsed action, latency, and token count) |
 | `calhunger-checkpoints-v1.tar.gz` | 1.93 GB | 203 RLlib checkpoints (see below) plus each run's training telemetry (`iters.jsonl`) |
 | `calhunger-checkpoints-v1-small90.tar.gz` | 97 MB | the ten 90-second best-configuration policies (`small_90_mlp`, iteration 1200) that the LLM arena and the EconML controls seated |
 
@@ -40,7 +40,7 @@ Expected checksums (identical to the `.sha256` files in this directory):
 Still from the repository root:
 
 ```bash
-# Raw per-game outputs: extracts in place under workshops/ (adds raw/ and games/ next to the summaries)
+# Raw per-game outputs: extracts in place under workshops/ (adds raw/, games/ and the LLM-arena debug runs next to the summaries; all git-ignored)
 tar -xzf calhunger-results-v1.tar.gz -C workshops/
 
 # Checkpoints: paths inside the tarballs are campaign-relative
