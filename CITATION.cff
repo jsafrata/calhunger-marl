@@ -7,7 +7,7 @@ authors:
     given-names: Jan
     affiliation: California Institute of Technology
     email: jsafrata@caltech.edu
-repository-code: "https://github.com/jsafrata/calhunger"
+repository-code: "https://github.com/jsafrata/calhunger-marl"
 license: MIT
 version: 1.0.0
 date-released: "2026-11-11"

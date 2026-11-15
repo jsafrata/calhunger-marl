@@ -66,8 +66,8 @@ versions that produced every released checkpoint (RLlib checkpoints load only wi
 `ray[rllib]==2.53.0`).
 
 ```bash
-git clone https://github.com/jsafrata/calhunger.git
-cd calhunger
+git clone https://github.com/jsafrata/calhunger-marl.git
+cd calhunger-marl
 python3 -m venv .venv && source .venv/bin/activate
 
 pip install -e './research[dev]'     # simulator + scripted agents + pytest (NumPy only)
